@@ -1,0 +1,31 @@
+---
+title: "Cloud Compare"
+id: materialspat-analysis-6
+order: 145
+summary: "3D point cloud and mesh processing software."
+source_url: "https://www.danielgm.net/cc/"
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+activities:
+  - activity-analysis-4
+  - activity-analysis-5
+  - activity-analysis-5
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - recommended
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/materialspat-analysis-6.md"
+---
+
+Read about CloudCompare:
+
+<https://www.danielgm.net/cc/>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

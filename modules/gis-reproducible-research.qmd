@@ -1,0 +1,70 @@
+---
+title: "Reproducible Research"
+id: gis-reproducible-research
+order: 300
+summary: "Reproducible research is rooted in good scientific practice and transparent, repeatable research work."
+module-goals: []
+materials:
+  - material-gis-reproducible-research-intro
+  - material-screencast-gis-reproducible-research-4
+  - material-screencast-gis-reproducible-research-5
+  - material-guide
+  - material-gis-reproducible-research-expose
+activities:
+  - activity-gis-reproducible-research-blogs
+  - activity-gis-reproducible-research-r
+  - activity-gis-reproducible-research-blogdown
+  - activity-gis-reproducible-research-external-1
+  - activity-gis-reproducible-research-external-2
+assessments: []
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/module-gis-reproducible-research.md"
+title-block-banner: ../images/gis-reproducible-research/spatial-r-r.png
+title-block-banner-color: black
+listing:
+  - id: module-module-goals
+    contents: "../module-goals/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: gis-reproducible-research
+      heading: "Goals"
+
+  - id: module-materials
+    contents: "../materials/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: gis-reproducible-research
+      heading: "Materials"
+
+  - id: module-activities
+    contents: "../activities/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: gis-reproducible-research
+      heading: "Activities"
+
+  - id: module-assessments
+    contents: "../assessments/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: gis-reproducible-research
+      heading: "Assessments"
+---
+
+
+
+::: {#module-module-goals}
+:::
+
+::: {#module-materials}
+:::
+
+::: {#module-activities}
+:::
+
+::: {#module-assessments}
+:::

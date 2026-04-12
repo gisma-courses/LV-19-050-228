@@ -1,0 +1,39 @@
+---
+title: "Reproducible research in application - A question of balance"
+subtitle: "The Fiji test is suitable for many situations in life"
+id: material-screencast-gis-reproducible-research-4
+order: 301
+summary: "What is a good balance between effort and benefit?"
+modules:
+  - gis-reproducible-research
+Goals: []
+activities: []
+assessments: []
+labels:
+  - basic
+  - talk
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/material-screencast-gis-reproducible-research-4.md"
+---
+
+
+
+
+```{=html}
+<iframe
+  src="https://fast.wistia.net/embed/iframe/6cwdd163ij?videoFoam=true"
+  allow="autoplay; fullscreen"
+  allowfullscreen
+  frameborder="0"
+  scrolling="no"
+  class="wistia_embed"
+  name="wistia_embed"
+  width="100%"
+  height="600">
+</iframe>
+
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

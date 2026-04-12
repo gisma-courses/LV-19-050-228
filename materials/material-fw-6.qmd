@@ -1,0 +1,28 @@
+---
+title: "Choosing a Ground Station"
+id: material-fw-6
+order: 92
+summary: "A high-level overview of available Ground Control Stations (GCS) with links for choosing an appropriate tool."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+activities:
+  - activity-fw-11
+assessments:
+  - fw-assessment
+labels:
+  - supplement
+  - optional
+source: "../LV-uav-workflow/morea/UAVFieldwork/material-fw-6.md"
+---
+
+This reading gives a high-level overview of available Ground Control Stations (GCS) and provides links for choosing an appropriate tool.
+
+Read the ArduPilot guide:
+
+<https://ardupilot.org/copter/docs/common-choosing-a-ground-station.html>
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

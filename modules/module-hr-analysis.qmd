@@ -1,0 +1,76 @@
+---
+title: "Analysis of high resolution aerial data"
+id: module-hr-analysis
+order: 140
+summary: "High-resolution UAV orthoimages and point clouds require methods such as OBIA, machine learning, deep learning, and point-cloud classification."
+module-goals:
+  - module-goals-spat-analysis
+materials:
+  - materialspat-analysis-000
+  - materialspat-analysis-00
+  - materialspat-analysis-0
+  - materialspat-analysis-3
+  - materialspat-analysis-2
+  - materialspat-analysis-6
+activities:
+  - activity-analysis-0
+  - activity-analysis-1
+  - activity-analysis-4
+  - activity-analysis-5
+  - activity-analysis-5
+  - activity-analysis-3
+  - activity-analysis-6
+assessments:
+  - assessment-spat-analysis
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/module-microremotesensing.md"
+title-block-banner: ../images/module-hr-analysis/icon1.png
+title-block-banner-color: black
+listing:
+  - id: module-module-goals
+    contents: "../module-goals/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-hr-analysis
+      heading: "Goals"
+
+  - id: module-materials
+    contents: "../materials/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-hr-analysis
+      heading: "Materials"
+
+  - id: module-activities
+    contents: "../activities/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-hr-analysis
+      heading: "Activities"
+
+  - id: module-assessments
+    contents: "../assessments/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-hr-analysis
+      heading: "Assessments"
+---
+
+This module bundles the processing workflow for creating high-quality outputs from aerial imagery.
+
+::: {#module-module-goals}
+:::
+
+::: {#module-materials}
+:::
+
+::: {#module-activities}
+:::
+
+::: {#module-assessments}
+:::
+

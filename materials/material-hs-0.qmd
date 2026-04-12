@@ -1,0 +1,31 @@
+---
+title: "Open-Source UAV"
+id: material-hs-0
+order: 42
+summary: "David Benowitz gives an overview of the major commercial Open Source UAV systems."
+source_url: "https://droneanalyst.com/2021/05/30/rise-of-open-source-drones"
+modules:
+  - module-introduction
+  - module-hs
+Goals:
+  - module-goals
+  - module-goals-hs
+activities: []
+assessments:
+  - assessment
+  - assessment-hs
+labels:
+  - supplement
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/Hardware_Software/material-hs-0.md"
+---
+
+Read the article:
+
+<https://droneanalyst.com/2021/05/30/rise-of-open-source-drones>
+
+## Connected Module
+
+- [UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)
+- [Scientific UAV Hardware](../modules/module-hs.qmd)

@@ -1,0 +1,128 @@
+---
+title: "Field Guide"
+id: activity-fw-111
+order: 92
+summary: "Schemes for well-being during the field work."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+materials:
+  - material-fw-7
+  - material-fw-8
+  - material-fw-6
+assessments:
+  - fw-assessment
+labels:
+  - advanced
+  - recommended
+source: "../LV-uav-workflow/morea/UAVFieldwork/activity-fw-111.md"
+---
+
+# Field Guide
+
+## Planning Your Survey
+
+It is most important that you set up your survey with an appropriate overlap for reliable stitching results. If the overlap is too small, or if you fly too fast, you will get poor results or no results. The same applies to flight altitude and camera settings.
+
+#### Suggested Overlap
+
+Front overlap: 80%
+
+Side overlap: 75%
+
+#### Camera Settings
+
+Typical ground resolution values for selected cameras:
+
+| AGL | GP8MP3+ | GP12MP3+ | DJIP3-4K | MAPIR-2 | DJI-Mini-2 |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| **15m** | 1.08 | 0.9 | 0.63 | 0.56 | 0.8 |
+| **30m** | 2.16 | 1.8 | 1.27 | 1.03 | 1.6 |
+| **75m** | 5.4 | 4.5 | 3.2 | 2.53 | 3.9 |
+| **100m** | 7.2 | 6.0 | 4.25 | 3.38 | 5.2 |
+
+Ground resolution of typical cameras in cm with respect to above-surface level.
+
+Depending on the camera product and manufacturer, you have to deal with different flight speeds. Only the speed that can be continuously achieved is taken into account. Currently a picture rate of 2 seconds is the maximum in speed.
+
+::: {.callout-note}
+It is strongly recommended that you use an autonomous camera timer or time lapse, if available, for controlling the picture interval.
+:::
+
+#### Flight Speed
+
+On average, both SD cards and cameras can achieve an average speed of about 2 seconds per image. As a rule of thumb:
+
+$$maxSpeed~(km/h) = (0.2 * AGL) * 3.6$$
+
+For a 100 meter AGL flight, you should set the speed to a maximum of:
+
+$$0.2 * 100 = 20~(m/s) = 72~(km/h)$$
+
+For a flight of 40 m AGL, this will be roughly:
+
+$$5.25~(m/s) = 28.8~(km/h)$$
+
+Please note that maximum speed is usually not the best choice.
+
+#### DEM/DSM Data
+
+If you fly in a wide open flat area, you do not need additional data. But if you fly in middle range mountains, forests, or similar complex structures, you will need a digital surface model (DSM/DEM) for retrieving an optimal and safe flight path. Depending on the software, you may have to handle this manually.
+
+## Weather
+
+::: {.callout-warning}
+Check the weather before flying: <https://www.windy.com/?50.117,8.684,5>
+
+You must take care of wind gusts and cloud coverage for quality and safety reasons. Do not ignore this. Forget about flying with wind speed above 4 Beaufort; most UAVs are not falcons.
+:::
+
+# Workflow in the Field
+
+::: {.callout-note}
+1. Set up your remote controller, controlling device, and UAV.
+2. Load the task.
+3. Double check if the task is correct.
+4. Start the task.
+5. Always check the complete situation: one person pilots the UAV, one co-pilots the surroundings.
+:::
+
+## Pre-Flight Check
+
+The pre-flight check seems simple, but it is full of pitfalls:
+
+UAV:
+
+- batteries fully charged
+- remote control charged
+- props
+- cleaned MicroSD cards
+- field charger
+- minute book
+- power bank
+- charge and configure cameras, if needed
+
+Tools:
+
+- tools for the UAV
+- tape, glue, and related repair material
+- table and chairs
+
+Survey:
+
+- survey is checked
+- task is stored on controller or app
+- offline maps loaded
+
+Legal:
+
+- insurance valid
+- common flight permission
+- specific permissions
+- necessary information sent to flight security authority
+- necessary information sent to local air control
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

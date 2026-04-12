@@ -1,0 +1,13 @@
+---
+title: "Goals"
+listing:
+  - id: module-goals-list
+    contents: "module-goals/*.qmd"
+    type: custom
+    template: "_templates/collection-cards.ejs.md"
+    template-params:
+      heading: ""
+---
+
+::: {#module-goals-list}
+:::

@@ -1,0 +1,15 @@
+---
+title: "Activities"
+listing:
+  - id: activities-list
+    contents:
+      - "modules/*.qmd"
+      - "activities/*.qmd"
+    type: custom
+    template: "_templates/collection-cards-grouped-by-module.ejs.md"
+    template-params:
+      heading: ""
+---
+
+::: {#activities-list}
+:::

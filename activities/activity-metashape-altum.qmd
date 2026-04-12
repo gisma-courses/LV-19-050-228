@@ -1,0 +1,22 @@
+---
+title: "Metashape MicaSense Altum workflow"
+id: activity-metashape-altum
+order: 107
+summary: "A tutorial for processing multisensor datasets from a MicaSense Altum sensor in Metashape."
+source_url: "https://agisoft.freshdesk.com/support/solutions/articles/31000148381-micasense-altum-processing-workflow-including-reflectance-calibration-in-agisoft-metashape-professi"
+modules:
+  - module-postprocessing
+Goals:
+  - module-goals-pp
+activity:
+  - material-hs-3
+  - material-hs-4
+assessments:
+  - pp-assessment
+labels:
+  - advanced
+  - supplement
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/activities-Metashape-wf-12.md"
+---

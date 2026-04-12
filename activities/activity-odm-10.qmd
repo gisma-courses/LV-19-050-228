@@ -1,0 +1,21 @@
+---
+title: "The OpenDroneMap Tutorial Page"
+id: activity-odm-10
+order: 104
+summary: "OpenDroneMap offers a free, powerful, and open source choice for creating, processing, and analyzing low-cost aerial imagery."
+source_url: "https://docs.opendronemap.org/tutorials/"
+modules:
+  - module-postprocessing
+Goals:
+  - module-goals-pp
+materials:
+  - material-hs-3
+  - material-hs-4
+assessments:
+  - pp-assessment
+labels:
+  - basic
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/activities-odm-10.md"
+---

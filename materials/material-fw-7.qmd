@@ -1,0 +1,29 @@
+---
+title: "QGroundControl Planning a Mission"
+id: material-fw-7
+order: 90
+summary: "Getting an idea how to practically plan and perform a flight mission with QGroundControl."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+activities:
+  - activity-fw-11
+assessments:
+  - fw-assessment
+labels:
+  - basics
+  - mandatory
+  - YouTube 
+source: "../LV-uav-workflow/morea/UAVFieldwork/material-fw-7.md"
+---
+
+## Planning and Running a Mission
+
+Watch the QGroundControl mission planning video:
+
+<https://www.youtube.com/watch?v=0d23O_RUOmI>
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

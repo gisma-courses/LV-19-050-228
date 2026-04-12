@@ -1,0 +1,124 @@
+---
+title: "Micro-Remote Sensing"
+---
+<style>
+  body {
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+</style>
+
+
+
+## Welcome to the course website for LV-19-050-228 — gisma spatial science resources.
+
+The *Micro Remote Sensing* course offers a comprehensive introduction to reproducible flight planning, UAV-based data acquisition, pre-processing, and the example-based analysis of high-resolution, low-cost image data — using both commercial and open-source software tools.
+
+The course places equal emphasis on the practical acquisition of high-resolution aerial imagery with UAV-based camera systems and on the generation, analysis, interpretation, and scientific validation of the resulting data products.
+
+## Who Should Take This Course?
+
+This course is intended for learners of all levels who possess a basic understanding of their operating system's structure. While basic programming knowledge is **not required**, it may be helpful.
+
+The course is particularly suitable for students and practitioners interested in UAV-based remote sensing, reproducible geospatial workflows, and the critical evaluation of spatial products derived from image data.
+
+## Course Objective
+
+Throughout this course you will learn how to **acquire, process, analyse, and scientifically validate high-resolution UAV-based image data and derived products**.
+
+The overarching goal is to develop a *reproducible and well-argued workflow* that links field acquisition, data processing, product generation, and critical evaluation. This is not a purely technical exercise, but a research-oriented workflow challenge that connects practical UAV operation, spatial data processing, and scientific reasoning.
+
+The course evolves in three conceptual phases:
+
+1. **Exploration** – Identify what makes a UAV-based workflow, product, or interpretation robust, weak, reproducible, or misleading. Define what “quality” and “validation” mean in relation to your chosen task.  
+2. **Development** – Apply methods learned in class to iteratively improve your workflow, including flight planning, acquisition strategy, preprocessing, product generation, and evaluation.  
+3. **Synthesis** – Present and defend a transparent, reproducible workflow and a scientifically interpretable final product, including a critical discussion of limitations, uncertainty, and methodological choices.
+
+## Didactic Concept
+
+The course consists of a sequential (but not strictly linear) set of [modules](/modules.qmd), each designed to be completed in roughly 2–4 weeks.
+
+Each module follows this structure:
+
+- [Module Goals](module-goals.qmd): Learning objectives  
+- [Materials](materials.qmd): Core and supplemental resources  
+- [Activities](activities.qmd): Exercises and tutorials for hands-on learning  
+- [Assessments](assessments.qmd): Self-assessment and evaluation of progress  
+
+The `labels` provide a quick overview of the content and importance of each unit within a module:
+
+- `mandatory` units define the **minimum course requirements**  
+- `recommended` units should be **considered strongly**  
+- other resources support **internal differentiation** for learners seeking deeper or broader engagement  
+
+## Final Deliverables
+
+At the end of the course, each group submits **three complementary products**:
+
+### 1. Transparent repository (core submission)
+
+A public or shared repository (e.g. GitHub, GitLab, or institutional server) that contains:
+
+- all relevant scripts, settings, metadata, and documentation used to derive the final products  
+- a reproducible workflow showing how you moved from acquisition planning and raw data to processed outputs and final interpretation  
+- a clear project structure and a short README explaining the workflow logic, data organisation, and main methodological decisions  
+
+The repository represents the **traceable backbone** of the project and demonstrates reproducibility, technical care, and collaborative organisation.
+
+### 2. Poster
+
+A concise visual summary of:
+
+- the research question or task and the chosen workflow  
+- the main methodological steps, from acquisition to final product  
+- the final outputs (e.g. orthomosaic, point cloud, classification, segmentation, or derived analysis result)  
+- the main quality criteria, validation steps, and limitations  
+
+The poster should communicate the project as if presented at a professional conference in geoinformatics, remote sensing, or applied spatial analysis.
+
+### 3. Five-minute pitch (presentation)
+
+Each group presents its poster in a short oral pitch (max. 5 minutes).
+
+The goal is to **argue convincingly** why the workflow, products, and interpretation are methodologically sound, reproducible, and scientifically meaningful. The pitch should demonstrate technical understanding, critical reflection, and the ability to justify key decisions.
+
+## Evaluation Criteria
+
+Each final submission is evaluated across **five dimensions**, 0–2 points each (max. 10 points):
+
+| Criterion | 0 | 1 | 2 |
+|---|---|---|---|
+| **Workflow design** | unclear or ad hoc workflow | partly structured workflow | coherent, transparent, and logically structured workflow from acquisition to product |
+| **Methodological rigour** | undocumented or arbitrary choices | partly justified methods | well-justified and reproducible methodological decisions, including parameters and processing logic |
+| **Product quality & validation** | outputs not interpretable or not checked | outputs plausible but weakly evaluated | outputs critically assessed with explicit quality criteria, validation, and discussion of uncertainty |
+| **Transparency & reproducibility** | no clear documentation | partial scripts / incomplete metadata | complete, documented, and reproducible repository with clear structure |
+| **Communication quality** | unclear poster / pitch | partly coherent presentation | clear, concise, visually convincing, and scientifically well-argued presentation |
+
+## Learning Outcome
+
+By completing the full project you will be able to:
+
+- plan and document UAV-based data acquisition in a methodologically transparent way  
+- generate and evaluate spatial products from high-resolution aerial imagery  
+- critically assess the quality, limits, and scientific validity of derived results  
+- communicate and defend a reproducible workflow from data acquisition to final interpretation  
+
+## Instructor
+
+**Chris Reudenbach**  
+[Geoinformatics Working Group](https://www.uni-marburg.de/de/fb19/fachbereich/staff/reudenbach) (GISMA)  
+Department of Geography, [University of Marburg](https://www.uni-marburg.de/en)
+
+The course materials are developed and hosted on  
+[<i class="fa fa-github"></i> GitHub](https://github.com/gisma-courses/LV-19-050-228)
+
+---
+
+> The responsibility for the content lies with the instructors.  
+> Statements, opinions, and conclusions are those of the instructors and do not necessarily reflect the views of the University of Marburg.
+
+
+
+

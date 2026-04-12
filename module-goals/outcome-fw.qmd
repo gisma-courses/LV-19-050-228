@@ -1,0 +1,31 @@
+---
+title: "Autonomous Flight Planning Workflow"
+id: module-goals-fw
+order: 90
+summary: "Implement autonomous flight planning confidently and successfully, from software choice to safe execution."
+modules:
+  - module-fieldwork
+materials:
+  - material-fw-7
+  - material-fw-8
+  - material-fw-6
+activities:
+  - activity-fw-14
+  - activity-fw-11
+  - activity-fw-111
+  - activity-fw-12
+assessments:
+  - fw-assessment
+source: "../LV-uav-workflow/morea/UAVFieldwork/module-goals-fw.md"
+---
+
+This module is intended to enable you to implement autonomous flight planning confidently and successfully. In particular:
+
+- Overview of the hardware and software market, especially the planning and control software.
+- Hardware-independent optimized planning of the flight area, taking air law and environmental protection into account with optimal safety and efficiency.
+- Manual optimization of the flight plan and practice of the workflow.
+- Safe execution of the flight task.
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

@@ -1,0 +1,29 @@
+---
+title: "A review of Object-based image analysis (OBIA) in (UAV) remote sensing"
+id: materialspat-analysis-0
+order: 142
+summary: "An overview of OBIA especially for land-cover mapping purposes using remote-sensing imagery."
+source_url: "https://www.sciencedirect.com/science/article/pii/S092427161630661X"
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+activities:
+  - activity-analysis-0
+  - activity-analysis-1
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/materialspat-analysis-0.md"
+---
+
+Read the article:
+
+<https://www.sciencedirect.com/science/article/pii/S092427161630661X>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

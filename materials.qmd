@@ -1,0 +1,15 @@
+---
+title: "Materials"
+listing:
+  - id: materials-list
+    contents:
+      - "modules/*.qmd"
+      - "materials/*.qmd"
+    type: custom
+    template: "_templates/collection-cards-grouped-by-module.ejs.md"
+    template-params:
+      heading: ""
+---
+
+::: {#materials-list}
+:::

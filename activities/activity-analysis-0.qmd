@@ -1,0 +1,35 @@
+---
+title: "OBIA Workflow for QGIS in a nutshell"
+id: activity-analysis-0
+order: 140
+summary: "A concise video overview of an OBIA workflow with QGIS and the OTB processing plugin."
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+materials:
+  - materialspat-analysis-000
+  - materialspat-analysis-0
+assessments:
+  - assessment-spat-analysis
+labels:
+  - basic
+  - mandatory
+  - YouTube
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/activity-analysis-0.md"
+---
+
+# Object-based image analysis (OBIA)
+
+Human visual perception almost always outperforms computer image processing algorithms. Especially with spatially extreme and spectrally minimal UAV image data, it is more useful to identify objects or entities than to classify individual pixels.
+
+The core principle of OBIA is to segment first and then classify. Segmentation iteratively searches for similarities in space, structure, and channel dimensions to group neighboring pixels into objects. These segments are then classified using supervised training data.
+
+## Workflow video
+
+<https://www.youtube.com/watch?v=fX2UpOwoYLk>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

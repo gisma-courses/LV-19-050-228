@@ -1,0 +1,70 @@
+---
+title: "Autonomous Flights Made Easy"
+id: module-fieldwork
+order: 2
+summary: "An easy-to-use workflow for controlling ready-to-fly UAVs on autonomous survey missions in highly structured terrain."
+module-goals:
+  - module-goals-fw
+materials:
+  - material-fw-7
+  - material-fw-8
+  - material-fw-6
+activities:
+  - activity-fw-14
+  - activity-fw-11
+  - activity-fw-111
+  - activity-fw-12
+assessments:
+  - fw-assessment
+labels:
+  - Einführung
+source: "../LV-uav-workflow/morea/UAVFieldwork/module-UAVfieldwork.md"
+title-block-banner: ../images/uav-fieldwork/fp4.png
+title-block-banner-color: black
+listing:
+  - id: module-module-goals
+    contents: "../module-goals/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-fieldwork
+      heading: "Goals"
+
+  - id: module-materials
+    contents: "../materials/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-fieldwork
+      heading: "Materials"
+
+  - id: module-activities
+    contents: "../activities/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-fieldwork
+      heading: "Activities"
+
+  - id: module-assessments
+    contents: "../assessments/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-fieldwork
+      heading: "Assessments"
+---
+
+This module bundles the processing workflow for creating high-quality outputs from aerial imagery.
+
+::: {#module-module-goals}
+:::
+
+::: {#module-materials}
+:::
+
+::: {#module-activities}
+:::
+
+::: {#module-assessments}
+:::

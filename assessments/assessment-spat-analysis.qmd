@@ -1,0 +1,43 @@
+---
+title: "Creating Orthoimages and Point Clouds"
+id: assessment-spat-analysis
+order: 140
+summary: "Create an OBIA classification or classify dense point cloud data, then report and present the results."
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+materials:
+  - materialspat-analysis-000
+  - materialspat-analysis-00
+  - materialspat-analysis-0
+  - materialspat-analysis-3
+  - materialspat-analysis-2
+  - materialspat-analysis-6
+activities:
+  - activity-analysis-0
+  - activity-analysis-1
+  - activity-analysis-4
+  - activity-spat-analysis-5
+  - activity-analysis-5
+  - activity-analysis-3
+  - activity-analysis-6
+labels:
+  - self-check
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/assessment.md"
+---
+
+## Task
+
+You can use the provided sample data or your own project data:
+
+- Create an OBIA classification of the orthoimage you have produced.
+- Write a short report and discuss the results.
+- Alternatively or additionally, classify the 3D dense point cloud into ground data and vegetation data.
+- Estimate the biomass volume.
+- Prepare a short presentation, preferably online, with your main results and findings.
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

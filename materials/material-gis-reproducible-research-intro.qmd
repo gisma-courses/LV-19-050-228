@@ -1,0 +1,32 @@
+---
+title: "What is that supposed to be - reproducible research?"
+id: material-gis-reproducible-research-intro
+order: 300
+summary: "Definition of reproducible research tools and workflows."
+source_url: "https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/"
+modules:
+  - gis-reproducible-research
+Goals: []
+activities: []
+assessments: []
+labels:
+  - basic
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/material-gis-reproducible-research-intro.md"
+---
+
+Read the introduction to open reproducible science:
+
+<iframe
+  src="https://earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/"
+  width="100%"
+  height="90%"
+  style="border:none;"
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

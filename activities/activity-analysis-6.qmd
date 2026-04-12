@@ -1,0 +1,29 @@
+---
+title: "Deriving ecological indices from LiDAR data"
+id: activity-analysis-6
+order: 146
+summary: "After simple ground-point classification, typical LiDAR processing can be performed."
+source_url: "https://gisma-courses.github.io/LV-19-d19-006/modules/forest-lidar-gis/"
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+materials:
+  - materialspat-analysis-6
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - supplement
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/activity-analysis-6.md"
+---
+
+Read the LiDAR processing module:
+
+<https://gisma-courses.github.io/LV-19-d19-006/modules/forest-lidar-gis/>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

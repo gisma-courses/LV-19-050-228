@@ -1,0 +1,28 @@
+---
+title: "An applied comparison of Machine Learning (ML) versus Deep Learning (DL) approaches using UAV Imagery"
+id: materialspat-analysis-2
+order: 144
+summary: "An article on the practical impacts and tradeoffs of applying DL and ML to an applied research task."
+source_url: "https://doi.org/10.3390/rs12162602"
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+activities:
+  - activity-analysis-3
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/materialspat-analysis-2.md"
+---
+
+Read the article:
+
+<https://doi.org/10.3390/rs12162602>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

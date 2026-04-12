@@ -1,0 +1,16 @@
+---
+title: "Modules"
+listing:
+  - id: modules-list
+    contents:
+      - modules/module-introduction.qmd
+      - modules/module-fieldwork.qmd
+      - modules/module-postprocessing.qmd
+      - modules/module-hr-analysis.qmd
+      - modules/gis-reproducible-research.qmd
+    type: custom
+    template: "_templates/modules-index-cards.ejs.md"
+---
+
+::: {#modules-list}
+:::

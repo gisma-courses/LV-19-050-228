@@ -1,0 +1,20 @@
+# Didactic content type: activity
+#
+# Required page front matter:
+#   title: Human-readable activity title
+#   id: Stable unique identifier, e.g. activity-visualization-lab
+#   order: Numeric ordering key
+#
+# Optional relationship fields:
+#   modules: [module-id]
+#   Goals: [module-goals-id]
+#   materials: [material-id]
+#   assessments: [assessment-id]
+#
+# Optional descriptive fields:
+#   summary: Short activity description
+
+content_type: activity
+format:
+  html:
+    toc: true

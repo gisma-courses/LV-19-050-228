@@ -1,0 +1,13 @@
+---
+title: "Assessments"
+listing:
+  - id: assessments-list
+    contents: "assessments/*.qmd"
+    type: custom
+    template: "_templates/collection-cards.ejs.md"
+    template-params:
+      heading: ""
+---
+
+::: {#assessments-list}
+:::

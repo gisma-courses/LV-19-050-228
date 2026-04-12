@@ -1,0 +1,196 @@
+---
+title: "UAV Mission Planning Practical Workflow"
+id: activity-fw-11
+order: 91
+summary: "Planning an aerial flight mission using QGroundControl and uavRmp."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+materials:
+  - material-fw-7
+  - material-fw-8
+  - material-fw-6
+assessments:
+  - fw-assessment
+labels:
+  - advanced
+  - mandatory
+source: "../LV-uav-workflow/morea/UAVFieldwork/activity-fw-11.md"
+---
+
+::: {.callout-warning}
+You will have many chances to make a small mistake that can damage your UAV or involve people, animals, or assets. Check your risk and implement a double-check system while planning and performing autonomous flight missions. Operating autonomous UAVs is the full responsibility of the pilot.
+
+Keep cool. Keep alert.
+:::
+
+# UAV Mission Planning - Practical Workflow
+
+The open UAV community is focused on the PixHawk autopilot unit and the [MissionPlanner](http://qgroundcontrol.com/downloads/), or the more recent and platform-independent [QGroundControl](http://ardupilot.org/planner2/) software. Both are well documented and provide APIs and easy-to-use GUIs.
+
+Nevertheless, they miss some planning capabilities, such as high-resolution terrain-following flight planning, dealing with battery-dependent task splitting, safe departures and approaches within the split main tasks, or exporting the tasks to DJI-compatible format. Other commercial competitors such as [UgCS](https://www.ugcs.com/) are powerful but cost intensive and complex.
+
+## Basic Mission Planning Workflow
+
+This tutorial deals with effective and safe planning of an autonomous flight. It provides basic information about hardware and software, supplemental data, and useful additions. The extended workflow gives further explanations and hints for improving your planning.
+
+## Things You Need
+
+- [Digital Surface Model](https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1/view). Account needed.
+- [QGroundControl](http://qgroundcontrol.com/)
+- [Step-by-step tutorial](https://docs.qgroundcontrol.com/master/en/PlanView/pattern_survey.html)
+- [Airmap](https://app.airmap.com/), an easy-to-use application
+- [flynex](https://app.flynex.io/), a complex professional application with extensive support
+
+## General Workflow
+
+1. Identify the area and digitize it.
+2. Adjust the flight parameters to your needs and generate flight control files.
+3. Convert and upload the mission control files either directly to your tablet or smartphone, or via the Litchi cloud.
+4. Make an extensive pre-flight check.
+5. Fly the mission.
+
+## Aim of the Tutorial
+
+The tutorial introduces the basic usage of `QGroundControl` and `uavRmp`.
+
+The goal is to create flight plans for surveys over high relief-energy surfaces and terrain to generate orthophotos and point clouds.
+
+### Digitizing the Survey Area Using QGroundControl's Survey Feature
+
+We want to plan a flight in structured terrain in the upper Lahn valley. Start `QGroundControl`, navigate to the Mission tab, open `Pattern -> Survey`, digitize a pattern, and fill in the values in the right-side menus for camera angle, overlap, and related parameters.
+
+::: {layout-ncol=2}
+![Cross-valley planning view](../images/uav-fieldwork/lahn_quer.png)
+
+![Long-valley planning view](../images/uav-fieldwork/lahn_lang.png)
+:::
+
+You will produce much better results when you capture images from different above-ground levels (AGL) and different capturing angles. This can be realized by two different plannings. It is also useful to take nadir images and non-nadir images. A cross pattern flown at two different altitudes with varying nadir angles is much better than a single nadir-only pattern flight. To avoid horizon shots, the nadir angle should not be greater than roughly 5 to 10 degrees.
+
+::: {.callout-warning}
+During planning, observe all airspace and protected-area regulations. This is not only a legal issue, but also a matter of maximum safety.
+
+Relevant links: [LBA legal information](https://www.lba.de/DE/Drohnen/Drohnen_node.html;jsessionid=7ECB1558F37F914B0EF93F2D54B8991B.live11311) and the [BMDV cheat card](https://www.bmvi.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile).
+:::
+
+If you use a Pixhawk device, the QGroundControl workflow is sufficient at this point.
+
+### Specific Settings for DJI Cameras
+
+To derive a valid planning, we need to calculate the correct camera parameters. Typically camera parameters are standardized to the 35 mm full-frame sensor format. The DJI Mini 2 sensors have a size of 1/2.3 inch. The default setting of many point-and-shoot cameras is 16:9, which changes the sensor size because part of the height is cut.
+
+![Sensor size comparison](../images/uav-fieldwork/sensor_size.png)
+
+The real focal length can be calculated approximately by dividing the equivalent focal length by the corresponding [crop factor](https://shuttermuse.com/calculate-cameras-crop-factor/).
+
+```text
+rF = eFL / cf
+
+eFL = equivalent Focal Length
+cf  = crop factor
+rF  = real Focal Length
+
+For the Mavic Mini 2:
+rF = 24 / 5.6 = 4.285714
+rF = 4.3
+```
+
+According to this, the camera specs for the DJI Mavic Mini 2 are:
+
+Image Size 4:3, 4000 x 3000:
+
+- Sensor Width: 6.17 mm
+- Sensor Height: 4.77 mm
+- Focal Length: 4.3 mm
+
+Image Size 16:9, 4000 x 2250:
+
+- Sensor Width: 6.17 mm
+- Sensor Height: 4.56 mm
+- Focal Length: 4.3 mm
+
+You may also use a [depth of field calculator](https://www.cambridgeincolour.com/tutorials/dof-calculator.htm) to estimate the minimum distance of the camera to the target.
+
+::: {.callout-note}
+For DJI usage, save this flight plan to an appropriate folder and follow the instructions in the conversion chapter to create the Litchi-compatible DJI format.
+:::
+
+## Conversion of the Flight Plan for Litchi-Compatible DJI Devices
+
+The R package [`uavRmp`](https://github.com/gisma/uavRmp) bridges this gap. It generates MAVLINK-compliant mission files that can be uploaded to the Pixhawk controller via any Ground Control Station software. It also exports or converts plannings to the Litchi format for DJI drones.
+
+### Installation of R and uavRmp
+
+First install R and preferably the RStudio IDE. You can use the [HowTo install R & RStudio](https://geomoer.github.io/moer-base-r/unit01/unit01-02_Installation.html) tutorial, or the [rig R installation manager](https://github.com/r-lib/rig#the-r-installation-manager). Then follow the [`uavRmp`](https://github.com/gisma/uavRmp) homepage and install the package.
+
+```r
+install.packages("uavRmp")
+```
+
+To install the current GitHub version, install `devtools` and the latest GitHub version of `link2GI`.
+
+```r
+install.packages("devtools")
+devtools::install_github("gisma/uavRmp", ref = "master")
+devtools::install_github("r-spatial/link2GI")
+```
+
+### Calling `makeAP` from `uavRmp`
+
+There are many optional arguments that control generation of an autonomous flight plan. In this first use case, keep it simple. Results are stored in a fixed folder structure. The root folder is set by `projectDir`, for example `~/proj/uav`. The current working directory is generated from `locationName` and is always a subfolder of `projectDir`. The folder structure creates subfolders for log files, temporary data, and mission control files.
+
+::: {.callout-note}
+The mission control files are stored in a folder named `control`.
+:::
+
+![Folder structure for uavRmp planning output](../images/uav-fieldwork/folderstructure.png)
+
+Explanation of the used arguments:
+
+- `useMP = TRUE` activates QGroundControl or MissionPlanner task files.
+- `demFn = filenameDEM` sets path and file name for the DEM.
+- `surveyArea = filenameFlightarea` sets path and file name of the QGroundControl flight plan.
+
+The example below uses demo files from the package. To change it, provide the path and name of your DEM and planning file.
+
+```r
+library(uavRmp)
+
+filenameDEM = system.file("extdata", "mrbiko.tif", package = "uavRmp")
+filenameFlightarea = system.file("extdata", "tutdata_qgc_survey.plan", package = "uavRmp")
+
+fp = makeAP(projectDir = "~/uav",
+            useMP = TRUE,
+            surveyArea = filenameFlightarea,
+            demFn = filenameDEM,
+            cameraType = "dji43",
+            uavType = "dji_csv")
+```
+
+The script generates R objects for visualization, log files, and flight control files for running a mission on DJI drones. The log file records the important parameters of the calculated mission.
+
+For a more comprehensive tutorial, see [Mission Planning on basis of QGroundControl](https://gisma.github.io/uavRmp/articles/uavRmp_2.html).
+
+If you just want to convert flight plans from GroundControl to Litchi, you can use the Shiny GUI:
+
+```r
+library(uavRmp)
+library(shiny)
+runApp(system.file("shiny/plan2litchi/", "/app.R", package = "uavRmp"))
+```
+
+Navigate to the requested files and check the output. Be patient; it may take a while.
+
+![uavRmp Shiny interface](../images/uav-fieldwork/shiny.png)
+
+After checking the files, import the control file to the [Litchi Hub](https://flylitchi.com/hub). You need an account. During the course, the account and Litchi software are provided via Ilias.
+
+::: {.callout-tip}
+Ready to take off: that is your first flight plan.
+:::
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

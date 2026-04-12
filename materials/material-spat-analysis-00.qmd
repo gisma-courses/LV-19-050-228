@@ -1,0 +1,32 @@
+---
+title: "The basic Idea of Deep Learning"
+id: materialspat-analysis-00
+order: 141
+summary: "A short introduction in Deep Learning."
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+activities:
+  - activity-analysis-3
+assessments:
+  - assessment-spat-analysis
+labels:
+  - basic
+  - YouTube
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/materialspat-analysis-00.md"
+---
+
+# The basic concept of Deep Learning
+
+<https://www.youtube.com/watch?v=3WcUTMWa9fU>
+
+# A bit more basics
+
+<https://www.youtube.com/watch?v=RbcHiAYPbC0>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

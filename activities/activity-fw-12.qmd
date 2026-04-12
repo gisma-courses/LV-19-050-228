@@ -1,0 +1,32 @@
+---
+title: "DJI UAV Flight Simulator"
+id: activity-fw-12
+order: 93
+summary: "Train the handling of the drones with the DJI flight simulator. Worse than flying, better than crashing."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+materials:
+  - material-fw-7
+  - material-fw-8
+  - material-fw-6
+assessments:
+  - fw-assessment
+labels:
+  - supplement
+  - optional
+source: "../LV-uav-workflow/morea/UAVFieldwork/activity-fw-12.md"
+---
+
+Train the handling of the drones with the DJI flight simulator.
+
+Worse than flying, better than crashing.
+
+Download the simulator:
+
+<https://www.dji.com/de/downloads/products/simulator>
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

@@ -1,0 +1,21 @@
+---
+title: "ODM - The Missing Guide"
+id: activity-odm-15
+order: 105
+summary: "A practical guide to the operation of OpenDroneMap provided through the closed Ilias course area."
+source_url: "https://ilias.uni-marburg.de/ilias.php?ref_id=2830985&cmd=view&cmdClass=ilrepositorygui&cmdNode=z3&baseClass=ilRepositoryGUI"
+modules:
+  - module-postprocessing
+Goals:
+  - module-goals-pp
+materials:
+  - material-hs-3
+  - material-hs-4
+assessments:
+  - pp-assessment
+labels:
+  - supplement
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/activities-odm-15.md"
+---

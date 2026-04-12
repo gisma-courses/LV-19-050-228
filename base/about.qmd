@@ -1,0 +1,13 @@
+---
+title: "About"
+title-block-banner: ../images/diffusion-sp.jpg # keine pngs
+title-block-banner-color: black 
+format-links: [html]   # Link-Namen müssen den Formatkeys entsprechen
+format:
+  html: { toc: true, toc-depth: 2, code-fold: true, number-sections: false }
+---
+
+
+Organisation: **gisma spatial science ressources**
+Kurs: **LV-19-050-228**
+Kontakt: <reudenbach@uni-marburg.de>

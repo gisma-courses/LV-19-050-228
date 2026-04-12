@@ -1,0 +1,20 @@
+# Didactic content type: module
+#
+# Required page front matter:
+#   title: Human-readable module title
+#   id: Stable unique identifier, e.g. module-id
+#   order: Numeric ordering key
+#
+# Optional relationship fields:
+#   Goals: [module-goals-id]
+#   materials: [material-id]
+#   activities: [activity-id]
+#   assessments: [assessment-id]
+#
+# Optional descriptive fields:
+#   summary: Short module description
+
+content_type: module
+format:
+  html:
+    toc: true

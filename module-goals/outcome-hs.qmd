@@ -1,0 +1,26 @@
+---
+title: "UAV Hardware"
+id: module-goals-hs
+order: 50
+summary: "Hardware, open source and commercial systems, application fields, low-cost systems, and low spectral resolution."
+modules:
+  - module-hs
+materials:
+  - material-hs-0
+  - material-hs-1
+  - material-hs-2
+activities: []
+assessments:
+  - assessment-hs
+published: true
+source: "../LV-uav-workflow/morea/Hardware_Software/module-goals_hs.md"
+---
+
+- Hardware: Open Source Hardware and commercial systems
+- Field of application
+- Focus on low cost
+- Focus on low spectral resolution
+
+## Connected Module
+
+- [Scientific UAV Hardware](../modules/module-hs.qmd)

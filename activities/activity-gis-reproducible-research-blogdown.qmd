@@ -1,0 +1,26 @@
+---
+title: "Blogdown scientific online publishing"
+id: activity-gis-reproducible-research-blogdown
+order: 302
+summary: "Blogdown: RMarkdown powered by Hugo, from R script to website."
+source_url: "https://thinking-spatial.org/courses/geoinformationen_kommunizieren/kurs6/"
+modules:
+  - gis-reproducible-research
+Goals: []
+materials:
+  - material-gis-reproducible-research-intro
+assessments: []
+labels:
+  - advanced
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/activity-gis-reproducible-research-blogdown.md"
+---
+
+Open the Blogdown resource:
+
+<https://thinking-spatial.org/courses/geoinformationen_kommunizieren/kurs6/>
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

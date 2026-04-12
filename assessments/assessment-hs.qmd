@@ -1,0 +1,31 @@
+---
+title: "Get used to scientific UAV applications"
+id: assessment-hs
+order: 50
+summary: "Prepare your working environment."
+modules:
+  - module-hs
+Goals:
+  - module-goals-hs
+materials:
+  - material-hs-0
+  - material-hs-1
+  - material-hs-2
+activities: []
+labels:
+  - self-check
+published: true
+source: "../LV-uav-workflow/morea/Hardware_Software/assessment-hs.md"
+---
+
+## Task
+
+Please familiarize yourself with the following software packages. Install the packages on your laptop and check if they are running.
+
+- [QGroundControl](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html)
+- [OpenDroneMap](https://www.opendronemap.org/)
+- [uavRmp](https://gisma.github.io/uavRmp/)
+
+## Connected Module
+
+- [Scientific UAV Hardware](../modules/module-hs.qmd)

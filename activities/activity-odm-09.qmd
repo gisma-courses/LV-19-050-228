@@ -1,0 +1,26 @@
+---
+title: "The OpenDroneMap Tutorial Page"
+id: activity-odm-09
+order: 103
+summary: "A practical introduction to the operation of OpenDroneMap."
+modules:
+  - module-postprocessing
+Goals:
+  - module-goals-pp
+materials:
+  - material-hs-3
+  - material-hs-4
+assessments:
+  - pp-assessment
+labels:
+  - basic
+  - YouTube
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/activities-odm-09.md"
+---
+
+# Introduction WebODM
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/c38DUn7kKYk" frameborder="0" allowfullscreen></iframe>
+</div>

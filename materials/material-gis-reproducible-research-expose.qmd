@@ -1,0 +1,26 @@
+---
+title: "Preperation of a scientific project"
+id: material-gis-reproducible-research-expose
+order: 304
+summary: "For scientific practice it is useful to document and communicate the chosen approach transparently and comprehensibly."
+source_url: "https://gisma-courses.github.io/LV-uav-workflow/morea/gis-reproducible-research/scientific_expose.pdf"
+modules:
+  - gis-reproducible-research
+Goals: []
+activities: []
+assessments: []
+labels:
+  - basic
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/material-gis-reproducible-research-expose.md"
+---
+
+Read the project preparation guide:
+
+- [Scientific expose PDF](../images/gis-reproducible-research/scientific_expose.pdf)
+- [Original source URL](https://gisma-courses.github.io/LV-uav-workflow/morea/gis-reproducible-research/scientific_expose.pdf)
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

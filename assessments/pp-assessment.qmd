@@ -1,0 +1,38 @@
+---
+title: "Creating Orthoimages and Point Clouds"
+id: pp-assessment
+order: 100
+summary: "Create an orthoimage, inspect it, compute a dense point cloud and mesh, and present the main results."
+modules:
+  - module-postprocessing
+Goals:
+  - module-goals-pp
+materials:
+  - material-hs-3
+  - material-hs-4
+activities:
+  - activity-metashape-wf-10
+  - activity-metashape-wf-11
+  - activity-usecase-1
+  - activity-odm-09
+  - activity-odm-10
+  - activity-odm-15
+  - activity-fw-21
+  - activity-metashape-altum
+labels:
+  - self-check
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/assessment.md"
+---
+
+
+
+::: {.callout-warning title="< Things To Do >"}
+You can use the provided sample data or your own project data:<br><br>
+
+- Create the first orthoimage with 1 cm or 5 cm ground scan resolution (GSD) according to the contents of this module. <br>
+- Perform a visual inspection of the image. Are you satisfied? <br>
+- Compute a 3D dense point cloud.<br>
+-Compute a mesh with texture as close to reality as possible.<br>
+- Prepare a short presentation (preferably online) with your main results and findings.
+:::

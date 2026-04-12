@@ -1,0 +1,36 @@
+---
+title: "Create a Litchi-Flightplan"
+id: fw-assessment
+order: 90
+summary: "Develop an applicable flight plan, taking legal restrictions into account, and upload it to the cloud in Litchi format."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+materials:
+  - material-fw-7
+  - material-fw-8
+  - material-fw-6
+activities:
+  - activity-fw-14
+  - activity-fw-11
+  - activity-fw-111
+  - activity-fw-12
+labels:
+  - self-check
+source: "../LV-uav-workflow/morea/UAVFieldwork/fw-assessment.md"
+---
+
+## Task
+
+Based on this module, plan a reasonable and suitable flight plan for what you consider an important part of the Gisselberger Spannweite. The flight time should be a maximum of 15 minutes.
+
+Your plan must:
+
+- take legal restrictions into account, including air law and protected goods,
+- be converted to Litchi format,
+- be uploaded to the Litchi Cloud.
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

@@ -1,0 +1,36 @@
+---
+title: "DL & ML Workflow with R"
+id: activity-analysis-3
+order: 145
+summary: "Selected deep learning and machine learning workflow resources in R."
+source_url: "https://geomoer.github.io/geoAI/"
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+materials:
+  - materialspat-analysis-00
+  - materialspat-analysis-2
+  - materialspat-analysis-3
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - supplement
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/activity-analysis-3.md"
+---
+
+# Workflow in R
+
+There is a complete advanced course dealing with deep learning and AI in R. For this module, use the selected deep learning parts:
+
+- [Setup working environment](https://geomoer.github.io/geoAI//unit01/unit01-04_setup_working_environment.html)
+- [Warm-up R spatial](https://geomoer.github.io/geoAI//unit01/unit01-05_warm-up-r-spatial.html)
+- [Remote sensing basics](https://geomoer.github.io/geoAI//unit02/unit02-04_rs.html)
+- [Deep learning overview](https://geomoer.github.io/geoAI//unit04/unit04-00-00_overview.html)
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

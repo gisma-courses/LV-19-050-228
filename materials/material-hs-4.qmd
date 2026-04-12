@@ -1,0 +1,19 @@
+---
+title: "Drone Mapping Software Costs Comparison"
+id: material-hs-4
+order: 101
+summary: "Overview of the static calculated economic costs of drone data processing software."
+source_url: "https://blog.flykit.app/pix4d-vs-dronedeploy-vs-agisoft-vs-mme-vs-webodm-a-comparison-of-processing-costs/"
+modules:
+  - module-postprocessing
+Goals:
+  - module-goals-pp
+activities: []
+assessments:
+  - pp-assessment
+labels:
+  - supplement
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/material-hs-4.md"
+---

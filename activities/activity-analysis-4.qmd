@@ -1,0 +1,30 @@
+---
+title: "Manual and CSF based Classification of Ground Points with CloudCompare"
+id: activity-analysis-4
+order: 142
+summary: "Manual and automatic classification and segmentation for small photogrammetric datasets using CloudCompare."
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+materials:
+  - materialspat-analysis-6
+assessments:
+  - assessment-spat-analysis
+labels:
+  - basic
+  - optional
+  - YouTube
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/activity-analysis-4.md"
+---
+
+# Manual and CSF based Classification of Ground Points with CloudCompare
+
+Watch the workflow:
+
+<https://www.youtube.com/watch?v=r6AOUbPi54s>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

@@ -1,0 +1,28 @@
+---
+title: "uavRmp - Adapt Your Planning"
+id: material-fw-8
+order: 91
+summary: "The uavRmp package is designed for UAV autonomous mission planning for monitoring flights of low cost drones based on R."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+activities:
+  - activity-fw-11
+assessments:
+  - fw-assessment
+labels:
+  - advanced
+  - mandatory
+source: "../LV-uav-workflow/morea/UAVFieldwork/material-fw-8.md"
+---
+
+The `uavRmp` package supports autonomous UAV mission planning for monitoring flights of low-cost drones based on R.
+
+Read the package documentation:
+
+<https://gisma.github.io/uavRmp/>
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

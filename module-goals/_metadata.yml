@@ -1,0 +1,20 @@
+# Didactic content type: module-goals
+#
+# Required page front matter:
+#   title: Human-readable module-goals title
+#   id: Stable unique identifier, e.g. module-goals-observation-model
+#   order: Numeric ordering key
+#
+# Optional relationship fields:
+#   modules: [module-id]
+#   materials: [material-id]
+#   activities: [activity-id]
+#   assessments: [assessment-id]
+#
+# Optional descriptive fields:
+#   summary: Short module-goals description
+
+content_type: module-goals
+format:
+  html:
+    toc: true

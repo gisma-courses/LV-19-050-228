@@ -1,0 +1,27 @@
+---
+title: "Reproducible research - Does it mean anything at all?"
+id: material-screencast-gis-reproducible-research-5
+order: 302
+summary: "Why is reproducible research necessary at all?"
+modules:
+  - gis-reproducible-research
+Goals: []
+activities: []
+assessments: []
+labels:
+  - basic
+  - talk
+  - recommended
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/material-screencast-gis-reproducible-research-5.md"
+---
+
+# A Few Thoughts Beyond the Scientific Ethical Significance of Reproducible Research
+
+Watch the talk:
+
+<https://www.rstudio.com/resources/rstudioconf-2019/r-markdown-the-bigger-picture/?wvideo=wblobrq76y>
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

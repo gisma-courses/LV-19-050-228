@@ -1,0 +1,30 @@
+---
+title: "Structure-from-motion Post-processing Workflow"
+id: module-goals-pp
+order: 100
+summary: "Build an overview of SfM photogrammetry software and practice optimized workflows for orthoimage and point-cloud generation."
+modules:
+  - module-postprocessing
+materials:
+  - material-hs-3
+  - material-hs-4
+activities:
+  - activity-metashape-wf-10
+  - activity-metashape-wf-11
+  - activity-usecase-1
+  - activity-odm-09
+  - activity-odm-10
+  - activity-odm-15
+  - activity-fw-21
+  - activity-metashape-altum
+assessments:
+  - pp-assessment
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/module-goals-pp.md"
+---
+
+The module is intended to provide a solid overview of the extensive range of structure-from-motion (SfM) photogrammetry software and its use:
+* Identify which of the software packages provide good results and are cost effective.
+* Using the commercial software Agisoft Metashape, an optimized workflow for orthoimage generation will be demonstrated and practiced.
+* Optionally, this workflow is also explained and illustrated with the open source software OpenDroneMap.
+* Optional tutorials are available for special tasks.

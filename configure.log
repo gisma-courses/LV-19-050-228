@@ -1,0 +1,15 @@
+=== configure.py run @ 2026-04-10T22:29:49 ===
+[_quarto.yml] replace_line key='title' → '"Micro-Remote Sensing"' (count=1, lines=[11])
+[_quarto.yml] replace_line key='site-url' → 'https://gisma-courses.github.io/LV-19-050-228' (count=1, lines=[12])
+[_quarto.yml] replace_line key='repo-url' → 'https://github.com/gisma-courses/LV-19-050-228' (count=1, lines=[13])
+[_quarto.yml] replace_line key='logo' → 'images/logo.png' (count=1, lines=[31])
+[_quarto.yml] navbar.right → text: "ILIAS"
+[_quarto.yml] navbar.right → href: "https://ilias.uni-marburg.de/ilias.php?baseClass=ilrepositorygui&reloadpublic=1&cmd=&ref_id=1"
+[_quarto.yml] simple_replace 'your organisation (<span class="year"></span>) —' → 'gisma spatial science ressources (<span class="year"></span>) —' (count=1)
+[_quarto.yml] regex_replace impressum-link → 'base/impressum.html'
+[_quarto.yml] link-external-filter: Wert ersetzt → '^(?:http:|https:)//(gisma\-courses\.github\.io/LV\-19\-050\-228|www\.quarto\.org/custom)'
+[custom.scss/theme-dark.scss] Branding leer → keine Änderungen
+[impressum.qmd] placeholders aktualisiert
+[index.qmd] placeholders aktualisiert
+[base/about.qmd] placeholders aktualisiert
+ensure docs/.nojekyll

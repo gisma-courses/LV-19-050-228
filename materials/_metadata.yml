@@ -1,0 +1,21 @@
+# Didactic content type: reading
+#
+# Required page front matter:
+#   title: Human-readable reading title
+#   id: Stable unique identifier, e.g. material-id
+#   order: Numeric ordering key
+#
+# Optional relationship fields:
+#   modules: [module-id]
+#   Goals: [module-goals-id]
+#   activities: [activity-id]
+#   assessments: [assessment-id]
+#
+# Optional descriptive fields:
+#   summary: Short reading description
+#   source: Citation, DOI, URL, or internal source note
+
+content_type: reading
+format:
+  html:
+    toc: true

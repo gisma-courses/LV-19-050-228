@@ -1,0 +1,40 @@
+---
+title: "Analysis of high-resolution aerial data"
+id: module-goals-spat-analysis
+order: 140
+summary: "Gain initial insight into automated evaluation of high-resolution orthoimages and point clouds."
+modules:
+  - module-hr-analysis
+materials:
+  - materialspat-analysis-000
+  - materialspat-analysis-00
+  - materialspat-analysis-0
+  - materialspat-analysis-3
+  - materialspat-analysis-2
+  - materialspat-analysis-6
+activities:
+  - activity-analysis-0
+  - activity-analysis-1
+  - activity-analysis-4
+  - activity-analysis-5
+  - activity-analysis-5
+  - activity-analysis-3
+  - activity-analysis-6
+assessments:
+  - assessment-spat-analysis
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/module-goals-spatanalysis.md"
+---
+
+The module is intended to provide an initial insight into the automated evaluation of high-resolution orthoimages and point clouds. Since this topic can easily fill several courses, the possibilities of more complex evaluations with QGIS and comparable software will be presented.
+
+The module offers:
+
+- A lightning introduction to, and classification of, Object Based Image Analysis (OBIA), Machine Learning (ML), and Deep Learning (DL) in relation to the course task.
+- A template example of an OBIA classification run with QGIS and Orfeo Toolbox (OTB).
+- Optional implementation of DL and ML classifications with R.
+- A first classification and analysis of point clouds.
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

@@ -1,0 +1,29 @@
+---
+title: "Deep learning versus Object-based Image Analysis (OBIA) in weed mapping of UAV imagery"
+id: materialspat-analysis-3
+order: 143
+summary: "A quantitative comparison of OBIA and deep learning approaches for weed mapping in UAV imagery."
+source_url: "https://doi.org/10.1080/01431161.2019.1706112"
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+activities:
+  - activity-analysis-3
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - recommended
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/materialspat-analysis-3.md"
+---
+
+Read the article:
+
+<https://doi.org/10.1080/01431161.2019.1706112>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

@@ -1,0 +1,75 @@
+---
+title: "Creating High Quality Products"
+id: module-postprocessing
+order: 3
+summary: "The processing of aerial drone imagery is a complex procedure which is supported by both open source and closed source software."
+module-goals:
+  - module-goals-pp
+materials:
+  - material-hs-3
+  - material-hs-4
+  - activity-metashape-altum
+activities:
+  - activity-metashape-wf-10
+  - activity-metashape-wf-11
+  - activity-usecase-1
+  - activity-odm-09
+  - activity-odm-10
+  - activity-odm-15
+  - activity-fw-21
+assessments:
+  - pp-assessment
+labels:
+  - Einführung
+published: true
+source: "../LV-uav-workflow/morea/Postprocessing/module-postprocessing.md"
+title-block-banner: ../images/module-postprocessing/odm.png
+title-block-banner-color: black
+
+listing:
+  - id: module-module-goals
+    contents: "../module-goals/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-postprocessing
+      heading: "Goals"
+
+  - id: module-materials
+    contents: "../materials/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-postprocessing
+      heading: "Materials"
+
+  - id: module-activities
+    contents: "../activities/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-postprocessing
+      heading: "Activities"
+
+  - id: module-assessments
+    contents: "../assessments/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-postprocessing
+      heading: "Assessments"
+---
+
+This module bundles the processing workflow for creating high-quality outputs from aerial imagery.
+
+::: {#module-module-goals}
+:::
+
+::: {#module-materials}
+:::
+
+::: {#module-activities}
+:::
+
+::: {#module-assessments}
+:::

@@ -1,0 +1,26 @@
+---
+title: "Cesium a powerful tool for presentation"
+id: activity-gis-reproducible-research-external-2
+order: 304
+summary: "Cesium as a powerful tool for presentation."
+source_url: "https://cesium.com/platform/cesium-ion/"
+modules:
+  - gis-reproducible-research
+Goals: []
+materials: []
+assessments: []
+labels:
+  - supplement
+  - recommended
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/activity-gis-reproducible-research-external-2.md"
+---
+
+Open Cesium ion:
+
+<https://cesium.com/platform/cesium-ion/>
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

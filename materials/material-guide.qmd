@@ -1,0 +1,25 @@
+---
+title: "Assessment and Research Guide"
+id: material-guide
+order: 303
+summary: "Assessment Guide."
+source_url: "https://gisma-courses.github.io/gc/Theses_Evaluation.html"
+modules:
+  - gis-reproducible-research
+Goals: []
+activities: []
+assessments: []
+labels:
+  - basic
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/material-gis-reproducible-research-guide.md"
+---
+
+Read the assessment and research guide:
+
+<https://gisma-courses.github.io/gc/Theses_Evaluation.html>
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

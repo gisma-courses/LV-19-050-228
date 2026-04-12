@@ -1,0 +1,35 @@
+---
+title: "The basic Idea of OBIA"
+id: materialspat-analysis-000
+order: 140
+summary: "A short introduction in Object Based Image Analysis."
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+activities:
+  - activity-analysis-0
+  - activity-analysis-1
+assessments:
+  - assessment-spat-analysis
+labels:
+  - basic
+  - mandatory
+  - YouTube 
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/materialspat-analysis-000.md"
+---
+
+# The basic concept of Object Based Image Analysis
+
+Watch the introduction:
+
+<https://www.youtube.com/watch?v=ohMnKg84nDg>
+
+# A bit more basics
+
+<https://www.youtube.com/watch?v=TpuV7DT6seI>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

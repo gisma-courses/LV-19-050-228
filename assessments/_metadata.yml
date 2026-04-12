@@ -1,0 +1,20 @@
+# Didactic content type: assessment
+#
+# Required page front matter:
+#   title: Human-readable assessment title
+#   id: Stable unique identifier, e.g. assessment-checkpoint-1
+#   order: Numeric ordering key
+#
+# Optional relationship fields:
+#   modules: [module-id]
+#   Goals: [module-goals-id]
+#   materials: [material-id]
+#   activities: [activity-id]
+#
+# Optional descriptive fields:
+#   summary: Short assessment description
+
+content_type: assessment
+format:
+  html:
+    toc: true

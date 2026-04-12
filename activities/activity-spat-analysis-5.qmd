@@ -1,0 +1,28 @@
+---
+title: "CANUPO train and classify point clouds"
+id: activity-spat-analysis-5
+order: 143
+summary: "The CANUPO suite is a simple and efficient way to automatically classify a point cloud."
+source_url: "https://www.cloudcompare.org/doc/wiki/index.php/CANUPO_(plugin)"
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+materials:
+  - activity-spat-analysis-6
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/activity-spat-analysis-5.md"
+---
+
+Read about the CANUPO plugin:
+
+<https://www.cloudcompare.org/doc/wiki/index.php/CANUPO_(plugin)>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

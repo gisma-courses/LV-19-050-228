@@ -1,0 +1,26 @@
+---
+title: "Markdown & RMarkdown"
+id: activity-gis-reproducible-research-r
+order: 301
+summary: "Markdown and RMarkdown provide an efficient concept to create and publish scientific content."
+source_url: "https://thinking-spatial.org/courses/geoinformationen_kommunizieren/kurs5/"
+modules:
+  - gis-reproducible-research
+Goals: []
+materials:
+  - material-gis-reproducible-research-intro
+assessments: []
+labels:
+  - basic
+  - optional
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/activity-gis-reproducible-research-r.md"
+---
+
+Open the Markdown and RMarkdown resource:
+
+<https://thinking-spatial.org/courses/geoinformationen_kommunizieren/kurs5/>
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

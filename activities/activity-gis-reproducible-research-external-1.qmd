@@ -1,0 +1,26 @@
+---
+title: "3D Pointclouds in Sketchfab"
+id: activity-gis-reproducible-research-external-1
+order: 303
+summary: "3D Pointclouds in Sketchfab."
+modules:
+  - gis-reproducible-research
+Goals: []
+materials: []
+assessments: []
+labels:
+  - supplement
+  - recommended
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/activity-gis-reproducible-research-external-1.md"
+---
+
+Sketchfab is a provider for 3D web hosting. It is easy to use: upload a point cloud and follow the settings workflow.
+
+Example model:
+
+<https://sketchfab.com/3d-models/gisselberger-spannweite-c38b78f3c0b04102abe46f92cb5c4fd9>
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

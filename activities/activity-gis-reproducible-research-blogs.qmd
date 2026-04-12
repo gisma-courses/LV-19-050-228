@@ -1,0 +1,43 @@
+---
+title: "Scientific writing websites"
+id: activity-gis-reproducible-research-blogs
+order: 300
+summary: "Online blogs for deploying studies and more."
+modules:
+  - gis-reproducible-research
+Goals: []
+materials:
+  - material-gis-reproducible-research-intro
+  - material-guide
+assessments: []
+labels:
+  - basic
+  - recommended
+published: true
+source: "../LV-uav-workflow/morea/gis-reproducible-research/activity-gis-reproducible-research-blogs.md"
+---
+
+# Blogging portals for project reports and more
+
+## GitHub related
+
+GitHub-based approaches are useful because they are free of charge, support version control, can use automated workflows, and integrate well with IT-related work.
+
+Options include:
+
+- [fastpages](https://github.com/fastai/fastpages), which can integrate Word `.docx` documents.
+- `R`-focused blogdown and Hugo workflows, described in [Academic writing made easy](https://gisma-courses.github.io/gi-modules/post/2021-11-16-making-of-academic-websites/).
+- The [fast-template](https://www.fast.ai/2020/01/16/fast_template/) package.
+
+## Non-GitHub related
+
+If you are not familiar with GitHub, free blogging portals can also be used:
+
+- [hpage](https://de.hpage.com/)
+- [wix](https://www.wix.com/)
+- [netlify](https://www.netlify.com/pricing/)
+- [blogger](https://www.blogger.com/)
+
+## Connected Module
+
+- [Reproducible Research](../modules/gis-reproducible-research.qmd)

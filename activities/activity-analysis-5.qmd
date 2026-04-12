@@ -1,0 +1,28 @@
+---
+title: "qCanupo classification"
+id: activity-analysis-5
+order: 144
+summary: "qCanupo classification tutorial."
+modules:
+  - module-hr-analysis
+Goals:
+  - module-goals-spat-analysis
+materials:
+  - materialspat-analysis-6
+assessments:
+  - assessment-spat-analysis
+labels:
+  - advanced
+  - optional
+  - YouTube
+published: true
+source: "../LV-uav-workflow/morea/spatial_analysis/activity-analysis-5.md"
+---
+
+# Canupo classification in CloudCompare
+
+<https://www.youtube.com/watch?v=8ryh_QyUqH8>
+
+## Connected Module
+
+- [Analysis of high resolution aerial data](../modules/module-hr-analysis.qmd)

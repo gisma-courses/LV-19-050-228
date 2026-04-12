@@ -1,0 +1,71 @@
+---
+title: "UAV based remote Sensing - A Brief Overview"
+id: module-introduction
+order: 1
+summary: "A brief overview of UAV-based remote sensing in environmental research."
+module-goals:
+  - module-goals
+materials:
+  - material-1
+  - material-2
+  - material-hs-1
+  - material-hs-5
+  - material-hs-0
+  - material-hs-2
+activities: []
+assessments:
+  - assessment
+labels:
+  - basics
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/introduction/module-prerequisites.md"
+title-block-banner: ../images/module-prerequisites/oss.jpeg
+title-block-banner-color: black
+listing:
+  - id: module-module-goals
+    contents: "../module-goals/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-introduction
+      heading: "Goals"
+
+  - id: module-materials
+    contents: "../materials/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-introduction
+      heading: "Materials"
+
+  - id: module-activities
+    contents: "../activities/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-introduction
+      heading: "Activities"
+
+  - id: module-assessments
+    contents: "../assessments/*.qmd"
+    type: custom
+    template: "../_templates/module-cards.ejs.md"
+    template-params:
+      module_id: module-introduction
+      heading: "Assessments"
+---
+
+
+
+::: {#module-module-goals}
+:::
+
+::: {#module-materials}
+:::
+
+::: {#module-activities}
+:::
+
+::: {#module-assessments}
+:::

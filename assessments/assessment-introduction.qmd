@@ -6,7 +6,7 @@ summary: "Build a structured Zotero-based overview of UAV applications in geogra
 modules:
   - module-introduction
 Goals:
-  - module-goals
+  - module-goals-introduction
 materials:
   - material-introduction-0
   - material-introduction-1

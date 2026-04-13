@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modules – Micro-Remote Sensing</title>
+<title>Materials – Micro-Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,20 +72,21 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-modules-list .list');
+    const listingTargetEl = window.document.querySelector('#listing-materials-list .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-module-goals','listing-materials','listing-activities','listing-assessments','listing-labels','listing-published','listing-source','listing-title-block-banner','listing-title-block-banner-color','listing-listing','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-module-goals","listing-materials","listing-activities","listing-assessments","listing-labels","listing-published","listing-source","listing-title-block-banner","listing-title-block-banner-color","listing-listing","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-module-goals','listing-materials','listing-activities','listing-assessments','listing-published','listing-source','listing-title-block-banner','listing-title-block-banner-color','listing-listing','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-labels','listing-Goals','listing-modules','listing-source_url','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-module-goals","listing-materials","listing-activities","listing-assessments","listing-published","listing-source","listing-title-block-banner","listing-title-block-banner-color","listing-listing","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-labels","listing-Goals","listing-modules","listing-source_url","listing-subtitle"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-modules-list'] = new List('listing-modules-list', options);
+    window['quarto-listings']['listing-materials-list'] = new List('listing-materials-list', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -130,10 +131,11 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="css/styles.css">
-<meta property="og:title" content="Modules – Micro-Remote Sensing">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/module-prerequisites/oss.jpeg">
+<meta property="og:title" content="Materials – Micro-Remote Sensing">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/banner.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
-<meta property="og:image:alt" content="UAV based remote Sensing - A Brief Overview">
+<meta property="og:image:height" content="146">
+<meta property="og:image:width" content="1024">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -158,7 +160,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./modules.html" aria-current="page"> 
+    <a class="nav-link" href="./modules.html"> 
 <span class="menu-text">Modules</span></a>
   </li>  
   <li class="nav-item">
@@ -166,7 +168,7 @@ window.Quarto = {
 <span class="menu-text">Goals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./materials.html"> 
+    <a class="nav-link active" href="./materials.html" aria-current="page"> 
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
@@ -208,7 +210,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modules</h1>
+<h1 class="title">Materials</h1>
 </div>
 
 
@@ -225,102 +227,496 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-modules-list" class="quarto-listing quarto-listing-container-custom">
+<div id="listing-materials-list" class="quarto-listing quarto-listing-container-custom">
 
-<div class="related-cards">
+  
 
-  <article class="related-card">
+  
+  <section class="module-group">
+    <h2 class="module-group-title anchored">UAV based remote Sensing - A Brief Overview</h2>
+
+    <div class="related-cards">
     
-    <div class="related-card-image">
-      <img src="images/module-prerequisites/oss.jpeg" alt="UAV based remote Sensing - A Brief Overview">
-    </div>
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-introduction-0.html">UAV in geography</a>
+          </h3>
+
+          
+          <p class="related-card-summary">An overview of how drones are being used across geography, who is using them, and which future opportunities are emerging.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-basics">basics</span>
+          
+          <span class="related-card-tag tag-mandatory">mandatory</span>
+          
+        </div>
+        
+      </article>
     
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-introduction-2.html">Open-Source UAV</a>
+          </h3>
 
-    <div class="related-card-body">
-      <h3 class="related-card-title anchored">
-        <a href="./modules/module-introduction.html">UAV based remote Sensing - A Brief Overview</a>
-      </h3>
+          
+          <p class="related-card-summary">David Benowitz gives an overview of the major commercial Open Source UAV systems.</p>
+          
+        </div>
 
-      
-      <p class="related-card-summary">A brief overview of UAV-based remote sensing in environmental research.</p>
-      
-    </div>
-  </article>
-
-  <article class="related-card">
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-supplement">supplement</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
     
-    <div class="related-card-image">
-      <img src="images/uav-fieldwork/fp4.png" alt="Autonomous Flights Made Easy">
-    </div>
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-introduction-4.html">Low cost drones in applied science</a>
+          </h3>
+
+          
+          <p class="related-card-summary">A scoping review showing how drone applications can be structured across mapping, search and rescue, transportation, and training.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-supplement">supplement</span>
+          
+          <span class="related-card-tag tag-recommended">recommended</span>
+          
+        </div>
+        
+      </article>
     
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-introduction-3.html">Review of UAV based research</a>
+          </h3>
 
-    <div class="related-card-body">
-      <h3 class="related-card-title anchored">
-        <a href="./modules/module-fieldwork.html">Autonomous Flights Made Easy</a>
-      </h3>
+          
+          <p class="related-card-summary">A recent review of UAS applications in landscape ecology, covering major themes, sensors, processing, spatial analysis, and emerging opportunities.</p>
+          
+        </div>
 
-      
-      <p class="related-card-summary">An easy-to-use workflow for controlling ready-to-fly UAVs on autonomous survey missions in highly structured terrain.</p>
-      
-    </div>
-  </article>
-
-  <article class="related-card">
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-supplement">supplement</span>
+          
+          <span class="related-card-tag tag-recommended">recommended</span>
+          
+        </div>
+        
+      </article>
     
-    <div class="related-card-image">
-      <img src="images/module-postprocessing/odm.png" alt="Creating High Quality Products">
-    </div>
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-introduction-1.html">UAV in Environmental Science</a>
+          </h3>
+
+          
+          <p class="related-card-summary">A broad review of UAV remote sensing covering platforms, data types, workflows, and major application domains.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-basics">basics</span>
+          
+          <span class="related-card-tag tag-mandatory">mandatory</span>
+          
+        </div>
+        
+      </article>
     
-
-    <div class="related-card-body">
-      <h3 class="related-card-title anchored">
-        <a href="./modules/module-postprocessing.html">Creating High Quality Products</a>
-      </h3>
-
-      
-      <p class="related-card-summary">The processing of aerial drone imagery is a complex procedure which is supported by both open source and closed source software.</p>
-      
     </div>
-  </article>
+  </section>
+  
 
-  <article class="related-card">
+  
+
+  
+  <section class="module-group">
+    <h2 class="module-group-title anchored">Autonomous Flights Made Easy</h2>
+
+    <div class="related-cards">
     
-    <div class="related-card-image">
-      <img src="images/module-hr-analysis/icon1.png" alt="Analysis of high resolution aerial data">
-    </div>
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-fw-7.html">QGroundControl Planning a Mission</a>
+          </h3>
+
+          
+          <p class="related-card-summary">Getting an idea how to practically plan and perform a flight mission with QGroundControl.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-basics">basics</span>
+          
+          <span class="related-card-tag tag-mandatory">mandatory</span>
+          
+          <span class="related-card-tag tag-youtube">YouTube</span>
+          
+        </div>
+        
+      </article>
     
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-fw-8.html">uavRmp - Adapt Your Planning</a>
+          </h3>
 
-    <div class="related-card-body">
-      <h3 class="related-card-title anchored">
-        <a href="./modules/module-hr-analysis.html">Analysis of high resolution aerial data</a>
-      </h3>
+          
+          <p class="related-card-summary">The uavRmp package is designed for UAV autonomous mission planning for monitoring flights of low cost drones based on R.</p>
+          
+        </div>
 
-      
-      <p class="related-card-summary">High-resolution UAV orthoimages and point clouds require methods such as OBIA, machine learning, deep learning, and point-cloud classification.</p>
-      
-    </div>
-  </article>
-
-  <article class="related-card">
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-advanced">advanced</span>
+          
+          <span class="related-card-tag tag-mandatory">mandatory</span>
+          
+        </div>
+        
+      </article>
     
-    <div class="related-card-image">
-      <img src="images/gis-reproducible-research/spatial-r-r.png" alt="Reproducible Research">
-    </div>
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-fw-6.html">Choosing a Ground Station</a>
+          </h3>
+
+          
+          <p class="related-card-summary">A high-level overview of available Ground Control Stations (GCS) with links for choosing an appropriate tool.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-supplement">supplement</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
     
-
-    <div class="related-card-body">
-      <h3 class="related-card-title anchored">
-        <a href="./modules/gis-reproducible-research.html">Reproducible Research</a>
-      </h3>
-
-      
-      <p class="related-card-summary">Reproducible research is rooted in good scientific practice and transparent, repeatable research work.</p>
-      
     </div>
-  </article>
+  </section>
+  
 
-</div>
+  
+
+  
+  <section class="module-group">
+    <h2 class="module-group-title anchored">Creating High Quality Products</h2>
+
+    <div class="related-cards">
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-hs-3.html">Drone Mapping Software Quality Comparison</a>
+          </h3>
+
+          
+          <p class="related-card-summary">The evaluation of different software packages.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-basics">basics</span>
+          
+          <span class="related-card-tag tag-mandatory">mandatory</span>
+          
+        </div>
+        
+      </article>
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-hs-4.html">Drone Mapping Software Costs Comparison</a>
+          </h3>
+
+          
+          <p class="related-card-summary">Overview of the static calculated economic costs of drone data processing software.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-supplement">supplement</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
+    
+    </div>
+  </section>
+  
+
+  
+
+  
+  <section class="module-group">
+    <h2 class="module-group-title anchored">Scientific UAV Hardware</h2>
+
+    <div class="related-cards">
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-introduction-2.html">Open-Source UAV</a>
+          </h3>
+
+          
+          <p class="related-card-summary">David Benowitz gives an overview of the major commercial Open Source UAV systems.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-supplement">supplement</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-introduction-3.html">Review of UAV based research</a>
+          </h3>
+
+          
+          <p class="related-card-summary">A recent review of UAS applications in landscape ecology, covering major themes, sensors, processing, spatial analysis, and emerging opportunities.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-supplement">supplement</span>
+          
+          <span class="related-card-tag tag-recommended">recommended</span>
+          
+        </div>
+        
+      </article>
+    
+    </div>
+  </section>
+  
+
+  
+
+  
+  <section class="module-group">
+    <h2 class="module-group-title anchored">Analysis of high resolution aerial data</h2>
+
+    <div class="related-cards">
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-spat-analysis-000.html">The basic Idea of OBIA</a>
+          </h3>
+
+          
+          <p class="related-card-summary">A short introduction in Object Based Image Analysis.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-basic">basic</span>
+          
+          <span class="related-card-tag tag-mandatory">mandatory</span>
+          
+          <span class="related-card-tag tag-youtube">YouTube</span>
+          
+        </div>
+        
+      </article>
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-spat-analysis-00.html">The basic Idea of Deep Learning</a>
+          </h3>
+
+          
+          <p class="related-card-summary">A short introduction in Deep Learning.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-basic">basic</span>
+          
+          <span class="related-card-tag tag-youtube">YouTube</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-spat-analysis-0.html">A review of Object-based image analysis (OBIA) in (UAV) remote sensing</a>
+          </h3>
+
+          
+          <p class="related-card-summary">An overview of OBIA especially for land-cover mapping purposes using remote-sensing imagery.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-advanced">advanced</span>
+          
+          <span class="related-card-tag tag-mandatory">mandatory</span>
+          
+        </div>
+        
+      </article>
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-spat-analysis-3.html">Deep learning versus Object-based Image Analysis (OBIA) in weed mapping of UAV imagery</a>
+          </h3>
+
+          
+          <p class="related-card-summary">A quantitative comparison of OBIA and deep learning approaches for weed mapping in UAV imagery.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-advanced">advanced</span>
+          
+          <span class="related-card-tag tag-recommended">recommended</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-spat-analysis-2.html">An applied comparison of Machine Learning (ML) versus Deep Learning (DL) approaches using UAV Imagery</a>
+          </h3>
+
+          
+          <p class="related-card-summary">An article on the practical impacts and tradeoffs of applying DL and ML to an applied research task.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-advanced">advanced</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
+    
+      <article class="related-card">
+        <div class="related-card-body">
+          <h3 class="related-card-title anchored">
+            <a href="./materials/material-spat-analysis-6.html">Cloud Compare</a>
+          </h3>
+
+          
+          <p class="related-card-summary">3D point cloud and mesh processing software.</p>
+          
+        </div>
+
+        
+        
+        <div class="related-card-tags">
+          
+          <span class="related-card-tag tag-advanced">advanced</span>
+          
+          <span class="related-card-tag tag-recommended">recommended</span>
+          
+          <span class="related-card-tag tag-optional">optional</span>
+          
+        </div>
+        
+      </article>
+    
+    </div>
+  </section>
+  
+
 <div class="listing-no-matching d-none">Keine Treffer</div>
+<nav id="materials-list-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 

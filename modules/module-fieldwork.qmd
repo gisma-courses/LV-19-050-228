@@ -19,7 +19,7 @@ assessments:
 labels:
   - Einführung
 source: "../LV-uav-workflow/morea/UAVFieldwork/module-UAVfieldwork.md"
-title-block-banner: ../images/uav-fieldwork/fp4.png
+title-block-banner: images/uav-fieldwork/fp4.png
 title-block-banner-color: black
 listing:
   - id: module-module-goals

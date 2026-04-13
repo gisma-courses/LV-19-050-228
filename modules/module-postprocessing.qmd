@@ -23,7 +23,7 @@ labels:
   - Einführung
 published: true
 source: "../LV-uav-workflow/morea/Postprocessing/module-postprocessing.md"
-title-block-banner: ../images/module-postprocessing/odm.png
+title-block-banner: images/module-postprocessing/odm.png
 title-block-banner-color: black
 
 listing:

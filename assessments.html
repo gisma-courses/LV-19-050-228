@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modules – Micro-Remote Sensing</title>
+<title>Assessments – Micro-Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,20 +72,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-modules-list .list');
+    const listingTargetEl = window.document.querySelector('#listing-assessments-list .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-module-goals','listing-materials','listing-activities','listing-assessments','listing-labels','listing-published','listing-source','listing-title-block-banner','listing-title-block-banner-color','listing-listing','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-materials','listing-activities','listing-labels','listing-published','listing-source','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-module-goals","listing-materials","listing-activities","listing-assessments","listing-labels","listing-published","listing-source","listing-title-block-banner","listing-title-block-banner-color","listing-listing","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-materials","listing-activities","listing-labels","listing-published","listing-source","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-modules-list'] = new List('listing-modules-list', options);
+    window['quarto-listings']['listing-assessments-list'] = new List('listing-assessments-list', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -130,10 +130,11 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="css/styles.css">
-<meta property="og:title" content="Modules – Micro-Remote Sensing">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/module-prerequisites/oss.jpeg">
+<meta property="og:title" content="Assessments – Micro-Remote Sensing">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/banner.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
-<meta property="og:image:alt" content="UAV based remote Sensing - A Brief Overview">
+<meta property="og:image:height" content="146">
+<meta property="og:image:width" content="1024">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -158,7 +159,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./modules.html" aria-current="page"> 
+    <a class="nav-link" href="./modules.html"> 
 <span class="menu-text">Modules</span></a>
   </li>  
   <li class="nav-item">
@@ -174,7 +175,7 @@ window.Quarto = {
 <span class="menu-text">Activities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assessments.html"> 
+    <a class="nav-link active" href="./assessments.html" aria-current="page"> 
 <span class="menu-text">Assessments</span></a>
   </li>  
 </ul>
@@ -208,7 +209,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modules</h1>
+<h1 class="title">Assessments</h1>
 </div>
 
 
@@ -225,98 +226,113 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-modules-list" class="quarto-listing quarto-listing-container-custom">
+<div id="listing-assessments-list" class="quarto-listing quarto-listing-container-custom">
 
 <div class="related-cards">
 
   <article class="related-card">
-    
-    <div class="related-card-image">
-      <img src="images/module-prerequisites/oss.jpeg" alt="UAV based remote Sensing - A Brief Overview">
-    </div>
-    
-
     <div class="related-card-body">
       <h3 class="related-card-title anchored">
-        <a href="./modules/module-introduction.html">UAV based remote Sensing - A Brief Overview</a>
+        <a href="./assessments/assessment-introduction.html">Getting an Overview of UAV Application in Science</a>
       </h3>
 
       
-      <p class="related-card-summary">A brief overview of UAV-based remote sensing in environmental research.</p>
+      <p class="related-card-summary">Build a structured Zotero-based overview of UAV applications in geography and the geosciences by identifying, categorizing, and reflecting on at least 10 academic sources.</p>
       
     </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-self-check">self-check</span>
+      
+    </div>
+    
   </article>
 
   <article class="related-card">
-    
-    <div class="related-card-image">
-      <img src="images/uav-fieldwork/fp4.png" alt="Autonomous Flights Made Easy">
-    </div>
-    
-
     <div class="related-card-body">
       <h3 class="related-card-title anchored">
-        <a href="./modules/module-fieldwork.html">Autonomous Flights Made Easy</a>
+        <a href="./assessments/assessment-hs.html">Get used to scientific UAV applications</a>
       </h3>
 
       
-      <p class="related-card-summary">An easy-to-use workflow for controlling ready-to-fly UAVs on autonomous survey missions in highly structured terrain.</p>
+      <p class="related-card-summary">Prepare your working environment.</p>
       
     </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-self-check">self-check</span>
+      
+    </div>
+    
   </article>
 
   <article class="related-card">
-    
-    <div class="related-card-image">
-      <img src="images/module-postprocessing/odm.png" alt="Creating High Quality Products">
-    </div>
-    
-
     <div class="related-card-body">
       <h3 class="related-card-title anchored">
-        <a href="./modules/module-postprocessing.html">Creating High Quality Products</a>
+        <a href="./assessments/fw-assessment.html">Create a Litchi-Flightplan</a>
       </h3>
 
       
-      <p class="related-card-summary">The processing of aerial drone imagery is a complex procedure which is supported by both open source and closed source software.</p>
+      <p class="related-card-summary">Develop an applicable flight plan, taking legal restrictions into account, and upload it to the cloud in Litchi format.</p>
       
     </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-self-check">self-check</span>
+      
+    </div>
+    
   </article>
 
   <article class="related-card">
-    
-    <div class="related-card-image">
-      <img src="images/module-hr-analysis/icon1.png" alt="Analysis of high resolution aerial data">
-    </div>
-    
-
     <div class="related-card-body">
       <h3 class="related-card-title anchored">
-        <a href="./modules/module-hr-analysis.html">Analysis of high resolution aerial data</a>
+        <a href="./assessments/pp-assessment.html">Creating Orthoimages and Point Clouds</a>
       </h3>
 
       
-      <p class="related-card-summary">High-resolution UAV orthoimages and point clouds require methods such as OBIA, machine learning, deep learning, and point-cloud classification.</p>
+      <p class="related-card-summary">Create an orthoimage, inspect it, compute a dense point cloud and mesh, and present the main results.</p>
       
     </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-self-check">self-check</span>
+      
+    </div>
+    
   </article>
 
   <article class="related-card">
-    
-    <div class="related-card-image">
-      <img src="images/gis-reproducible-research/spatial-r-r.png" alt="Reproducible Research">
-    </div>
-    
-
     <div class="related-card-body">
       <h3 class="related-card-title anchored">
-        <a href="./modules/gis-reproducible-research.html">Reproducible Research</a>
+        <a href="./assessments/assessment-spat-analysis.html">Creating Orthoimages and Point Clouds</a>
       </h3>
 
       
-      <p class="related-card-summary">Reproducible research is rooted in good scientific practice and transparent, repeatable research work.</p>
+      <p class="related-card-summary">Create an OBIA classification or classify dense point cloud data, then report and present the results.</p>
       
     </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-self-check">self-check</span>
+      
+    </div>
+    
   </article>
 
 </div>

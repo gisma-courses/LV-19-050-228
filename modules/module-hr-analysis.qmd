@@ -24,7 +24,7 @@ assessments:
   - assessment-spat-analysis
 published: true
 source: "../LV-uav-workflow/morea/spatial_analysis/module-microremotesensing.md"
-title-block-banner: ../images/module-hr-analysis/icon1.png
+title-block-banner: images/module-hr-analysis/icon1.png
 title-block-banner-color: black
 listing:
   - id: module-module-goals

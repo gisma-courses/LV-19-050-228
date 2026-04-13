@@ -7,14 +7,18 @@ summary: "This module provides an introduction to the use of high-resolution UAV
 
 modules:
   - module-introduction
+Goals:
+  - module-goals-introduction
 materials:
-  - material-1
-  - material-2
-  - material-hs-1
-  - material-hs-5
-  - material-hs-0
-  - material-hs-2
-activities: []
+  - material-introduction-0
+  - material-introduction-1
+  - material-introduction-2
+  - material-introduction-3
+  - material-introduction-4
+  - material-introduction-5
+activities: 
+  - activity-introduction-0
+
 assessments:
   - assessment
 published: true

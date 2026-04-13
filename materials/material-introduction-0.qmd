@@ -1,0 +1,29 @@
+---
+title: "UAV in geography"
+id: material-introduction-0
+order: 40
+source_url: "https://www.tandfonline.com/doi/full/10.1080/00330124.2021.2000446"
+summary: "An overview of how drones are being used across geography, who is using them, and which future opportunities are emerging."
+modules:
+  - module-introduction
+Goals:
+  - module-goals
+activities: []
+assessments:
+  - assessment
+labels:
+  - basics
+  - mandatory
+published: true
+
+---
+
+Geography provides an especially useful entry point into UAV-based research because it connects spatial analysis, observation, mapping, and interpretation. High-resolution aerial imagery is not used in only one way here. It may support land cover mapping, vegetation analysis, geomorphological observation, environmental monitoring, coastal studies, hazard assessment, or urban analysis.
+
+For this reason, this text should be read as an overview-oriented starting point. Do not try to extract one single workflow from it. Instead, pay attention to the range of questions that can be addressed with UAV data, the spatial scales involved, and the kinds of objects or processes that become visible through very high spatial resolution.
+
+While reading, ask yourself three simple questions. What is the geographic problem? What role does the UAV imagery play in solving it? And what would likely be lost if only coarser satellite data were available?
+
+
+[**Module:** UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)
+

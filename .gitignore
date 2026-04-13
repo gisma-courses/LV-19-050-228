@@ -6,6 +6,5 @@ _site
 session-2
 scripts
 session-1
-
 /.quarto/
 **/*.quarto_ipynb

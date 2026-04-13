@@ -1,0 +1,68 @@
+---
+title: "Searching literature and organizing it in Zotero"
+id: activity-introduction-0
+order: 35
+summary: "Learn how to search for relevant academic literature on UAV applications and how to organize your sources systematically in Zotero."
+modules:
+  - module-introduction
+Goals:
+  - module-goals
+materials:
+  - material-introduction-0
+  - material-introduction-1
+  - material-introduction-2
+  - material-introduction-3
+  - material-introduction-4
+  - material-introduction-5
+assessments:
+  - assessment-introduction
+labels:
+  - basic
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/introduction/activity-introduction-0.md"
+---
+
+
+
+This activity is meant to support your literature review for this module. The goal is not simply to collect papers, but to build a structured and useful overview of a research field.
+
+## Step 1: Start from overview texts
+
+Begin with the suggested introductory materials from this module. Use them as entry points into the field. Pay attention to recurring application areas, methods, keywords, and references that may help you expand your search.
+
+## Step 2: Search strategically
+
+Search for literature on the use of high-resolution UAV imagery, especially RGB/VIS data, in geography, environmental science, and related geoscientific fields.
+
+Useful search terms may combine platform, sensor, and application context. For example, you may search for combinations such as UAV or drone with terms like RGB, visible imagery, mapping, monitoring, vegetation, geomorphology, coastal, hazards, or environmental change.
+
+Do not rely on one single search query. Try several combinations and refine them as your overview becomes clearer.
+
+## Step 3: Distinguish between review papers and case studies
+
+As you search, make sure to distinguish between broad review or overview papers and original research articles.
+
+Reviews help you understand the field as a whole. Case studies help you see how UAV methods are applied in concrete environmental settings. A good literature overview needs both.
+
+## Step 4: Organize your library in Zotero
+
+Import all relevant sources into Zotero and create a dedicated collection for this module.
+
+Use tags, notes, or short comments to record why a source is relevant, which thematic group it belongs to, and whether it is a review paper or a case study. This will help you move from a list of papers to a structured overview of the field.
+
+## Step 5: Group the literature thematically
+
+As your collection grows, begin to organize the literature into thematic categories. These may include, for example, vegetation and agriculture, geomorphology, coastal and marine environments, hazard assessment, urban applications, or general methodological workflows.
+
+The exact categories do not need to be fixed in advance. They should emerge from the literature you find.
+
+## Step 6: Read selectively and comparatively
+
+Read at least some papers in full, but do not treat every article in the same way. For many papers, selective reading is enough if you understand the research question, the data used, the methodological workflow, and the main contribution.
+
+Always compare papers rather than reading them in isolation. Ask yourself what kinds of problems are being addressed, what role UAV imagery plays, and where RGB/VIS data are sufficient or limited.
+
+---
+
+[**Module:** UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)

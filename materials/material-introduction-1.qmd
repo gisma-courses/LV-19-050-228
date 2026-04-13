@@ -1,0 +1,28 @@
+---
+title: "UAV in Environmental Science"
+id: material-introduction-1
+summary: "A broad review of UAV remote sensing covering platforms, data types, workflows, and major application domains."
+source_url: "https://www.mdpi.com/2504-446X/7/6/398"
+modules:
+  - module-introduction
+Goals:
+  - module-goals
+activities: []
+assessments:
+  - assessment
+labels:
+  - basics
+  - mandatory
+published: true
+source: "../LV-uav-workflow/morea/introduction/material-2.md"
+---
+
+## Read the article:
+
+[A Review on Unmanned Aerial Vehicle Remote Sensing](https://www.mdpi.com/2504-446X/7/6/398)
+
+---
+
+[**Module:** UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)
+
+

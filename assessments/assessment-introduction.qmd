@@ -1,0 +1,60 @@
+---
+title: "Getting an Overview of UAV Application in Science"
+id: assessment-introduction
+order: 40
+summary: "Build a structured Zotero-based overview of UAV applications in geography and the geosciences by identifying, categorizing, and reflecting on at least 10 academic sources."
+modules:
+  - module-introduction
+Goals:
+  - module-goals
+materials:
+  - material-introduction-0
+  - material-introduction-1
+  - material-introduction-2
+  - material-introduction-3
+  - material-introduction-4
+  - material-introduction-5
+activities: 
+  - activity-introduction-0
+labels:
+  - self-check
+published: true
+---
+
+The aim of this assessment is to develop a structured overview of how high-resolution UAV imagery, especially RGB/VIS data, is used in geography and the geosciences.
+
+Rather than reading a few isolated papers, you should build a small but well-organized literature base that helps you identify major application areas, recurring methodological approaches, and current thematic directions in the field.
+
+## Requirements
+
+Identify and collect at least 10 academic publications relevant to the topic.
+
+Your selection must include at least 2 review or overview papers that help structure the field. The remaining sources should include original research articles representing different application areas, environmental contexts, or methodological approaches.
+
+All selected literature must be imported into Zotero and organized in a clearly structured collection. Your Zotero library should contain complete bibliographic information and meaningful notes, tags, or comments that document your search and selection process.
+
+## What you should do
+
+Based on your literature search, organize the identified publications into meaningful thematic categories.
+
+Read at least 2 of the selected articles in full. The remaining articles should be examined selectively, but in sufficient depth to understand their research question, data basis, methodological approach, and main contribution.
+
+From your overall reading, identify 3 key insights that stood out most to you. Explain briefly why you found these points particularly important, interesting, or surprising.
+
+In addition, identify 3 topics or application areas that you would most like to explore further, based on the literature you reviewed. Briefly explain why these topics seem especially relevant or promising to you.
+
+## Written output
+
+Prepare a concise structured summary of your literature review. Your summary should include a short description of your search focus, the thematic categories you identified, a brief synthesis of the field based on the selected literature, your 3 main highlights and why they mattered to you, and your 3 topics of greatest interest for further exploration.
+
+In addition, select one article and prepare a short review of approximately 0.5 to 1 page using the PLOS peer review template as a structuring aid.
+
+## Submission
+
+Submit your written summary via ILIAS.
+
+Your Zotero collection should also be complete and well organized, so that it documents your literature search and thematic structuring of the field.
+
+---
+
+[**Module:** UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)

@@ -1,0 +1,28 @@
+---
+title: "Low cost drones in applied science"
+id: material-introduction-4
+summary: "A scoping review showing how drone applications can be structured across mapping, search and rescue, transportation, and training."
+source_url: "https://www.sciencedirect.com/science/article/pii/S1355030621001477"
+
+modules:
+  - module-introduction
+Goals:
+  - module-goals
+activities: []
+assessments:
+  - assessment
+labels:
+  - supplement
+  - recommended
+published: true
+source: "../LV-uav-workflow/morea/Hardware_Software/material-hs-5.md"
+---
+
+## Read the article:
+
+[Applications of drone in disaster management: A scoping review](https://www.sciencedirect.com/science/article/pii/S1355030621001477)
+
+---
+
+[**Module:** UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)
+

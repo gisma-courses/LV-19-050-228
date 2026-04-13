@@ -12,7 +12,7 @@ materials:
 activities: []
 assessments:
   - assessment-hs
-published: true
+published: false
 source: "../LV-uav-workflow/morea/Hardware_Software/module-goals_hs.md"
 ---
 

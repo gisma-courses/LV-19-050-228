@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-228/modules/module-introduction.html</loc>
-    <lastmod>2026-04-12T08:11:05.264Z</lastmod>
+    <lastmod>2026-04-13T12:00:45.944Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-228/modules/module-hs.html</loc>
@@ -25,12 +25,12 @@
     <lastmod>2026-04-12T08:11:05.263Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-fw.html</loc>
+    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-pp.html</loc>
     <lastmod>2026-04-12T08:05:41.899Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-hs.html</loc>
-    <lastmod>2026-04-13T10:34:57.079Z</lastmod>
+    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-spat-analysis.html</loc>
+    <lastmod>2026-04-12T07:57:24.868Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-228/materials/material-spat-analysis-2.html</loc>
@@ -269,16 +269,16 @@
     <lastmod>2026-04-12T08:11:05.260Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome.html</loc>
-    <lastmod>2026-04-13T11:33:46.140Z</lastmod>
+    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-hs.html</loc>
+    <lastmod>2026-04-13T10:34:57.079Z</lastmod>
   </url>
   <url>
-    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-spat-analysis.html</loc>
-    <lastmod>2026-04-12T07:57:24.868Z</lastmod>
-  </url>
-  <url>
-    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-pp.html</loc>
+    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/outcome-fw.html</loc>
     <lastmod>2026-04-12T08:05:41.899Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gisma-courses.github.io/LV-19-050-228/module-goals/module-goals-introduction.html</loc>
+    <lastmod>2026-04-13T11:53:05.413Z</lastmod>
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-228/session-2/sitzung-2-01.html</loc>
@@ -298,6 +298,6 @@
   </url>
   <url>
     <loc>https://gisma-courses.github.io/LV-19-050-228/modules/gis-reproducible-research.html</loc>
-    <lastmod>2026-04-12T08:11:05.263Z</lastmod>
+    <lastmod>2026-04-13T12:01:02.177Z</lastmod>
   </url>
 </urlset>

@@ -20,7 +20,7 @@ labels:
   - mandatory
 published: true
 source: "../LV-uav-workflow/morea/introduction/module-prerequisites.md"
-title-block-banner: ../images/module-prerequisites/oss.jpeg
+title-block-banner: images/module-prerequisites/oss.jpeg
 title-block-banner-color: black
 listing:
   - id: module-module-goals

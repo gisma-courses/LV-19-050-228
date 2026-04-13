@@ -2,7 +2,7 @@
   {
     "listing": "/modules/module-introduction.html",
     "items": [
-      "/module-goals/outcome.html",
+      "/module-goals/module-goals-introduction.html",
       "/module-goals/outcome-hs.html",
       "/module-goals/outcome-fw.html",
       "/module-goals/outcome-pp.html",
@@ -63,7 +63,7 @@
   {
     "listing": "/modules/module-hs.html",
     "items": [
-      "/module-goals/outcome.html",
+      "/module-goals/module-goals-introduction.html",
       "/module-goals/outcome-hs.html",
       "/module-goals/outcome-fw.html",
       "/module-goals/outcome-pp.html",
@@ -124,7 +124,7 @@
   {
     "listing": "/modules/module-postprocessing.html",
     "items": [
-      "/module-goals/outcome.html",
+      "/module-goals/module-goals-introduction.html",
       "/module-goals/outcome-hs.html",
       "/module-goals/outcome-fw.html",
       "/module-goals/outcome-pp.html",
@@ -195,7 +195,7 @@
   {
     "listing": "/module-goals.html",
     "items": [
-      "/module-goals/outcome.html",
+      "/module-goals/module-goals-introduction.html",
       "/module-goals/outcome-hs.html",
       "/module-goals/outcome-fw.html",
       "/module-goals/outcome-pp.html",
@@ -283,7 +283,7 @@
   {
     "listing": "/modules/module-fieldwork.html",
     "items": [
-      "/module-goals/outcome.html",
+      "/module-goals/module-goals-introduction.html",
       "/module-goals/outcome-hs.html",
       "/module-goals/outcome-fw.html",
       "/module-goals/outcome-pp.html",
@@ -344,7 +344,7 @@
   {
     "listing": "/modules/module-hr-analysis.html",
     "items": [
-      "/module-goals/outcome.html",
+      "/module-goals/module-goals-introduction.html",
       "/module-goals/outcome-hs.html",
       "/module-goals/outcome-fw.html",
       "/module-goals/outcome-pp.html",
@@ -405,7 +405,7 @@
   {
     "listing": "/modules/gis-reproducible-research.html",
     "items": [
-      "/module-goals/outcome.html",
+      "/module-goals/module-goals-introduction.html",
       "/module-goals/outcome-hs.html",
       "/module-goals/outcome-fw.html",
       "/module-goals/outcome-pp.html",

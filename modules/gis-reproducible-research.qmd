@@ -19,7 +19,7 @@ activities:
 assessments: []
 published: true
 source: "../LV-uav-workflow/morea/gis-reproducible-research/module-gis-reproducible-research.md"
-title-block-banner: ../images/gis-reproducible-research/spatial-r-r.png
+title-block-banner: images/gis-reproducible-research/spatial-r-r.png
 title-block-banner-color: black
 listing:
   - id: module-module-goals

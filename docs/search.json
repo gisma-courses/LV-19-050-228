@@ -84,32 +84,25 @@
     "text": "UAV Application in Science\n      \n\n      \n      This module provides an introduction to the use of high-resolution UAV imagery in applied environmental science, with a particular focus on RGB/VIS data in geography and the geosciences.\n      \n    \n\n    \n    \n  \n\n  \n    \n      \n        Autonomous Flight Planning Workflow\n      \n\n      \n      Implement autonomous flight planning confidently and successfully, from software choice to safe execution.\n      \n    \n\n    \n    \n  \n\n  \n    \n      \n        Structure-from-motion Post-processing Workflow\n      \n\n      \n      Build an overview of SfM photogrammetry software and practice optimized workflows for orthoimage and point-cloud generation.\n      \n    \n\n    \n    \n  \n\n  \n    \n      \n        Analysis of high-resolution aerial data\n      \n\n      \n      Gain initial insight into automated evaluation of high-resolution orthoimages and point clouds.\n      \n    \n\n    \n    \n  \n\n\nKeine Treffer"
   },
   {
-    "objectID": "module-goals/outcome-fw.html",
-    "href": "module-goals/outcome-fw.html",
-    "title": "Autonomous Flight Planning Workflow",
+    "objectID": "module-goals/outcome-pp.html",
+    "href": "module-goals/outcome-pp.html",
+    "title": "Structure-from-motion Post-processing Workflow",
     "section": "",
-    "text": "This module is intended to enable you to implement autonomous flight planning confidently and successfully. In particular:"
+    "text": "The module is intended to provide a solid overview of the extensive range of structure-from-motion (SfM) photogrammetry software and its use: * Identify which of the software packages provide good results and are cost effective. * Using the commercial software Agisoft Metashape, an optimized workflow for orthoimage generation will be demonstrated and practiced. * Optionally, this workflow is also explained and illustrated with the open source software OpenDroneMap. * Optional tutorials are available for special tasks."
   },
   {
-    "objectID": "module-goals/outcome-fw.html#connected-module",
-    "href": "module-goals/outcome-fw.html#connected-module",
-    "title": "Autonomous Flight Planning Workflow",
-    "section": "Connected Module",
-    "text": "Connected Module\n\nAutonomous Flights Made Easy"
-  },
-  {
-    "objectID": "module-goals/outcome-hs.html",
-    "href": "module-goals/outcome-hs.html",
-    "title": "UAV Hardware",
+    "objectID": "module-goals/outcome-spat-analysis.html",
+    "href": "module-goals/outcome-spat-analysis.html",
+    "title": "Analysis of high-resolution aerial data",
     "section": "",
-    "text": "Hardware: Open Source Hardware and commercial systems\nField of application\nFocus on low cost\nFocus on low spectral resolution"
+    "text": "The module is intended to provide an initial insight into the automated evaluation of high-resolution orthoimages and point clouds. Since this topic can easily fill several courses, the possibilities of more complex evaluations with QGIS and comparable software will be presented.\nThe module offers:"
   },
   {
-    "objectID": "module-goals/outcome-hs.html#connected-module",
-    "href": "module-goals/outcome-hs.html#connected-module",
-    "title": "UAV Hardware",
+    "objectID": "module-goals/outcome-spat-analysis.html#connected-module",
+    "href": "module-goals/outcome-spat-analysis.html#connected-module",
+    "title": "Analysis of high-resolution aerial data",
     "section": "Connected Module",
-    "text": "Connected Module\n\nScientific UAV Hardware"
+    "text": "Connected Module\n\nAnalysis of high resolution aerial data"
   },
   {
     "objectID": "materials/material-spat-analysis-2.html",
@@ -1281,39 +1274,46 @@
     "text": "Connected Module\n\nAutonomous Flights Made Easy"
   },
   {
-    "objectID": "module-goals/outcome.html",
-    "href": "module-goals/outcome.html",
-    "title": "UAV Application in Science",
+    "objectID": "module-goals/outcome-hs.html",
+    "href": "module-goals/outcome-hs.html",
+    "title": "UAV Hardware",
     "section": "",
-    "text": "This module introduces the use of high-resolution UAV imagery in applied environmental science, with a particular focus on RGB/VIS data in geography and the geosciences.\nStudents should learn how to identify major application areas of UAV-based imaging, distinguish between overview papers and case studies, and use literature strategically rather than collecting papers at random. The module therefore combines guided reading with independent literature research.\nA second goal is to build a structured overview of the field. Students should compare how UAV imagery is used across different environmental contexts, which data and workflows are involved, and where the specific strengths and limitations of high-resolution visible imagery become apparent.\nFinally, the module aims to strengthen critical reading and scientific judgement. Students should not only summarize what they read, but also decide which themes, methods, and application areas they find most relevant, convincing, or interesting, and explain why.\n\nModule: UAV based remote Sensing - A Brief Overview"
+    "text": "Hardware: Open Source Hardware and commercial systems\nField of application\nFocus on low cost\nFocus on low spectral resolution"
   },
   {
-    "objectID": "module-goals/outcome.html#goals",
-    "href": "module-goals/outcome.html#goals",
-    "title": "UAV Application in Science",
-    "section": "",
-    "text": "This module introduces the use of high-resolution UAV imagery in applied environmental science, with a particular focus on RGB/VIS data in geography and the geosciences.\nStudents should learn how to identify major application areas of UAV-based imaging, distinguish between overview papers and case studies, and use literature strategically rather than collecting papers at random. The module therefore combines guided reading with independent literature research.\nA second goal is to build a structured overview of the field. Students should compare how UAV imagery is used across different environmental contexts, which data and workflows are involved, and where the specific strengths and limitations of high-resolution visible imagery become apparent.\nFinally, the module aims to strengthen critical reading and scientific judgement. Students should not only summarize what they read, but also decide which themes, methods, and application areas they find most relevant, convincing, or interesting, and explain why.\n\nModule: UAV based remote Sensing - A Brief Overview"
-  },
-  {
-    "objectID": "module-goals/outcome-spat-analysis.html",
-    "href": "module-goals/outcome-spat-analysis.html",
-    "title": "Analysis of high-resolution aerial data",
-    "section": "",
-    "text": "The module is intended to provide an initial insight into the automated evaluation of high-resolution orthoimages and point clouds. Since this topic can easily fill several courses, the possibilities of more complex evaluations with QGIS and comparable software will be presented.\nThe module offers:"
-  },
-  {
-    "objectID": "module-goals/outcome-spat-analysis.html#connected-module",
-    "href": "module-goals/outcome-spat-analysis.html#connected-module",
-    "title": "Analysis of high-resolution aerial data",
+    "objectID": "module-goals/outcome-hs.html#connected-module",
+    "href": "module-goals/outcome-hs.html#connected-module",
+    "title": "UAV Hardware",
     "section": "Connected Module",
-    "text": "Connected Module\n\nAnalysis of high resolution aerial data"
+    "text": "Connected Module\n\nScientific UAV Hardware"
   },
   {
-    "objectID": "module-goals/outcome-pp.html",
-    "href": "module-goals/outcome-pp.html",
-    "title": "Structure-from-motion Post-processing Workflow",
+    "objectID": "module-goals/outcome-fw.html",
+    "href": "module-goals/outcome-fw.html",
+    "title": "Autonomous Flight Planning Workflow",
     "section": "",
-    "text": "The module is intended to provide a solid overview of the extensive range of structure-from-motion (SfM) photogrammetry software and its use: * Identify which of the software packages provide good results and are cost effective. * Using the commercial software Agisoft Metashape, an optimized workflow for orthoimage generation will be demonstrated and practiced. * Optionally, this workflow is also explained and illustrated with the open source software OpenDroneMap. * Optional tutorials are available for special tasks."
+    "text": "This module is intended to enable you to implement autonomous flight planning confidently and successfully. In particular:"
+  },
+  {
+    "objectID": "module-goals/outcome-fw.html#connected-module",
+    "href": "module-goals/outcome-fw.html#connected-module",
+    "title": "Autonomous Flight Planning Workflow",
+    "section": "Connected Module",
+    "text": "Connected Module\n\nAutonomous Flights Made Easy"
+  },
+  {
+    "objectID": "module-goals/module-goals-introduction.html",
+    "href": "module-goals/module-goals-introduction.html",
+    "title": "UAV Application in Science",
+    "section": "",
+    "text": "This module introduces the use of high-resolution UAV imagery in applied environmental science, with a particular focus on RGB/VIS data in geography and the geosciences.\nStudents should learn how to identify major application areas of UAV-based imaging, distinguish between overview papers and case studies, and use literature strategically rather than collecting papers at random. The module therefore combines guided reading with independent literature research.\nA second goal is to build a structured overview of the field. Students should compare how UAV imagery is used across different environmental contexts, which data and workflows are involved, and where the specific strengths and limitations of high-resolution visible imagery become apparent.\nFinally, the module aims to strengthen critical reading and scientific judgement. Students should not only summarize what they read, but also decide which themes, methods, and application areas they find most relevant, convincing, or interesting, and explain why.\n\nModule: UAV based remote Sensing - A Brief Overview"
+  },
+  {
+    "objectID": "module-goals/module-goals-introduction.html#goals",
+    "href": "module-goals/module-goals-introduction.html#goals",
+    "title": "UAV Application in Science",
+    "section": "",
+    "text": "This module introduces the use of high-resolution UAV imagery in applied environmental science, with a particular focus on RGB/VIS data in geography and the geosciences.\nStudents should learn how to identify major application areas of UAV-based imaging, distinguish between overview papers and case studies, and use literature strategically rather than collecting papers at random. The module therefore combines guided reading with independent literature research.\nA second goal is to build a structured overview of the field. Students should compare how UAV imagery is used across different environmental contexts, which data and workflows are involved, and where the specific strengths and limitations of high-resolution visible imagery become apparent.\nFinally, the module aims to strengthen critical reading and scientific judgement. Students should not only summarize what they read, but also decide which themes, methods, and application areas they find most relevant, convincing, or interesting, and explain why.\n\nModule: UAV based remote Sensing - A Brief Overview"
   },
   {
     "objectID": "session-2/sitzung-2-01.html",

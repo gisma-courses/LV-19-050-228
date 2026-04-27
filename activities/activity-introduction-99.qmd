@@ -1,5 +1,5 @@
 ---
-title: "Organizing Literature in Zotero"
+title: "Working with Literature in Zotero"
 id: activity-introduction-zotero
 order: 36
 summary: "Organize  selected literature sources in Zotero, clean metadata, and add structured personal notes."

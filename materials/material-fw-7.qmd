@@ -1,5 +1,5 @@
 ---
-title: "QGroundControl Planning a Mission"
+title: "## Planning and Running a Mission - QGroundControl Planning a Mission"
 id: material-fw-7
 order: 90
 summary: "Getting an idea how to practically plan and perform a flight mission with QGroundControl."
@@ -18,7 +18,43 @@ labels:
 source: "../LV-uav-workflow/morea/UAVFieldwork/material-fw-7.md"
 ---
 
-## Planning and Running a Mission
+
+
+## Lowest-Budget Mission Planning Options for DJI Mini-Class Mapping
+
+The table compares realistic low-budget workflows for teaching UAV mapping and object flights with DJI Mini-class aircraft. The focus is not maximum comfort, but the cheapest workable setup that still allows meaningful mission planning.
+
+| Workflow | Approx. software cost | Main role | Strength | Weakness | Lowest-budget suitability |
+|---|---:|---|---|---|---|
+| **QGroundControl + uavRmp + Litchi** | QGC/uavRmp free + Litchi app ca. **30 €** | Open planning + Litchi execution | Very transparent, reproducible, terrain-aware planning possible, strong for teaching | Technically fragile, requires file conversion and careful checking | **Very high** |
+| **Litchi only** | ca. **30 €** | Waypoint execution and simple mission planning | Cheapest practical DJI waypoint workflow, simple, good for object flights | Limited survey planning, weak terrain/planning logic compared with QGC | **High** |
+| **DJIFlightPlanner + Litchi** | **US$99** + Litchi ca. **30 €** | Simple photogrammetry grid planning + Litchi execution | Easy grid planning, direct Litchi export, low one-time cost | Proprietary, Windows-only, less didactically transparent than QGC/uavRmp | **Medium to high** |
+| **Dronelink** | from about **US$20+**, depending on plan | Integrated mission planning and execution | Powerful, flexible, supports mapping/object workflows in one environment | More complex, more expensive, model/controller/OS dependent | **Medium** |
+| **Manual flight + interval photos** | free | Manual training / fallback | Cheapest possible, works without mission app | No reproducible autonomous mission, weak for systematic mapping | **Medium as fallback** |
+| **Enterprise tools: UgCS / Pix4D / DroneDeploy etc.** | usually subscription / high cost | Professional mission planning and processing | Strong professional workflows | Too expensive and often overkill for low-budget teaching | **Low** |
+
+### Interpretation
+
+For a lowest-budget teaching setup, the strongest option is usually the **QGroundControl / uavRmp / Litchi workflow**. It is not the most comfortable solution, but it combines open planning, reproducible mission files, terrain-aware logic, and low-cost DJI execution.
+
+**Litchi only** is cheaper and simpler, but the planning logic is weaker. It is suitable for simple waypoint missions, object flights, and basic training.
+
+**DJIFlightPlanner** is a useful low-cost commercial alternative if the main goal is quick grid planning for photogrammetry. It is easier than QGroundControl/uavRmp, but less open and less suitable for teaching the underlying mission-planning logic.
+
+**Dronelink** is the strongest integrated alternative, but it is not the lowest-budget route. It is better understood as a more powerful, more expensive, and more complex ecosystem.
+
+### Practical Teaching Recommendation
+
+For low-budget UAV teaching, use a tiered approach:
+
+1. **Litchi only** for basic waypoint and object-flight training.
+2. **QGroundControl + uavRmp + Litchi** for serious mapping logic, terrain-aware planning, and reproducible mission workflows.
+3. **Dronelink** only where budget and device compatibility allow it.
+4. **Manual interval-photo flights** as emergency fallback or introductory exercise.
+
+::: {.callout-note}
+The distinctive strength of the QGroundControl / uavRmp / Litchi workflow is not that it is the easiest solution. Its strength is that it is cheap, transparent, reproducible, and exposes the actual planning logic behind mapping missions.
+:::
 
 Watch the QGroundControl mission planning video:
 

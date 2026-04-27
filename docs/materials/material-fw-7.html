@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>QGroundControl Planning a Mission – Micro-Remote Sensing</title>
+<title>## Planning and Running a Mission - QGroundControl Planning a Mission – Micro-Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="QGroundControl Planning a Mission – Micro-Remote Sensing">
+<meta property="og:title" content="## Planning and Running a Mission - QGroundControl Planning a Mission – Micro-Remote Sensing">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/materials/images/banner.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
@@ -145,7 +145,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#planning-and-running-a-mission" id="toc-planning-and-running-a-mission" class="nav-link active" data-scroll-target="#planning-and-running-a-mission">Planning and Running a Mission</a></li>
+  <li><a href="#lowest-budget-mission-planning-options-for-dji-mini-class-mapping" id="toc-lowest-budget-mission-planning-options-for-dji-mini-class-mapping" class="nav-link active" data-scroll-target="#lowest-budget-mission-planning-options-for-dji-mini-class-mapping">Lowest-Budget Mission Planning Options for DJI Mini-Class Mapping</a>
+  <ul class="collapse">
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#practical-teaching-recommendation" id="toc-practical-teaching-recommendation" class="nav-link" data-scroll-target="#practical-teaching-recommendation">Practical Teaching Recommendation</a></li>
+  </ul></li>
   <li><a href="#connected-module" id="toc-connected-module" class="nav-link" data-scroll-target="#connected-module">Connected Module</a></li>
   </ul>
 </nav>
@@ -155,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">QGroundControl Planning a Mission</h1>
+<h1 class="title">## Planning and Running a Mission - QGroundControl Planning a Mission</h1>
 </div>
 
 
@@ -172,10 +176,111 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="planning-and-running-a-mission" class="level2">
-<h2 class="anchored" data-anchor-id="planning-and-running-a-mission">Planning and Running a Mission</h2>
+<section id="lowest-budget-mission-planning-options-for-dji-mini-class-mapping" class="level2">
+<h2 class="anchored" data-anchor-id="lowest-budget-mission-planning-options-for-dji-mini-class-mapping">Lowest-Budget Mission Planning Options for DJI Mini-Class Mapping</h2>
+<p>The table compares realistic low-budget workflows for teaching UAV mapping and object flights with DJI Mini-class aircraft. The focus is not maximum comfort, but the cheapest workable setup that still allows meaningful mission planning.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Workflow</th>
+<th style="text-align: right;">Approx. software cost</th>
+<th>Main role</th>
+<th>Strength</th>
+<th>Weakness</th>
+<th>Lowest-budget suitability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>QGroundControl + uavRmp + Litchi</strong></td>
+<td style="text-align: right;">QGC/uavRmp free + Litchi app ca. <strong>30 €</strong></td>
+<td>Open planning + Litchi execution</td>
+<td>Very transparent, reproducible, terrain-aware planning possible, strong for teaching</td>
+<td>Technically fragile, requires file conversion and careful checking</td>
+<td><strong>Very high</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Litchi only</strong></td>
+<td style="text-align: right;">ca. <strong>30 €</strong></td>
+<td>Waypoint execution and simple mission planning</td>
+<td>Cheapest practical DJI waypoint workflow, simple, good for object flights</td>
+<td>Limited survey planning, weak terrain/planning logic compared with QGC</td>
+<td><strong>High</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>DJIFlightPlanner + Litchi</strong></td>
+<td style="text-align: right;"><strong>US$99</strong> + Litchi ca. <strong>30 €</strong></td>
+<td>Simple photogrammetry grid planning + Litchi execution</td>
+<td>Easy grid planning, direct Litchi export, low one-time cost</td>
+<td>Proprietary, Windows-only, less didactically transparent than QGC/uavRmp</td>
+<td><strong>Medium to high</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Dronelink</strong></td>
+<td style="text-align: right;">from about <strong>US$20+</strong>, depending on plan</td>
+<td>Integrated mission planning and execution</td>
+<td>Powerful, flexible, supports mapping/object workflows in one environment</td>
+<td>More complex, more expensive, model/controller/OS dependent</td>
+<td><strong>Medium</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Manual flight + interval photos</strong></td>
+<td style="text-align: right;">free</td>
+<td>Manual training / fallback</td>
+<td>Cheapest possible, works without mission app</td>
+<td>No reproducible autonomous mission, weak for systematic mapping</td>
+<td><strong>Medium as fallback</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Enterprise tools: UgCS / Pix4D / DroneDeploy etc.</strong></td>
+<td style="text-align: right;">usually subscription / high cost</td>
+<td>Professional mission planning and processing</td>
+<td>Strong professional workflows</td>
+<td>Too expensive and often overkill for low-budget teaching</td>
+<td><strong>Low</strong></td>
+</tr>
+</tbody>
+</table>
+<section id="interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
+<p>For a lowest-budget teaching setup, the strongest option is usually the <strong>QGroundControl / uavRmp / Litchi workflow</strong>. It is not the most comfortable solution, but it combines open planning, reproducible mission files, terrain-aware logic, and low-cost DJI execution.</p>
+<p><strong>Litchi only</strong> is cheaper and simpler, but the planning logic is weaker. It is suitable for simple waypoint missions, object flights, and basic training.</p>
+<p><strong>DJIFlightPlanner</strong> is a useful low-cost commercial alternative if the main goal is quick grid planning for photogrammetry. It is easier than QGroundControl/uavRmp, but less open and less suitable for teaching the underlying mission-planning logic.</p>
+<p><strong>Dronelink</strong> is the strongest integrated alternative, but it is not the lowest-budget route. It is better understood as a more powerful, more expensive, and more complex ecosystem.</p>
+</section>
+<section id="practical-teaching-recommendation" class="level3">
+<h3 class="anchored" data-anchor-id="practical-teaching-recommendation">Practical Teaching Recommendation</h3>
+<p>For low-budget UAV teaching, use a tiered approach:</p>
+<ol type="1">
+<li><strong>Litchi only</strong> for basic waypoint and object-flight training.</li>
+<li><strong>QGroundControl + uavRmp + Litchi</strong> for serious mapping logic, terrain-aware planning, and reproducible mission workflows.</li>
+<li><strong>Dronelink</strong> only where budget and device compatibility allow it.</li>
+<li><strong>Manual interval-photo flights</strong> as emergency fallback or introductory exercise.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The distinctive strength of the QGroundControl / uavRmp / Litchi workflow is not that it is the easiest solution. Its strength is that it is cheap, transparent, reproducible, and exposes the actual planning logic behind mapping missions.</p>
+</div>
+</div>
 <p>Watch the QGroundControl mission planning video:</p>
 <p><a href="https://www.youtube.com/watch?v=0d23O_RUOmI" class="uri">https://www.youtube.com/watch?v=0d23O_RUOmI</a></p>
+</section>
 </section>
 <section id="connected-module" class="level2">
 <h2 class="anchored" data-anchor-id="connected-module">Connected Module</h2>

@@ -1,0 +1,254 @@
+---
+title: "Legal Guidelines"
+id: activity-fw-14
+order: 90
+summary: "Flight planning requires compliance with a number of more or less clear legal regulations."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+materials:
+  - material-fw-7
+  - material-fw-8
+  - material-fw-6
+assessments:
+  - fw-assessment
+labels:
+  - basic
+  - mandatory
+source: "../LV-uav-workflow/morea/UAVFieldwork/activity-fw-14.md"
+---
+
+## General Regulations – German Drone Regulation and UAS Geographical Zones
+
+Drone operations in Germany are regulated by the EU UAS regulations, especially Regulation (EU) 2019/947 and Regulation (EU) 2019/945, together with the German Luftverkehrs-Ordnung (LuftVO). National restrictions for UAS geographical zones are defined in **§ 21h LuftVO**.
+
+Since 2021, the EU-wide drone rules have applied in Germany and the national legal framework has been adapted accordingly. For practical flight planning, remote pilots must check whether the planned operation area is affected by geographical zones, protected areas, airspace restrictions, infrastructure restrictions, or other local limitations. In Germany, the central operational tool for this check is **DIPUL**, the Digital Platform for Unmanned Aviation.
+
+The most important rules are summarized by the Federal Ministry of Transport in its drone flyer. However, for concrete flight planning, the current legal text, the LBA information pages, and the **DIPUL Map Tool** are the operational references.
+
+Relevant links:
+
+- [BMV drone rules overview](https://www.bmv.de/drohnen)
+- [BMV drone flyer / cheat sheet](https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.html)
+- [BMV drone flyer / cheat sheet, current PDF version](https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile)
+- [LBA drone FAQ](https://www.lba.de/DE/Drohnen/FAQ/01_FAQ_Allgemein/FAQ_node.html)
+- [LBA risk assessment / §21h and DIPUL reference](https://www.lba.de/DE/Drohnen/Allgemeine_Informationen/Risikobewertung/Risikobewertung_node.html)
+- [DIPUL central information platform](https://www.dipul.de/homepage/de/)
+- [DIPUL geographical zones](https://www.dipul.de/homepage/de/informationen/geografische-gebiete/)
+- [DIPUL Map Tool](https://maptool-dipul.dfs.de/?language=de)
+
+![Cheat sheet for German drone regulation](../images/uav-fieldwork/cheat.png)
+
+Copyright: Bundesministerium für Digitales und Verkehr. [Online source](https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile)
+
+Since there is no English version of the cheat sheet, the following text summarizes the rules relevant for the course framework.
+
+::: {.callout-note}
+The remote pilot is responsible for safe operation. The UAS operator is responsible for the operation framework.
+:::
+
+## Registration as UAS Operator
+
+Drone operators must be registered in the EU member state in which they are based. In Germany, registration is done online through the [Luftfahrt-Bundesamt (LBA)](https://uas-registration.lba-openuav.de/#/registration/uasOperator).
+
+Registration applies to the **UAS operator**, not to each individual drone. One registered operator can operate several drones under the same operator ID / eID. The assigned eID must be attached visibly to every drone operated by this operator.
+
+For small drones below 250 g, registration is still required if the drone has a camera or another sensor capable of recording personal data.
+
+In teaching contexts, distinguish clearly between **operator** and **remote pilot**:
+
+- The **operator** is the person or institution legally responsible for the operation.
+- The **remote pilot** is the person who actually controls the drone during the flight.
+
+If students fly a university-owned or instructor-owned drone **under supervision and within the course operation**, they usually act as remote pilots. In this case, the operator registration of the university or instructor can be used, provided that this person or institution is the defined operator for the flight and the drone carries the corresponding eID.
+
+If students plan and conduct flights **independently**, outside the supervised course operation, they may become UAS operators themselves. In that case, they need their own operator registration, their own eID, and their own liability coverage or explicit confirmation that the flight is covered by an existing insurance policy.
+
+For field courses, define the operator role before the flight. A simple course rule is:
+
+> All flights in this course are conducted under the operator responsibility of `[institution / responsible instructor]`. Students act as remote pilots only when explicitly assigned and supervised.
+
+::: {.callout-note}
+### Operator Registration in Germany
+
+If you operate UAVs independently as the responsible operator, you must register as a UAS operator in Germany.
+
+Registration is done online through the Luftfahrt-Bundesamt (LBA):
+
+- <https://uas-registration.lba-openuav.de/#/registration/uasOperator>
+
+#### Requirements
+
+- minimum age: 16 years
+- valid email address
+- basic personal information
+
+#### Costs
+
+- Registration fee for natural persons: **20 €**
+- Registration fee for legal persons: **50 €**
+- Validity: **5 years**
+
+After registration, you receive your **UAS operator ID (eID)**. This ID must be attached visibly to every drone operated under this registration.
+
+You do **not** need your own operator registration if you fly exclusively under the operator responsibility of the course instructor or institution and use their registered UAV within the defined course framework.
+:::
+
+## Liability Insurance
+
+In Germany, drone liability insurance is required for drone operations. Before any field course, the responsible person must check that the aircraft, pilots, and planned use are covered by valid liability insurance.
+
+Insurance coverage and operator responsibility are separate issues. A student may be insured as an additional remote pilot without becoming the UAS operator. Conversely, if students conduct flights as independent operators, they must ensure their own liability coverage or obtain explicit confirmation that the intended operation is covered by an existing policy.
+
+## Specific Regulations for UAVs under 250 g
+
+Drones below 250 g are usually operated in the EU **Open A1** category. For C0 drones and drones below 250 g, the EU A1/A3 competence certificate is not mandatory.
+
+These drones may be flown near uninvolved persons, but crowds or assemblies of people must not be overflown. If uninvolved persons are unexpectedly overflown, the overflight must be ended as quickly and safely as possible.
+
+For teaching, sub-250 g drones are the simplest practical option. They are suitable for short training flights, manual mapping exercises, object flights, and basic mission planning, provided that all local restrictions are checked before the flight.
+
+## UAVs up to 2 kg in Student Fieldwork
+
+Drones above 250 g and up to 2 kg can also be used in student fieldwork, but the requirements are stricter.
+
+At minimum, the remote pilot usually needs the EU **A1/A3 competence certificate**. Depending on the drone class and the planned distance to uninvolved persons, the **A2 remote pilot certificate** may also be required.
+
+For practical courses, drones up to 2 kg should only be used when the operation can be clearly controlled:
+
+- flight below 120 m AGL,
+- visual line of sight,
+- no overflight of crowds,
+- safe distance to uninvolved persons,
+- clearly defined take-off and landing area,
+- emergency procedure,
+- observer or spotter if needed,
+- valid operator registration,
+- visible eID,
+- valid liability insurance.
+
+For student exercises, this usually means open fields, training areas, or supervised field sites where uninvolved persons can reliably be kept away from the operation area.
+
+## Geographical Restrictions and Sensitive Areas
+
+The following restrictions are part of the German geographical-zone logic under § 21h LuftVO. Before every flight, check the current situation using the [DIPUL Map Tool](https://maptool-dipul.dfs.de/?language=de). If the planned flight cannot comply with the displayed restrictions or legal conditions, permission from the competent authority or infrastructure operator may be required.
+
+### Airfields, Airports, and Heliports
+
+Flights near airports, airfields, and heliports are restricted and must be checked before every flight. Special care is required near:
+
+- commercial airports,
+- airfields,
+- heliports,
+- runway extensions,
+- controlled airspace.
+
+The exact restrictions depend on the location and must be checked in DIPUL. Where necessary, clarify the operation with the responsible authority, air traffic control, or the relevant airfield operator.
+
+### Residential Areas and Residential Properties
+
+Residential areas and private residential properties are sensitive areas. Flights over or near them may be restricted because of privacy, noise, and safety concerns.
+
+Such flights should only be planned if they are necessary, legally allowed, and operationally safe. In teaching contexts, residential areas should normally be avoided unless explicit permission and a clear operational reason exist.
+
+### Traffic Routes
+
+Roads, railways, waterways, and other traffic routes may be subject to distance restrictions. Flights near traffic routes require special care because a drone failure could endanger people or traffic.
+
+Before planning such a flight, check the location in DIPUL and assess whether additional permission from the responsible infrastructure operator is required.
+
+### Nature Reserves and Protected Areas
+
+Nature reserves and other protected areas may be restricted for drone operations. A flight may only be conducted if it is legally allowed and compatible with the protection purpose of the area.
+
+Before planning such flights, check DIPUL and the relevant nature conservation rules. If required, obtain permission from the competent authority.
+
+### Other Sensitive Locations
+
+Additional restrictions may apply near sensitive locations such as:
+
+- accident scenes and emergency operation sites,
+- industrial facilities,
+- prisons,
+- military facilities,
+- police facilities,
+- constitutional bodies,
+- power generation and distribution infrastructure,
+- hospitals,
+- military exercises.
+
+## Practical Rule for Field Courses
+
+For teaching, the safest and simplest setup is:
+
+- sub-250 g drone where possible,
+- open area,
+- no uninvolved persons nearby,
+- no protected area,
+- no airport or heliport conflict,
+- clear take-off and landing zone,
+- one responsible pilot,
+- one observer,
+- short test flight before the actual exercise.
+
+This summary is a teaching-oriented checklist. It does not replace the current legal text, the LBA information pages, the insurance policy, or the DIPUL Map Tool.
+
+## Student Projects and Independent Flights
+
+Student UAV projects are possible, but the operator role must be defined before the flight. There are two valid operational models. The decisive factor is not ownership of the drone, but responsibility for the concrete operation.
+
+### Model A – Student as UAS Operator
+
+In this model, the student acts as the responsible operator.
+
+This means:
+
+- the student holds their own operator registration (eID),
+- the student ensures valid liability insurance,
+- the student meets all required remote-pilot competence levels,
+- the student independently checks airspace and geographical restrictions using DIPUL,
+- the student assumes full legal and operational responsibility.
+
+This model provides maximum independence and is suitable for fully autonomous student projects, such as theses or external project work.
+
+### Model B – Operation under Institutional Responsibility
+
+In this model, the instructor or institution remains the UAS operator.
+
+This means:
+
+- the UAV carries the operator ID (eID) of the responsible institution or instructor,
+- students act as remote pilots on behalf of the operator,
+- flights may also be conducted without direct supervision,
+- the operation remains bound to a predefined framework of approved locations, procedures, and flight types,
+- insurance explicitly covers additional pilots and independent student flights,
+- the operator retains overall responsibility for the operation.
+
+This model enables controlled autonomy and is commonly used in teaching environments. If the predefined framework is exceeded, or if the operation is no longer attributable to the institutional operator, the flight falls under Model A.
+
+::: {.callout-warning}
+## What happens if the rules are not followed?
+
+Violations of drone regulations in Germany can lead to significant legal consequences.
+
+Possible consequences include:
+
+- **Fines:** Violations such as flying without registration, in restricted areas, or without insurance can result in fines of up to **50,000 €**, depending on severity.
+- **Loss of insurance coverage:** If legal requirements are violated, liability insurance may refuse to cover damages. The responsible person may then be personally liable for all costs.
+- **Confiscation of equipment:** Authorities may confiscate the drone in case of serious violations.
+- **Criminal charges:** In severe cases, such as endangering air traffic, people, or critical infrastructure, criminal prosecution is possible.
+
+Ignorance of the rules does not protect you. Every remote pilot must check:
+
+- operator registration and eID,
+- insurance coverage,
+- airspace and geographical restrictions using DIPUL,
+- safe operation.
+
+In case of doubt: **do not fly.**
+:::
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

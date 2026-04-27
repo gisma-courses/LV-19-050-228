@@ -9,6 +9,7 @@ Goals:
   - module-goals
 materials:
   - material-introduction-0
+  -
   - material-introduction-1
   - material-introduction-2
   - material-introduction-3

@@ -207,6 +207,74 @@ This ID must be attached visibly to every drone you operate.
 You do **not** need your own registration if you fly exclusively under the operator responsibility of the course instructor or institution and use their registered UAV.
 :::
 
+::: {.callout-warning}
+## What happens if the rules are not followed?
+
+Violations of drone regulations in Germany can lead to significant legal consequences.
+
+### Possible consequences
+
+- **Fines**  
+  Violations (e.g. flying without registration, in restricted areas, or without insurance) can result in fines of up to **50,000 €** depending on severity.
+
+- **Loss of insurance coverage**  
+  If you violate legal requirements, your liability insurance may refuse to cover damages. You may then be personally liable for all costs.
+
+- **Confiscation of equipment**  
+  Authorities may confiscate your drone in case of serious violations.
+
+- **Criminal charges**  
+  In severe cases (e.g. endangering air traffic, people, or critical infrastructure), criminal prosecution is possible.
+
+### Important
+
+Ignorance of the rules does not protect you.  
+Every remote pilot is responsible for checking:
+
+- registration (operator / eID),
+- insurance coverage,
+- airspace and geographical restrictions (DIPUL),
+- safe operation.
+
+In case of doubt: **do not fly.**
+
+## Independent Student UAV Operations
+
+Two valid operational models exist for student-led UAV flights. The decisive factor is the definition of the **UAS operator**.
+
+### Model A – Student as UAS Operator
+
+In this model, the student acts as the responsible operator.
+
+This means:
+
+- the student holds their own operator registration (eID),
+- the student ensures valid liability insurance,
+- the student meets all required remote-pilot competence levels,
+- the student independently checks airspace and geographical restrictions (e.g. via DIPUL),
+- the student assumes full legal and operational responsibility.
+
+This model provides maximum independence and is suitable for fully autonomous student projects (e.g. theses or external work).
+
+---
+
+### Model B – Operation under Institutional Responsibility
+
+In this model, the instructor or institution remains the UAS operator.
+
+This means:
+
+- the UAV carries the operator ID (eID) of the responsible institution or instructor,
+- students act as remote pilots on behalf of the operator,
+- flights may also be conducted without direct supervision,
+- the operation remains bound to a predefined framework (approved locations, procedures, and flight types),
+- insurance must explicitly cover additional pilots and independent student flights,
+- the operator retains overall responsibility for the operation.
+
+This model enables controlled autonomy and is commonly used in teaching environments.
+
+If the predefined framework is exceeded or the operation is no longer attributable to the institutional operator, the flight falls under Model A.
+:::
 ## Connected Module
 
 - [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

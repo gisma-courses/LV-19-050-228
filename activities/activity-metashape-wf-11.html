@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Legal Guidelines – Micro-Remote Sensing</title>
+<title>Metashape Ortho+ - optimized processing of RGB images – Micro-Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -70,12 +105,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Legal Guidelines – Micro-Remote Sensing">
+<meta property="og:title" content="Metashape Ortho+ - optimized processing of RGB images – Micro-Remote Sensing">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/uav-fieldwork/cheat.png">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/activities/images/banner.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
-<meta property="og:image:height" content="1322">
-<meta property="og:image:width" content="1313">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -147,22 +180,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#general-regulations-german-drone-regulation-and-uas-geographical-zones" id="toc-general-regulations-german-drone-regulation-and-uas-geographical-zones" class="nav-link active" data-scroll-target="#general-regulations-german-drone-regulation-and-uas-geographical-zones">General Regulations – German Drone Regulation and UAS Geographical Zones</a></li>
-  <li><a href="#registration-as-uas-operator" id="toc-registration-as-uas-operator" class="nav-link" data-scroll-target="#registration-as-uas-operator">Registration as UAS Operator</a>
+  <li><a href="#metashape-workflow-via-ortho" id="toc-metashape-workflow-via-ortho" class="nav-link active" data-scroll-target="#metashape-workflow-via-ortho">Metashape Workflow via <code>Ortho+</code></a>
   <ul class="collapse">
-  <li><a href="#liability-insurance" id="toc-liability-insurance" class="nav-link" data-scroll-target="#liability-insurance">Liability Insurance</a></li>
-  <li><a href="#specific-regulations-for-uavs-under-250-g" id="toc-specific-regulations-for-uavs-under-250-g" class="nav-link" data-scroll-target="#specific-regulations-for-uavs-under-250-g">Specific Regulations for UAVs under 250 g</a></li>
-  <li><a href="#uavs-up-to-2-kg-in-student-fieldwork" id="toc-uavs-up-to-2-kg-in-student-fieldwork" class="nav-link" data-scroll-target="#uavs-up-to-2-kg-in-student-fieldwork">UAVs up to 2 kg in Student Fieldwork</a>
+  <li><a href="#instalation-of-the-toolbox" id="toc-instalation-of-the-toolbox" class="nav-link" data-scroll-target="#instalation-of-the-toolbox">Instalation of the toolbox</a></li>
+  <li><a href="#first-things-first---load-images" id="toc-first-things-first---load-images" class="nav-link" data-scroll-target="#first-things-first---load-images">First things first - Load images</a></li>
+  <li><a href="#bestpractice" id="toc-bestpractice" class="nav-link" data-scroll-target="#bestpractice"><code>BestPractice</code></a></li>
+  <li><a href="#orthoimage-workflow-integrating-ground-control-points-gcps" id="toc-orthoimage-workflow-integrating-ground-control-points-gcps" class="nav-link" data-scroll-target="#orthoimage-workflow-integrating-ground-control-points-gcps">Orthoimage Workflow integrating Ground Control Points (GCPs)</a>
   <ul class="collapse">
-  <li><a href="#distance-to-airfields-and-airports" id="toc-distance-to-airfields-and-airports" class="nav-link" data-scroll-target="#distance-to-airfields-and-airports">Distance to Airfields and Airports</a></li>
-  <li><a href="#residential-areas-and-residential-properties" id="toc-residential-areas-and-residential-properties" class="nav-link" data-scroll-target="#residential-areas-and-residential-properties">Residential Areas and Residential Properties</a></li>
-  <li><a href="#distance-to-traffic-routes" id="toc-distance-to-traffic-routes" class="nav-link" data-scroll-target="#distance-to-traffic-routes">Distance to Traffic Routes</a></li>
-  <li><a href="#nature-reserves-and-protected-areas" id="toc-nature-reserves-and-protected-areas" class="nav-link" data-scroll-target="#nature-reserves-and-protected-areas">Nature Reserves and Protected Areas</a></li>
-  <li><a href="#further-geographical-restrictions" id="toc-further-geographical-restrictions" class="nav-link" data-scroll-target="#further-geographical-restrictions">Further Geographical Restrictions</a></li>
-  <li><a href="#practical-rule-for-field-courses" id="toc-practical-rule-for-field-courses" class="nav-link" data-scroll-target="#practical-rule-for-field-courses">Practical Rule for Field Courses</a></li>
+  <li><a href="#step-1-orthoimage-pre-gcp" id="toc-step-1-orthoimage-pre-gcp" class="nav-link" data-scroll-target="#step-1-orthoimage-pre-gcp"><code>Step-1 Orthoimage-pre-GCP</code></a></li>
+  <li><a href="#step-2-link-gcp-to-images" id="toc-step-2-link-gcp-to-images" class="nav-link" data-scroll-target="#step-2-link-gcp-to-images"><code>Step-2 Link GCP to images</code></a></li>
+  <li><a href="#step-3-optimize-sparsecloud" id="toc-step-3-optimize-sparsecloud" class="nav-link" data-scroll-target="#step-3-optimize-sparsecloud"><code>Step-3 Optimize Sparsecloud</code></a></li>
+  <li><a href="#step-4-orthoimage-post-gcp" id="toc-step-4-orthoimage-post-gcp" class="nav-link" data-scroll-target="#step-4-orthoimage-post-gcp"><code>Step-4 Orthoimage-post-GCP</code></a></li>
+  <li><a href="#orthoimage-no-gcp" id="toc-orthoimage-no-gcp" class="nav-link" data-scroll-target="#orthoimage-no-gcp"><code>Orthoimage-no-GCP</code></a></li>
+  <li><a href="#reduce-overlap" id="toc-reduce-overlap" class="nav-link" data-scroll-target="#reduce-overlap"><code>Reduce Overlap</code></a></li>
+  <li><a href="#densecloud" id="toc-densecloud" class="nav-link" data-scroll-target="#densecloud"><code>Densecloud</code></a></li>
+  <li><a href="#orthoimage" id="toc-orthoimage" class="nav-link" data-scroll-target="#orthoimage"><code>Orthoimage</code></a></li>
   </ul></li>
-  <li><a href="#student-projects-and-independent-flights" id="toc-student-projects-and-independent-flights" class="nav-link" data-scroll-target="#student-projects-and-independent-flights">Student Projects and Independent Flights</a></li>
-  <li><a href="#connected-module" id="toc-connected-module" class="nav-link" data-scroll-target="#connected-module">Connected Module</a></li>
+  <li><a href="#utilities" id="toc-utilities" class="nav-link" data-scroll-target="#utilities"><code>Utilities</code></a>
+  <ul class="collapse">
+  <li><a href="#export-marker-error" id="toc-export-marker-error" class="nav-link" data-scroll-target="#export-marker-error"><code>Export Marker Error</code></a></li>
+  <li><a href="#export-tiepoint-error" id="toc-export-tiepoint-error" class="nav-link" data-scroll-target="#export-tiepoint-error"><code>Export Tiepoint Error</code></a></li>
+  <li><a href="#orthomosaic-reproducibility" id="toc-orthomosaic-reproducibility" class="nav-link" data-scroll-target="#orthomosaic-reproducibility"><code>Orthomosaic Reproducibility</code></a></li>
+  </ul></li>
+  <li><a href="#further-materials" id="toc-further-materials" class="nav-link" data-scroll-target="#further-materials">Further materials</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -172,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Legal Guidelines</h1>
+<h1 class="title">Metashape Ortho+ - optimized processing of RGB images</h1>
 </div>
 
 
@@ -189,273 +229,196 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="general-regulations-german-drone-regulation-and-uas-geographical-zones" class="level2">
-<h2 class="anchored" data-anchor-id="general-regulations-german-drone-regulation-and-uas-geographical-zones">General Regulations – German Drone Regulation and UAS Geographical Zones</h2>
-<p>Drone operations in Germany are regulated by the EU UAS regulations, especially Regulation (EU) 2019/947 and Regulation (EU) 2019/945, together with the German Luftverkehrs-Ordnung (LuftVO). The national restrictions for UAS geographical zones are defined in <strong>§ 21h LuftVO</strong>.</p>
-<p>Since 2021, the EU-wide drone rules have applied in Germany, and the national legal framework was adapted accordingly. For practical flight planning, pilots must check whether the planned operation area is affected by geographical zones, protected areas, airspace restrictions, infrastructure restrictions, or other local limitations. In Germany, the recommended official tool for checking these restrictions is <strong>DIPUL</strong>, the Digital Platform for Unmanned Aviation.</p>
-<p>The most important rules are summarized by the Federal Ministry of Transport in its drone flyer, while the current operational reference for geographical zones is the <strong>DIPUL Map Tool</strong>.</p>
-<p>Relevant links:</p>
-<ul>
-<li><a href="https://www.bmv.de/drohnen">BMV drone rules overview</a></li>
-<li><a href="https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.html">BMV drone flyer / cheat sheet</a></li>
-<li><a href="https://www.lba.de/DE/Drohnen/FAQ/01_FAQ_Allgemein/FAQ_node.html">LBA drone FAQ</a></li>
-<li><a href="https://www.lba.de/DE/Drohnen/Allgemeine_Informationen/Risikobewertung/Risikobewertung_node.html">LBA risk assessment / §21h and DIPUL reference</a></li>
-<li><a href="https://www.dipul.de/homepage/de/informationen/geografische-gebiete/">DIPUL geographical zones</a></li>
-<li><a href="https://maptool-dipul.dfs.de/?language=de">DIPUL Map Tool</a></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/uav-fieldwork/cheat.png" class="img-fluid figure-img"></p>
-<figcaption>Cheat sheet for German drone regulation</figcaption>
-</figure>
-</div>
-<p>Copyright: Bundesministerium für Digitales und Verkehr. <a href="https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile">Online source</a></p>
-<ul>
-<li><a href="https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile">BMV drone flyer / cheat sheet, current version</a></li>
-<li><a href="https://www.bmv.de/drohnen">BMV drone rules overview</a></li>
-<li><a href="https://maptool-dipul.dfs.de/?language=de">DIPUL Map Tool</a></li>
-</ul>
-<p>Since there is no English version of the cheat sheet, the following text lists the rules relevant for the course framework. Relevant information is also available at the central internet platform <a href="https://www.dipul.de/homepage/de/">DIPUL</a>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>The pilot is responsible, always.</p>
-</div>
-</div>
-</section>
-<section id="registration-as-uas-operator" class="level1">
-<h1>Registration as UAS Operator</h1>
-<p>Drone operators must be registered in the EU member state in which they are based. In Germany, this registration is done online through the <a href="https://uas-registration.lba-openuav.de/#/registration/uasOperator">Luftfahrt-Bundesamt (LBA)</a>.</p>
-<p>The registration applies to the <strong>UAS operator</strong>, not to each individual drone. One registered operator can operate several drones under the same operator ID / eID. The assigned eID must be attached visibly to every drone operated by this operator.</p>
-<p>For small drones below 250 g, registration is still required if the drone has a camera or another sensor capable of recording personal data.</p>
-<p>In teaching contexts, it is important to distinguish between <strong>operator</strong> and <strong>remote pilot</strong>:</p>
-<ul>
-<li>The <strong>operator</strong> is the person or institution legally responsible for the operation.</li>
-<li>The <strong>remote pilot</strong> is the person who actually controls the drone during the flight.</li>
-</ul>
-<p>If students fly a university-owned or instructor-owned drone <strong>under supervision and within the course operation</strong>, they usually act as remote pilots. In this case, the operator registration of the university or instructor can be used, provided that this person or institution is the defined operator for the flight and the drone carries the corresponding eID.</p>
-<p>If students plan and conduct flights <strong>independently</strong>, outside the supervised course operation, they may become UAS operators themselves. In that case, they need their own operator registration, their own eID, and their own liability coverage or explicit confirmation that the flight is covered by an existing insurance policy.</p>
-<p>For field courses, the operator role should therefore be defined before the flight. A simple course rule is:</p>
-<blockquote class="blockquote">
-<p>All flights in this course are conducted under the operator responsibility of <code>[institution / responsible instructor]</code>. Students act as remote pilots only when explicitly assigned and supervised.</p>
-</blockquote>
-<section id="liability-insurance" class="level2">
-<h2 class="anchored" data-anchor-id="liability-insurance">Liability Insurance</h2>
-<p>In Germany, drone liability insurance is required for drone operations. Before any field course, the responsible person must check that the aircraft and the planned use are covered by valid liability insurance.</p>
-</section>
-<section id="specific-regulations-for-uavs-under-250-g" class="level2">
-<h2 class="anchored" data-anchor-id="specific-regulations-for-uavs-under-250-g">Specific Regulations for UAVs under 250 g</h2>
-<p>Drones below 250 g are usually operated in the EU <strong>Open A1</strong> category. For C0 drones and drones below 250 g, the EU A1/A3 competence certificate is not mandatory.</p>
-<p>These drones may be flown near uninvolved persons, but crowds or assemblies of people must not be overflown. If uninvolved persons are unexpectedly overflown, the overflight must be ended as quickly and safely as possible.</p>
-<p>For teaching, sub-250 g drones are therefore the simplest practical option. They are suitable for short training flights, manual mapping exercises, object flights, and basic mission planning, provided that all local restrictions are checked before the flight.</p>
-</section>
-<section id="uavs-up-to-2-kg-in-student-fieldwork" class="level2">
-<h2 class="anchored" data-anchor-id="uavs-up-to-2-kg-in-student-fieldwork">UAVs up to 2 kg in Student Fieldwork</h2>
-<p>Drones above 250 g and up to 2 kg can also be used in student fieldwork, but the requirements are stricter.</p>
-<p>At minimum, the remote pilot usually needs the EU <strong>A1/A3 competence certificate</strong>. Depending on the drone class and the planned distance to uninvolved persons, the <strong>A2 remote pilot certificate</strong> may also be required.</p>
-<p>For practical courses, drones up to 2 kg should only be used when the operation can be clearly controlled:</p>
-<ul>
-<li>flight below 120 m AGL,</li>
-<li>visual line of sight,</li>
-<li>no overflight of crowds,</li>
-<li>safe distance to uninvolved persons,</li>
-<li>clearly defined take-off and landing area,</li>
-<li>emergency procedure,</li>
-<li>observer or spotter if needed,</li>
-<li>valid operator registration,</li>
-<li>visible eID,</li>
-<li>valid liability insurance.</li>
-</ul>
-<p>For student exercises, this usually means open fields, training areas, or supervised field sites where uninvolved persons can reliably be kept away from the operation area.</p>
-<section id="distance-to-airfields-and-airports" class="level3">
-<h3 class="anchored" data-anchor-id="distance-to-airfields-and-airports">Distance to Airfields and Airports</h3>
-<p>Flights near airports, airfields, and heliports are restricted and must be checked before every flight.</p>
-<p>As a practical rule, special care is required near:</p>
-<ul>
-<li>commercial airports,</li>
-<li>airfields,</li>
-<li>heliports,</li>
-<li>runway extensions,</li>
-<li>controlled airspace.</li>
-</ul>
-<p>The exact restrictions depend on the location. They must be checked using the <a href="https://maptool-dipul.dfs.de/?language=de">DIPUL Map Tool</a> and, where necessary, clarified with the responsible authority or air traffic control.</p>
-</section>
-<section id="residential-areas-and-residential-properties" class="level3">
-<h3 class="anchored" data-anchor-id="residential-areas-and-residential-properties">Residential Areas and Residential Properties</h3>
-<p>Residential areas and private residential properties are sensitive areas. Flights over or near them may be restricted, especially because of privacy, noise, and safety concerns.</p>
-<p>Such flights should only be planned if they are necessary, legally allowed, and operationally safe. In teaching contexts, residential areas should normally be avoided unless explicit permission and a clear operational reason exist.</p>
-</section>
-<section id="distance-to-traffic-routes" class="level3">
-<h3 class="anchored" data-anchor-id="distance-to-traffic-routes">Distance to Traffic Routes</h3>
-<p>Roads, railways, waterways, and other traffic routes may be subject to distance restrictions. Flights near traffic routes require special care because a drone failure could endanger people or traffic.</p>
-<p>Before planning such a flight, check the location in DIPUL and assess whether additional permission from the responsible infrastructure operator is required.</p>
-</section>
-<section id="nature-reserves-and-protected-areas" class="level3">
-<h3 class="anchored" data-anchor-id="nature-reserves-and-protected-areas">Nature Reserves and Protected Areas</h3>
-<p>Nature reserves and other protected areas may be restricted for drone operations. A flight may only be conducted if it is legally allowed and compatible with the protection purpose of the area.</p>
-<p>Before planning such flights, check DIPUL and the relevant nature conservation rules. If required, obtain permission from the competent authority.</p>
-</section>
-<section id="further-geographical-restrictions" class="level3">
-<h3 class="anchored" data-anchor-id="further-geographical-restrictions">Further Geographical Restrictions</h3>
-<p>Additional restrictions may apply near sensitive locations such as:</p>
-<ul>
-<li>accident scenes and emergency operation sites,</li>
-<li>industrial facilities,</li>
-<li>prisons,</li>
-<li>military facilities,</li>
-<li>police facilities,</li>
-<li>constitutional bodies,</li>
-<li>power generation and distribution infrastructure,</li>
-<li>hospitals,</li>
-<li>military exercises.</li>
-</ul>
-<p>These restrictions are part of the German geographical-zone logic under § 21h LuftVO. Before every flight, the current situation must be checked using DIPUL.</p>
-</section>
-<section id="practical-rule-for-field-courses" class="level3">
-<h3 class="anchored" data-anchor-id="practical-rule-for-field-courses">Practical Rule for Field Courses</h3>
-<p>For teaching, the safest and simplest setup is:</p>
-<ul>
-<li>sub-250 g drone where possible,</li>
-<li>open area,</li>
-<li>no uninvolved persons nearby,</li>
-<li>no protected area,</li>
-<li>no airport or heliport conflict,</li>
-<li>clear take-off and landing zone,</li>
-<li>one responsible pilot,</li>
-<li>one observer,</li>
-<li>short test flight before the actual exercise.</li>
-</ul>
-<p>The legal text, the LBA information pages, and the DIPUL Map Tool are the operational references. This summary is only a teaching-oriented checklist and does not replace the current legal requirements.</p>
-</section>
-</section>
-<section id="student-projects-and-independent-flights" class="level2">
-<h2 class="anchored" data-anchor-id="student-projects-and-independent-flights">Student Projects and Independent Flights</h2>
-<ul>
-<li><p>If students want to conduct their own UAV projects, the operator role must be clarified before the flight. If the project is conducted as part of the course under the responsibility of the university or instructor, students may act as remote pilots using the registered operator ID/eID of the defined operator. In this case, the flight must follow the course rules, insurance coverage, supervision concept, pre-flight checklist, and approved operation area.</p></li>
-<li><p>If students plan and conduct flights independently, outside the supervised course operation, they may become UAS operators themselves. In that case, they need their own LBA operator registration/eID, valid liability insurance or confirmed insurance coverage, the required remote-pilot competence, and their own check of all geographical zones and local restrictions using DIPUL.</p></li>
-<li><p>For student projects, the recommended procedure is therefore: define the operator, check insurance, verify pilot competence, check the location in DIPUL, document the mission plan, and approve the flight before take-off.</p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Operator Registration (Germany)
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you plan to operate UAVs independently (i.e.&nbsp;as the responsible operator), you must register as a UAS operator in Germany.</p>
-<p>Registration is done online via the Luftfahrt-Bundesamt (LBA):</p>
-<ul>
-<li>https://uas-registration.lba-openuav.de/#/registration/uasOperator</li>
-</ul>
-<section id="requirements" class="level4">
-<h4 class="anchored" data-anchor-id="requirements">Requirements</h4>
-<ul>
-<li>minimum age: 16 years</li>
-<li>valid email address</li>
-<li>basic personal information</li>
-</ul>
-</section>
-<section id="costs" class="level4">
-<h4 class="anchored" data-anchor-id="costs">Costs</h4>
-<ul>
-<li>Registration fee: approx. <strong>20–25 €</strong> (one-time)</li>
-<li>Validity: <strong>5 years</strong></li>
-</ul>
-<p>After registration, you will receive your <strong>UAS operator ID (eID)</strong>.<br>
-This ID must be attached visibly to every drone you operate.</p>
-</section>
-<section id="important" class="level4">
-<h4 class="anchored" data-anchor-id="important">Important</h4>
-<p>You do <strong>not</strong> need your own registration if you fly exclusively under the operator responsibility of the course instructor or institution and use their registered UAV.</p>
-</section>
-</div>
-</div>
+<section id="metashape-workflow-via-ortho" class="level1">
+<h1>Metashape Workflow via <code>Ortho+</code></h1>
+<p>The <code>Metashape Ortho+</code> menu provides essential scripts that simplify and optimize the manual metashape workflow <a href="https://www.mdpi.com/2072-4292/12/22/3831">Ludwig et al., 2020</a>. The optimized workflow generates reproducible and automatically optimized products from the aerial images. Installation is seamless via Metashape’s scripting interface. After the installation and the necessary restart of Metashape there is <code>Ortho+</code> menu item in the Metashape menu bar.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warnung</span>What happens if the rules are not followed?
+Warnung
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Violations of drone regulations in Germany can lead to significant legal consequences.</p>
-<section id="possible-consequences" class="level3">
-<h3 class="anchored" data-anchor-id="possible-consequences">Possible consequences</h3>
+<p>The MetashapeToolbox plugin is capable to control all working steps for low cost aerial images with GPS information. Usually it is capable to replace the manual workflow. <br> <strong>This is not the case for multispectral sensors like the <code>MicaSense Altum</code> or other advanced sensors!</strong> <br></p>
+</div>
+</div>
+<section id="instalation-of-the-toolbox" class="level3">
+<h3 class="anchored" data-anchor-id="instalation-of-the-toolbox">Instalation of the toolbox</h3>
+<p><strong>Linux/Mac:</strong> Download this repo and unzip it to <code>~/.local/share/Agisoft/Metashape Pro/scripts/</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/.local/share/Agisoft/Metashape Pro/scripts</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/gisma/MetashapeTools.git .</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Windows:</strong> Copy the content of this repo to <code>User/AppData/Local/AgiSoft/Metashape Pro/scripts</code></p>
+</section>
+<section id="first-things-first---load-images" class="level2">
+<h2 class="anchored" data-anchor-id="first-things-first---load-images">First things first - Load images</h2>
+<p>All functions are based on image data so first do <strong>always</strong> the following:</p>
+<ol type="1">
+<li>Add the images you want to process to the chunk.</li>
+<li>Give the chunk a meaningful name.</li>
+<li>Save the project using a meaningful name</li>
+</ol>
+<p>Note: You will be always ask if you want to perfrm the task for a singel chunk or all chunks. Choose wisely.</p>
+</section>
+<section id="bestpractice" class="level2">
+<h2 class="anchored" data-anchor-id="bestpractice"><code>BestPractice</code></h2>
+<p>The <code>BestPractice</code> menu provides robust and well tested workflows that are primarily intended for processing large image data sets from (low cost) drone surveys. The problem that arises here is the huge amount of images with numerous starts and landings and a fixed continuous camera system (e.g.&nbsp;GoPro Hero 7, time lapse 2 sec). This way, 10k images are quickly collected, 80% of which are over sampled or of poor image quality and so on. The workflows identify low image quality and reduce the number of images by an inverse camera position calculation based on the preliminary surface model. This <em>dramatically</em> reduces the number of images, due to elimination of unusable taxiway and takeoff/landing image sequences. In addition the remaining cameras are activated and optimized. In this way, the quality and reproducibility can be significantly improved. At the same time, processing time is reduced by one to two orders of magnitude.</p>
+</section>
+<section id="orthoimage-workflow-integrating-ground-control-points-gcps" class="level2">
+<h2 class="anchored" data-anchor-id="orthoimage-workflow-integrating-ground-control-points-gcps">Orthoimage Workflow integrating Ground Control Points (GCPs)</h2>
+<p>It is obligatory that you run consecutively all three steps.</p>
+<section id="step-1-orthoimage-pre-gcp" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-orthoimage-pre-gcp"><code>Step-1 Orthoimage-pre-GCP</code></h3>
 <ul>
-<li><p><strong>Fines</strong><br>
-Violations (e.g.&nbsp;flying without registration, in restricted areas, or without insurance) can result in fines of up to <strong>50,000 €</strong> depending on severity.</p></li>
-<li><p><strong>Loss of insurance coverage</strong><br>
-If you violate legal requirements, your liability insurance may refuse to cover damages. You may then be personally liable for all costs.</p></li>
-<li><p><strong>Confiscation of equipment</strong><br>
-Authorities may confiscate your drone in case of serious violations.</p></li>
-<li><p><strong>Criminal charges</strong><br>
-In severe cases (e.g.&nbsp;endangering air traffic, people, or critical infrastructure), criminal prosecution is possible.</p></li>
+<li>Start the script <code>Orthoimage-pre-GCP</code>
+<ul>
+<li>checks image Quality and drop images with a quality less than 0.78</li>
+<li>calculate a first alignment and mesh using the following parameters:</li>
+<li>key point limit: 10000</li>
+<li>tie point limit: 1000</li>
+<li>downsampling: 4</li>
+<li>smoothing 10 times</li>
+<li>reduce overlap with a value of 8</li>
+<li>calculate a <strong>second</strong> alignment and mesh using the following parameters:</li>
+<li>key point limit: 40000</li>
+<li>tie point limit: 4000</li>
+<li>downsampling: 1</li>
+</ul></li>
 </ul>
 </section>
-<section id="important-1" class="level3">
-<h3 class="anchored" data-anchor-id="important-1">Important</h3>
-<p>Ignorance of the rules does not protect you.<br>
-Every remote pilot is responsible for checking:</p>
-<ul>
-<li>registration (operator / eID),</li>
-<li>insurance coverage,</li>
-<li>airspace and geographical restrictions (DIPUL),</li>
-<li>safe operation.</li>
-</ul>
-<p>In case of doubt: <strong>do not fly.</strong></p>
+<section id="step-2-link-gcp-to-images" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-link-gcp-to-images"><code>Step-2 Link GCP to images</code></h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warnung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a manual step please follow the bekow instructions</p>
+</div>
+</div>
+<p>After the script is finished you <em>may</em> need to manually remove the few remaining start and landing area pictures. Otherwise you will find at the launching place some artefacts. To do so just right-click on the position in the model and choose filter by point. Mark and remove all pictures with the launching pad and repeated launching and landing images.</p>
+<p>The procedure is well documented. Dor instant watch this <a href="https://youtu.be/G09r5PXqhBc">YouTube</a> or follow this <a href="https://agisoft.freshdesk.com/support/solutions/articles/31000153696-aerial-data-processing-with-gcps-orthomosaic-dem-generation">tutorial</a>. Import your Ground Control Points (GCP) and align them manually in at least 4 images. Use about 30 % of the GCP as independent checkpoints by unticking the check box in the reference pane. Save your project.</p>
 </section>
-<section id="independent-student-uav-operations" class="level2">
-<h2 class="anchored" data-anchor-id="independent-student-uav-operations">Independent Student UAV Operations</h2>
-<p>Two valid operational models exist for student-led UAV flights. The decisive factor is the definition of the <strong>UAS operator</strong>.</p>
-<section id="model-a-student-as-uas-operator" class="level3">
-<h3 class="anchored" data-anchor-id="model-a-student-as-uas-operator">Model A – Student as UAS Operator</h3>
-<p>In this model, the student acts as the responsible operator.</p>
-<p>This means:</p>
+<section id="step-3-optimize-sparsecloud" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-optimize-sparsecloud"><code>Step-3 Optimize Sparsecloud</code></h3>
+<p>Performs an iterative optimisation of the sparse cloud to retrieve the best reprojection error. The tie pointcloud will be much more reliable for all later tasks</p>
+</section>
+<section id="step-4-orthoimage-post-gcp" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-orthoimage-post-gcp"><code>Step-4 Orthoimage-post-GCP</code></h3>
 <ul>
-<li>the student holds their own operator registration (eID),</li>
-<li>the student ensures valid liability insurance,</li>
-<li>the student meets all required remote-pilot competence levels,</li>
-<li>the student independently checks airspace and geographical restrictions (e.g.&nbsp;via DIPUL),</li>
-<li>the student assumes full legal and operational responsibility.</li>
+<li>Use <code>Orthoimage-post-GCP</code>. This includes the following steps:
+<ul>
+<li>optimize sparse cloud using the point cloud statistics</li>
+<li>create 2.5D Mesh</li>
+<li>smooth Mesh with factor 35 (empirical value for forests)</li>
+<li>create Orthomosaic
+<ul>
+<li>surface: mesh</li>
+<li>refine seamlines = True</li>
+</ul></li>
+<li>export Orthomosaic, Seamlines and Marker error</li>
+<li>export report</li>
+</ul></li>
 </ul>
-<p>This model provides maximum independence and is suitable for fully autonomous student projects (e.g.&nbsp;theses or external work).</p>
+<p>Finally you have a result that automatically tries to optimize the number of necessary cameras, minimize re projection errors in the tie point cloud (sparse cloud), re-arrange the cameras and thus produce an reproducible orthoimage on the (statistically) best possible spatial resolution.</p>
+</section>
+<section id="orthoimage-no-gcp" class="level3">
+<h3 class="anchored" data-anchor-id="orthoimage-no-gcp"><code>Orthoimage-no-GCP</code></h3>
+<p>If you do <em>NOT</em> have Ground Control Points or not intending to squeeze the absolute position of the final product, you can run corresponding to the upper workflow, an one click production of optimized orthoimages. This maybe very useful if you have several repeated flights over an area and if you want to get an overview. Just put the image data of each flight in a seperate chunk and start the script <code>Toolchain noGCP</code> with the option to process all chunks.</p>
+<p>This will do the following steps:. * Check image Quality and drop images with a quality less than 0.75 * Calculate a first alignement and mesh with * Key Point Limit: 10000 * Tie Point Limit: 1000 * Downsampling: 4 * Smoothing 10 times * reduce overlap with a value of 15 * on the remaining cameras calculate second alignment and 2.5D mesh with: * Key Point Limit: 40000 * Tie Point Limit: 4000 * Downsampling: 1 * smooth Mesh with factor 35 * create Orthomosaic * surface: mesh * refine seamlines = True * export Orthomosaic, Seamlines and Marker error * export a report ## <code>Tools+</code></p>
+</section>
+<section id="reduce-overlap" class="level3">
+<h3 class="anchored" data-anchor-id="reduce-overlap"><code>Reduce Overlap</code></h3>
+<p>Performs a low-quality initial alignment to generate a sparse point cloud and a smoothed mesh (smoothing factor: 10). Based on this, it calculates an inverse optimization of the necessary camera positions using a reduction factor of 8.</p>
+</section>
+<section id="densecloud" class="level3">
+<h3 class="anchored" data-anchor-id="densecloud"><code>Densecloud</code></h3>
+<p>Generates a dense point cloud based on the existing sparse cloud and alignment.</p>
+</section>
+<section id="orthoimage" class="level3">
+<h3 class="anchored" data-anchor-id="orthoimage"><code>Orthoimage</code></h3>
+<p>Use <code>Orthoimage</code> if you do <strong>not</strong> intend to optimize camera positions or the sparse point cloud beforehand. This script executes the following steps:</p>
+<ul>
+<li>Generate a 2.5D mesh</li>
+<li>Smooth the mesh (smoothing factor: 35)</li>
+<li>Create an orthomosaic:
+<ul>
+<li>Surface: mesh</li>
+<li>Refine seamlines: <code>True</code></li>
+</ul></li>
+<li>Export:
+<ul>
+<li>Orthomosaic</li>
+<li>Seamlines</li>
+<li>Marker error report</li>
+<li>Project report</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warnung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>It is strongly recommended to run the <code>Optimize Sparsecloud</code> script beforehand. This helps to minimize the reprojection error and improves the overall accuracy of your final orthomosaic.</p>
+</div>
+</div>
 <hr>
 </section>
-<section id="model-b-operation-under-institutional-responsibility" class="level3">
-<h3 class="anchored" data-anchor-id="model-b-operation-under-institutional-responsibility">Model B – Operation under Institutional Responsibility</h3>
-<p>In this model, the instructor or institution remains the UAS operator.</p>
-<p>This means:</p>
-<ul>
-<li>the UAV carries the operator ID (eID) of the responsible institution or instructor,</li>
-<li>students act as remote pilots on behalf of the operator,</li>
-<li>flights may also be conducted without direct supervision,</li>
-<li>the operation remains bound to a predefined framework (approved locations, procedures, and flight types),</li>
-<li>insurance must explicitly cover additional pilots and independent student flights,</li>
-<li>the operator retains overall responsibility for the operation.</li>
-</ul>
-<p>This model enables controlled autonomy and is commonly used in teaching environments.</p>
-<p>If the predefined framework is exceeded or the operation is no longer attributable to the institutional operator, the flight falls under Model A.</p>
+</section>
+<section id="utilities" class="level2">
+<h2 class="anchored" data-anchor-id="utilities"><code>Utilities</code></h2>
+<section id="export-marker-error" class="level3">
+<h3 class="anchored" data-anchor-id="export-marker-error"><code>Export Marker Error</code></h3>
+<p>Exports the marker error statistics as a <code>.csv</code> file.</p>
+</section>
+<section id="export-tiepoint-error" class="level3">
+<h3 class="anchored" data-anchor-id="export-tiepoint-error"><code>Export Tiepoint Error</code></h3>
+<p>Exports key statistics from the sparse point cloud (e.g., Reconstruction Uncertainty, Reprojection Error, Projection Accuracy, Image Count) to a <code>.csv</code> file.</p>
+</section>
+<section id="orthomosaic-reproducibility" class="level3">
+<h3 class="anchored" data-anchor-id="orthomosaic-reproducibility"><code>Orthomosaic Reproducibility</code></h3>
+<ol type="1">
+<li>Import your Ground Control Points (GCPs) and align them.</li>
+<li>Run the script <code>Reproducibility</code>.</li>
+</ol>
+<p>This script generates a set of orthomosaics (default: 5), which can then be evaluated statistically in <strong>R</strong> or other analysis tools to assess spatial variability and product consistency.</p>
+<hr>
 </section>
 </section>
+<section id="further-materials" class="level2">
+<h2 class="anchored" data-anchor-id="further-materials">Further materials</h2>
+<p>The above-described workflow functions to a certain extent as a “black box.” However, it is fully documented, and you are encouraged to inspect the scripts directly and review the corresponding publication by <a href="https://doi.org/10.3390/rs12223831">Ludwig et al.&nbsp;2020</a>.</p>
+<p>The optimizations and workflows presented in this course are tailored primarily to low- and mid-altitude forest environments in mountainous regions. Accordingly, the presets may require adjustment for other application contexts.</p>
+<p>That said, it is highly recommended to engage actively with the capabilities of Metashape. The resources below offer insights into diverse workflows and application scenarios. They also explain interactive tool use beyond what is scripted in <code>Ortho+</code>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Note
 </div>
 </div>
-</section>
-<section id="connected-module" class="level2">
-<h2 class="anchored" data-anchor-id="connected-module">Connected Module</h2>
+<div class="callout-body-container callout-body">
+<p>You will likely encounter other, sometimes conflicting, recommendations in literature and practice. Feel free to experiment and share your insights with the community!</p>
+</div>
+</div>
 <ul>
-<li><a href="../modules/module-fieldwork.html">Autonomous Flights Made Easy</a></li>
+<li><a href="https://agisoft.freshdesk.com/support/solutions/articles/31000153696-aerial-data-processing-with-gcps-orthomosaic-dem-generation">Aerial data processing – Orthomosaic &amp; DEM generation</a></li>
+<li><a href="https://pubs.usgs.gov/of/2021/1039/ofr20211039.pdf">USGS – Processing Coastal Imagery with Agisoft</a></li>
+<li><a href="https://www.agisoft.com/pdf/metashape-pro_1_8_en.pdf">Metashape 1.8 User Manual (PDF)</a></li>
 </ul>
 
 

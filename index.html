@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Activities – Micro-Remote Sensing</title>
+<title>Micro-Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,69 +67,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Suchen"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-activities-list .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-module-goals','listing-materials','listing-activities','listing-assessments','listing-published','listing-source','listing-title-block-banner','listing-title-block-banner-color','listing-listing','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-labels','listing-Goals','listing-modules','listing-source_url','listing-activity',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-module-goals","listing-materials","listing-activities","listing-assessments","listing-published","listing-source","listing-title-block-banner","listing-title-block-banner-color","listing-listing","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-labels","listing-Goals","listing-modules","listing-source_url","listing-activity"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-activities-list'] = new List('listing-activities-list', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="css/styles.css">
-<meta property="og:title" content="Activities – Micro-Remote Sensing">
+<meta property="og:title" content="Micro-Remote Sensing">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/banner.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
 <meta property="og:image:height" content="146">
@@ -172,7 +112,7 @@ window.Quarto = {
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./activities.html" aria-current="page"> 
+    <a class="nav-link" href="./activities.html"> 
 <span class="menu-text">Activities</span></a>
   </li>  
   <li class="nav-item">
@@ -202,15 +142,33 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#welcome-to-the-course-website-for-lv-19-050-228-gisma-spatial-science-resources." id="toc-welcome-to-the-course-website-for-lv-19-050-228-gisma-spatial-science-resources." class="nav-link active" data-scroll-target="#welcome-to-the-course-website-for-lv-19-050-228-gisma-spatial-science-resources.">Welcome to the course website for LV-19-050-228 — gisma spatial science resources.</a></li>
+  <li><a href="#who-should-take-this-course" id="toc-who-should-take-this-course" class="nav-link" data-scroll-target="#who-should-take-this-course">Who Should Take This Course?</a></li>
+  <li><a href="#course-objective" id="toc-course-objective" class="nav-link" data-scroll-target="#course-objective">Course Objective</a></li>
+  <li><a href="#didactic-concept" id="toc-didactic-concept" class="nav-link" data-scroll-target="#didactic-concept">Didactic Concept</a></li>
+  <li><a href="#final-deliverables" id="toc-final-deliverables" class="nav-link" data-scroll-target="#final-deliverables">Final Deliverables</a>
+  <ul class="collapse">
+  <li><a href="#transparent-repository-core-submission" id="toc-transparent-repository-core-submission" class="nav-link" data-scroll-target="#transparent-repository-core-submission">1. Transparent repository (core submission)</a></li>
+  <li><a href="#poster" id="toc-poster" class="nav-link" data-scroll-target="#poster">2. Poster</a></li>
+  <li><a href="#five-minute-pitch-presentation" id="toc-five-minute-pitch-presentation" class="nav-link" data-scroll-target="#five-minute-pitch-presentation">3. Five-minute pitch (presentation)</a></li>
+  </ul></li>
+  <li><a href="#evaluation-criteria" id="toc-evaluation-criteria" class="nav-link" data-scroll-target="#evaluation-criteria">Evaluation Criteria</a></li>
+  <li><a href="#learning-outcome" id="toc-learning-outcome" class="nav-link" data-scroll-target="#learning-outcome">Learning Outcome</a></li>
+  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">Instructor</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Activities</h1>
+<h1 class="title">Micro-Remote Sensing</h1>
 </div>
 
 
@@ -227,567 +185,174 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-activities-list" class="quarto-listing quarto-listing-container-custom">
+<style>
+  body {
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">UAV based remote Sensing - A Brief Overview</h2>
-
-    <div class="related-cards">
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-introduction-0.html">Searching literature and organizing it in Zotero</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Learn how to search for relevant academic literature on UAV applications and how to organize your sources systematically in Zotero.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-    </div>
-  </section>
-  
-
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">Autonomous Flights Made Easy</h2>
-
-    <div class="related-cards">
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-14.html">Legal Guidelines</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Flight planning requires compliance with a number of more or less clear legal regulations.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-14_clean (1).html">Legal Guidelines</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Flight planning requires compliance with a number of more or less clear legal regulations.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-11.html">UAV Mission Planning Practical Workflow</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Planning an aerial flight mission using QGroundControl and uavRmp.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-111.html">Field Guide</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Schemes for well-being during the field work.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-recommended">recommended</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-12.html">Flight Simulator</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Train the handling of the drones with the Real Drone Flight Simulator</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-    </div>
-  </section>
-  
-
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">Creating High Quality Products</h2>
-
-    <div class="related-cards">
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-metashape-wf-10.html">Metashape basic workflow</a>
-          </h3>
-
-          
-          <p class="related-card-summary">The Metashape software provides a slim standard workflow with reasonable default values for creating an orthoimage and a point cloud.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-metashape-wf-11.html">Metashape Ortho+ - optimized processing of RGB images</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Metashape Ortho+ provides scripts for reproducible optimized generation of orthoimages and point clouds.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-usecase-1.html">Use Case Gisselberger Spannweite</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A feasibility test for reproducible orthoimages using low-cost mini-UAVs with minimal effort.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-usecase">usecase</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-odm-09.html">The OpenDroneMap Tutorial Page</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A practical introduction to the operation of OpenDroneMap.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-odm-10.html">The OpenDroneMap Tutorial Page</a>
-          </h3>
-
-          
-          <p class="related-card-summary">OpenDroneMap offers a free, powerful, and open source choice for creating, processing, and analyzing low-cost aerial imagery.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-odm-15.html">ODM - The Missing Guide</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A practical guide to the operation of OpenDroneMap provided through the closed Ilias course area.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-21.html">Georeferencing of imagery without GPS data</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Aligning UAV pictures with missing or defective GPS image positions.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-metashape-altum.html">Metashape MicaSense Altum workflow</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A tutorial for processing multisensor datasets from a MicaSense Altum sensor in Metashape.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-    </div>
-  </section>
-  
-
-  
-
-  
-
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">Analysis of high resolution aerial data</h2>
-
-    <div class="related-cards">
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-0.html">OBIA Workflow for QGIS in a nutshell</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A concise video overview of an OBIA workflow with QGIS and the OTB processing plugin.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-1.html">OBIA Workflow for QGIS step by step</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A step-by-step OBIA workflow in QGIS with Orfeo Toolbox.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-4.html">Manual and CSF based Classification of Ground Points with CloudCompare</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Manual and automatic classification and segmentation for small photogrammetric datasets using CloudCompare.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-spat-analysis-5.html">CANUPO train and classify point clouds</a>
-          </h3>
-
-          
-          <p class="related-card-summary">The CANUPO suite is a simple and efficient way to automatically classify a point cloud.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-5.html">qCanupo classification</a>
-          </h3>
-
-          
-          <p class="related-card-summary">qCanupo classification tutorial.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-3.html">DL &amp; ML Workflow with R</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Selected deep learning and machine learning workflow resources in R.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-6.html">Deriving ecological indices from LiDAR data</a>
-          </h3>
-
-          
-          <p class="related-card-summary">After simple ground-point classification, typical LiDAR processing can be performed.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-    </div>
-  </section>
-  
-
-<div class="listing-no-matching d-none">Keine Treffer</div>
-<nav id="activities-list-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div>
+</style>
+<section id="welcome-to-the-course-website-for-lv-19-050-228-gisma-spatial-science-resources." class="level2">
+<h2 class="anchored" data-anchor-id="welcome-to-the-course-website-for-lv-19-050-228-gisma-spatial-science-resources.">Welcome to the course website for LV-19-050-228 — gisma spatial science resources.</h2>
+<p>The <em>Micro Remote Sensing</em> course offers a comprehensive introduction to reproducible flight planning, UAV-based data acquisition, pre-processing, and the example-based analysis of high-resolution, low-cost image data — using both commercial and open-source software tools.</p>
+<p>The course places equal emphasis on the practical acquisition of high-resolution aerial imagery with UAV-based camera systems and on the generation, analysis, interpretation, and scientific validation of the resulting data products.</p>
+</section>
+<section id="who-should-take-this-course" class="level2">
+<h2 class="anchored" data-anchor-id="who-should-take-this-course">Who Should Take This Course?</h2>
+<p>This course is intended for learners of all levels who possess a basic understanding of their operating system’s structure. While basic programming knowledge is <strong>not required</strong>, it may be helpful.</p>
+<p>The course is particularly suitable for students and practitioners interested in UAV-based remote sensing, reproducible geospatial workflows, and the critical evaluation of spatial products derived from image data.</p>
+</section>
+<section id="course-objective" class="level2">
+<h2 class="anchored" data-anchor-id="course-objective">Course Objective</h2>
+<p>Throughout this course you will learn how to <strong>acquire, process, analyse, and scientifically validate high-resolution UAV-based image data and derived products</strong>.</p>
+<p>The overarching goal is to develop a <em>reproducible and well-argued workflow</em> that links field acquisition, data processing, product generation, and critical evaluation. This is not a purely technical exercise, but a research-oriented workflow challenge that connects practical UAV operation, spatial data processing, and scientific reasoning.</p>
+<p>The course evolves in three conceptual phases:</p>
+<ol type="1">
+<li><strong>Exploration</strong> – Identify what makes a UAV-based workflow, product, or interpretation robust, weak, reproducible, or misleading. Define what “quality” and “validation” mean in relation to your chosen task.<br>
+</li>
+<li><strong>Development</strong> – Apply methods learned in class to iteratively improve your workflow, including flight planning, acquisition strategy, preprocessing, product generation, and evaluation.<br>
+</li>
+<li><strong>Synthesis</strong> – Present and defend a transparent, reproducible workflow and a scientifically interpretable final product, including a critical discussion of limitations, uncertainty, and methodological choices.</li>
+</ol>
+</section>
+<section id="didactic-concept" class="level2">
+<h2 class="anchored" data-anchor-id="didactic-concept">Didactic Concept</h2>
+<p>The course consists of a sequential (but not strictly linear) set of <a href="./modules.html">modules</a>, each designed to be completed in roughly 2–4 weeks.</p>
+<p>Each module follows this structure:</p>
+<ul>
+<li><a href="./module-goals.html">Module Goals</a>: Learning objectives<br>
+</li>
+<li><a href="./materials.html">Materials</a>: Core and supplemental resources<br>
+</li>
+<li><a href="./activities.html">Activities</a>: Exercises and tutorials for hands-on learning<br>
+</li>
+<li><a href="./assessments.html">Assessments</a>: Self-assessment and evaluation of progress</li>
+</ul>
+<p>The <code>labels</code> provide a quick overview of the content and importance of each unit within a module:</p>
+<ul>
+<li><code>mandatory</code> units define the <strong>minimum course requirements</strong><br>
+</li>
+<li><code>recommended</code> units should be <strong>considered strongly</strong><br>
+</li>
+<li>other resources support <strong>internal differentiation</strong> for learners seeking deeper or broader engagement</li>
+</ul>
+</section>
+<section id="final-deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="final-deliverables">Final Deliverables</h2>
+<p>At the end of the course, each group submits <strong>three complementary products</strong>:</p>
+<section id="transparent-repository-core-submission" class="level3">
+<h3 class="anchored" data-anchor-id="transparent-repository-core-submission">1. Transparent repository (core submission)</h3>
+<p>A public or shared repository (e.g.&nbsp;GitHub, GitLab, or institutional server) that contains:</p>
+<ul>
+<li>all relevant scripts, settings, metadata, and documentation used to derive the final products<br>
+</li>
+<li>a reproducible workflow showing how you moved from acquisition planning and raw data to processed outputs and final interpretation<br>
+</li>
+<li>a clear project structure and a short README explaining the workflow logic, data organisation, and main methodological decisions</li>
+</ul>
+<p>The repository represents the <strong>traceable backbone</strong> of the project and demonstrates reproducibility, technical care, and collaborative organisation.</p>
+</section>
+<section id="poster" class="level3">
+<h3 class="anchored" data-anchor-id="poster">2. Poster</h3>
+<p>A concise visual summary of:</p>
+<ul>
+<li>the research question or task and the chosen workflow<br>
+</li>
+<li>the main methodological steps, from acquisition to final product<br>
+</li>
+<li>the final outputs (e.g.&nbsp;orthomosaic, point cloud, classification, segmentation, or derived analysis result)<br>
+</li>
+<li>the main quality criteria, validation steps, and limitations</li>
+</ul>
+<p>The poster should communicate the project as if presented at a professional conference in geoinformatics, remote sensing, or applied spatial analysis.</p>
+</section>
+<section id="five-minute-pitch-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="five-minute-pitch-presentation">3. Five-minute pitch (presentation)</h3>
+<p>Each group presents its poster in a short oral pitch (max. 5 minutes).</p>
+<p>The goal is to <strong>argue convincingly</strong> why the workflow, products, and interpretation are methodologically sound, reproducible, and scientifically meaningful. The pitch should demonstrate technical understanding, critical reflection, and the ability to justify key decisions.</p>
+</section>
+</section>
+<section id="evaluation-criteria" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-criteria">Evaluation Criteria</h2>
+<p>Each final submission is evaluated across <strong>five dimensions</strong>, 0–2 points each (max. 10 points):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterion</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Workflow design</strong></td>
+<td>unclear or ad hoc workflow</td>
+<td>partly structured workflow</td>
+<td>coherent, transparent, and logically structured workflow from acquisition to product</td>
+</tr>
+<tr class="even">
+<td><strong>Methodological rigour</strong></td>
+<td>undocumented or arbitrary choices</td>
+<td>partly justified methods</td>
+<td>well-justified and reproducible methodological decisions, including parameters and processing logic</td>
+</tr>
+<tr class="odd">
+<td><strong>Product quality &amp; validation</strong></td>
+<td>outputs not interpretable or not checked</td>
+<td>outputs plausible but weakly evaluated</td>
+<td>outputs critically assessed with explicit quality criteria, validation, and discussion of uncertainty</td>
+</tr>
+<tr class="even">
+<td><strong>Transparency &amp; reproducibility</strong></td>
+<td>no clear documentation</td>
+<td>partial scripts / incomplete metadata</td>
+<td>complete, documented, and reproducible repository with clear structure</td>
+</tr>
+<tr class="odd">
+<td><strong>Communication quality</strong></td>
+<td>unclear poster / pitch</td>
+<td>partly coherent presentation</td>
+<td>clear, concise, visually convincing, and scientifically well-argued presentation</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="learning-outcome" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcome">Learning Outcome</h2>
+<p>By completing the full project you will be able to:</p>
+<ul>
+<li>plan and document UAV-based data acquisition in a methodologically transparent way<br>
+</li>
+<li>generate and evaluate spatial products from high-resolution aerial imagery<br>
+</li>
+<li>critically assess the quality, limits, and scientific validity of derived results<br>
+</li>
+<li>communicate and defend a reproducible workflow from data acquisition to final interpretation</li>
+</ul>
+</section>
+<section id="instructor" class="level2">
+<h2 class="anchored" data-anchor-id="instructor">Instructor</h2>
+<p><strong>Chris Reudenbach</strong><br>
+<a href="https://www.uni-marburg.de/de/fb19/fachbereich/staff/reudenbach">Geoinformatics Working Group</a> (GISMA)<br>
+Department of Geography, <a href="https://www.uni-marburg.de/en">University of Marburg</a></p>
+<p>The course materials are developed and hosted on<br>
+<a href="https://github.com/gisma-courses/LV-19-050-228"><i class="fa fa-github"></i> GitHub</a></p>
+<hr>
+<blockquote class="blockquote">
+<p>The responsibility for the content lies with the instructors.<br>
+Statements, opinions, and conclusions are those of the instructors and do not necessarily reflect the views of the University of Marburg.</p>
+</blockquote>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script>

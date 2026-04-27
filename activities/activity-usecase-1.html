@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Legal Guidelines – Micro-Remote Sensing</title>
+<title>Use Case Gisselberger Spannweite – Micro-Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-e80e75a345bc4b34ce127970a478ece3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,12 +73,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../css/styles.css">
-<meta property="og:title" content="Legal Guidelines – Micro-Remote Sensing">
+<meta property="og:title" content="Use Case Gisselberger Spannweite – Micro-Remote Sensing">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/uav-fieldwork/cheat.png">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/module-postprocessing/trees_1_5cm.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
-<meta property="og:image:height" content="1322">
-<meta property="og:image:width" content="1313">
+<meta property="og:image:alt" content="Original 1.5 cm resolution">
+<meta property="og:image:height" content="1296">
+<meta property="og:image:width" content="1619">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -147,23 +151,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#general-regulations-german-drone-regulation-and-uas-geographical-zones" id="toc-general-regulations-german-drone-regulation-and-uas-geographical-zones" class="nav-link active" data-scroll-target="#general-regulations-german-drone-regulation-and-uas-geographical-zones">General Regulations – German Drone Regulation and UAS Geographical Zones</a></li>
-  <li><a href="#registration-as-uas-operator" id="toc-registration-as-uas-operator" class="nav-link" data-scroll-target="#registration-as-uas-operator">Registration as UAS Operator</a>
+  <li><a href="#methods-and-implementation" id="toc-methods-and-implementation" class="nav-link active" data-scroll-target="#methods-and-implementation">Methods and Implementation</a>
   <ul class="collapse">
-  <li><a href="#liability-insurance" id="toc-liability-insurance" class="nav-link" data-scroll-target="#liability-insurance">Liability Insurance</a></li>
-  <li><a href="#specific-regulations-for-uavs-under-250-g" id="toc-specific-regulations-for-uavs-under-250-g" class="nav-link" data-scroll-target="#specific-regulations-for-uavs-under-250-g">Specific Regulations for UAVs under 250 g</a></li>
-  <li><a href="#uavs-up-to-2-kg-in-student-fieldwork" id="toc-uavs-up-to-2-kg-in-student-fieldwork" class="nav-link" data-scroll-target="#uavs-up-to-2-kg-in-student-fieldwork">UAVs up to 2 kg in Student Fieldwork</a>
+  <li><a href="#uav-hardware-used" id="toc-uav-hardware-used" class="nav-link" data-scroll-target="#uav-hardware-used">UAV Hardware Used</a></li>
+  <li><a href="#flight-planning" id="toc-flight-planning" class="nav-link" data-scroll-target="#flight-planning">Flight Planning</a>
   <ul class="collapse">
-  <li><a href="#distance-to-airfields-and-airports" id="toc-distance-to-airfields-and-airports" class="nav-link" data-scroll-target="#distance-to-airfields-and-airports">Distance to Airfields and Airports</a></li>
-  <li><a href="#residential-areas-and-residential-properties" id="toc-residential-areas-and-residential-properties" class="nav-link" data-scroll-target="#residential-areas-and-residential-properties">Residential Areas and Residential Properties</a></li>
-  <li><a href="#distance-to-traffic-routes" id="toc-distance-to-traffic-routes" class="nav-link" data-scroll-target="#distance-to-traffic-routes">Distance to Traffic Routes</a></li>
-  <li><a href="#nature-reserves-and-protected-areas" id="toc-nature-reserves-and-protected-areas" class="nav-link" data-scroll-target="#nature-reserves-and-protected-areas">Nature Reserves and Protected Areas</a></li>
-  <li><a href="#further-geographical-restrictions" id="toc-further-geographical-restrictions" class="nav-link" data-scroll-target="#further-geographical-restrictions">Further Geographical Restrictions</a></li>
-  <li><a href="#practical-rule-for-field-courses" id="toc-practical-rule-for-field-courses" class="nav-link" data-scroll-target="#practical-rule-for-field-courses">Practical Rule for Field Courses</a></li>
+  <li><a href="#lengthwise-flight" id="toc-lengthwise-flight" class="nav-link" data-scroll-target="#lengthwise-flight">Lengthwise Flight</a></li>
+  <li><a href="#cross-flight" id="toc-cross-flight" class="nav-link" data-scroll-target="#cross-flight">Cross Flight</a></li>
   </ul></li>
-  <li><a href="#student-projects-and-independent-flights" id="toc-student-projects-and-independent-flights" class="nav-link" data-scroll-target="#student-projects-and-independent-flights">Student Projects and Independent Flights</a></li>
-  <li><a href="#connected-module" id="toc-connected-module" class="nav-link" data-scroll-target="#connected-module">Connected Module</a></li>
+  <li><a href="#post-processing-agisoft-metashape" id="toc-post-processing-agisoft-metashape" class="nav-link" data-scroll-target="#post-processing-agisoft-metashape">Post-Processing (Agisoft Metashape)</a></li>
   </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#ground-resolution-whats-real" id="toc-ground-resolution-whats-real" class="nav-link" data-scroll-target="#ground-resolution-whats-real">Ground Resolution – What’s “Real”?</a></li>
+  <li><a href="#typical-visual-issues" id="toc-typical-visual-issues" class="nav-link" data-scroll-target="#typical-visual-issues">Typical Visual Issues</a></li>
+  <li><a href="#overall-visual-inspection" id="toc-overall-visual-inspection" class="nav-link" data-scroll-target="#overall-visual-inspection">Overall Visual Inspection</a></li>
+  <li><a href="#further-products" id="toc-further-products" class="nav-link" data-scroll-target="#further-products">Further Products</a>
+  <ul class="collapse">
+  <li><a href="#d-model" id="toc-d-model" class="nav-link" data-scroll-target="#d-model">3D Model</a></li>
+  <li><a href="#d-point-cloud" id="toc-d-point-cloud" class="nav-link" data-scroll-target="#d-point-cloud">3D Point Cloud</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
   </ul>
 </nav>
     </div>
@@ -172,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Legal Guidelines</h1>
+<h1 class="title">Use Case Gisselberger Spannweite</h1>
 </div>
 
 
@@ -189,277 +198,147 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="general-regulations-german-drone-regulation-and-uas-geographical-zones" class="level2">
-<h2 class="anchored" data-anchor-id="general-regulations-german-drone-regulation-and-uas-geographical-zones">General Regulations – German Drone Regulation and UAS Geographical Zones</h2>
-<p>Drone operations in Germany are regulated by the EU UAS regulations, especially Regulation (EU) 2019/947 and Regulation (EU) 2019/945, together with the German Luftverkehrs-Ordnung (LuftVO). The national restrictions for UAS geographical zones are defined in <strong>§ 21h LuftVO</strong>.</p>
-<p>Since 2021, the EU-wide drone rules have applied in Germany, and the national legal framework was adapted accordingly. For practical flight planning, pilots must check whether the planned operation area is affected by geographical zones, protected areas, airspace restrictions, infrastructure restrictions, or other local limitations. In Germany, the recommended official tool for checking these restrictions is <strong>DIPUL</strong>, the Digital Platform for Unmanned Aviation.</p>
-<p>The most important rules are summarized by the Federal Ministry of Transport in its drone flyer, while the current operational reference for geographical zones is the <strong>DIPUL Map Tool</strong>.</p>
-<p>Relevant links:</p>
+<p>A feasibility study was conducted using the <a href="https://www.marburg.de/portal/seiten/renaturierungsmassnahme-gisselberger-spannweite-900002083-23001.html">Gisselberger Spannweite</a> as a representative example. The goal of this test was to evaluate the proposed workflow for efficiency and suitability in acquiring orthoimages with a ground resolution of &lt; 2.5 cm using low-cost mini-UAVs (&lt; 250 g), with minimal effort. The resulting orthoimages and point clouds serve as foundational datasets for monitoring river restoration projects and similar applications.</p>
+<section id="methods-and-implementation" class="level1">
+<h1>Methods and Implementation</h1>
+<section id="uav-hardware-used" class="level2">
+<h2 class="anchored" data-anchor-id="uav-hardware-used">UAV Hardware Used</h2>
+<p>Mini-UAVs with a take-off weight below 250 g are particularly well-suited for such tasks due to the following advantages:</p>
 <ul>
-<li><a href="https://www.bmv.de/drohnen">BMV drone rules overview</a></li>
-<li><a href="https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.html">BMV drone flyer / cheat sheet</a></li>
-<li><a href="https://www.lba.de/DE/Drohnen/FAQ/01_FAQ_Allgemein/FAQ_node.html">LBA drone FAQ</a></li>
-<li><a href="https://www.lba.de/DE/Drohnen/Allgemeine_Informationen/Risikobewertung/Risikobewertung_node.html">LBA risk assessment / §21h and DIPUL reference</a></li>
-<li><a href="https://www.dipul.de/homepage/de/informationen/geografische-gebiete/">DIPUL geographical zones</a></li>
-<li><a href="https://maptool-dipul.dfs.de/?language=de">DIPUL Map Tool</a></li>
+<li>No EU A1/A3 drone license required</li>
+<li>Legal flights under category OPEN A1 are possible — including close proximity (30 m) to uninvolved individuals and flights over residential areas — provided all regulations and no-fly zones are observed</li>
+<li>Only mandatory requirements: pilot registration (UAS operator ID/e-ID) and liability insurance</li>
 </ul>
+<p>For this study, the <code>DJI Mavic Mini 2</code> was used, which is well-supported by the <code>Litchi</code> software and offers reliable straight-line and descent flight capabilities. An alternative, the more affordable <code>Xiaomi Fimi X8 Mini</code>, could likely yield comparable results with minor adjustments. In general, most high-quality mini-UAVs should suffice. Note, however, that drones heavier than 250 g require significantly more planning and are subject to stricter legal obligations.</p>
+</section>
+<section id="flight-planning" class="level2">
+<h2 class="anchored" data-anchor-id="flight-planning">Flight Planning</h2>
+<p>The flight plan followed a standardized dual-altitude strategy (50 m and 70 m AGL) with a 5° tilted nadir angle. Planning was performed in <code>QGroundControl</code> using the <code>DJI Mini 2</code> camera configuration. Flight restrictions derived from <code>Airmap</code> were considered and converted to <code>Litchi Mission Hub</code> missions via the <code>R</code> package <code>uavRmp</code>.</p>
+<p>Using <code>Litchi Mission Hub</code>, each waypoint was reviewed and adjusted manually (Settings → Use Online Elevation). This manual step is <strong>obligatory</strong> to ensure safe flights, maximize coverage, and stay within the 20-minute battery limit.</p>
+<p>The full onsite acquisition (setup, flight, teardown) took approximately one hour.</p>
+<section id="lengthwise-flight" class="level3">
+<h3 class="anchored" data-anchor-id="lengthwise-flight">Lengthwise Flight</h3>
+<iframe src="https://flylitchi.com/hub?m=cg0TRo2KdE" height="600px" width="100%" frameborder="0" onload="resizeIframe(this)">
+</iframe>
+</section>
+<section id="cross-flight" class="level3">
+<h3 class="anchored" data-anchor-id="cross-flight">Cross Flight</h3>
+<iframe src="https://flylitchi.com/hub?m=GoaB3rae3J" height="600px" width="100%" frameborder="0" onload="resizeIframe(this)">
+</iframe>
+</section>
+</section>
+<section id="post-processing-agisoft-metashape" class="level2">
+<h2 class="anchored" data-anchor-id="post-processing-agisoft-metashape">Post-Processing (Agisoft Metashape)</h2>
+<p>Processing was carried out using <code>Ortho+ -&gt; Best Practice -&gt; Ortho-no-GPS</code> within Metashape. The target ground resolution was set to 1.5 cm. No advanced tuning options were used for this demo, meaning that further improvements are likely possible.</p>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<p>The first evaluation step focuses on visual inspection — especially image quality, the occurrence of artifacts, and positional accuracy.</p>
+<section id="ground-resolution-whats-real" class="level2">
+<h2 class="anchored" data-anchor-id="ground-resolution-whats-real">Ground Resolution – What’s “Real”?</h2>
+<p>Metashape reports a ground resolution of about 1.4 cm, based on the two flight altitudes. The full-resolution orthoimage has a file size of ~2.4 GB. A resampled version at 5 cm resolution is only ~210 MB.</p>
+<p>Compare the visual differences in the cutout images below:</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/uav-fieldwork/cheat.png" class="img-fluid figure-img"></p>
-<figcaption>Cheat sheet for German drone regulation</figcaption>
+<p><a href="../images/module-postprocessing/trees_1_5cm.png"><img src="../images/module-postprocessing/trees_1_5cm.png" class="img-fluid figure-img" alt="Original 1.5 cm resolution"></a></p>
+<figcaption>Original 1.5 cm resolution</figcaption>
 </figure>
 </div>
-<p>Copyright: Bundesministerium für Digitales und Verkehr. <a href="https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile">Online source</a></p>
-<ul>
-<li><a href="https://www.bmv.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile">BMV drone flyer / cheat sheet, current version</a></li>
-<li><a href="https://www.bmv.de/drohnen">BMV drone rules overview</a></li>
-<li><a href="https://maptool-dipul.dfs.de/?language=de">DIPUL Map Tool</a></li>
-</ul>
-<p>Since there is no English version of the cheat sheet, the following text lists the rules relevant for the course framework. Relevant information is also available at the central internet platform <a href="https://www.dipul.de/homepage/de/">DIPUL</a>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Hinweis
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/module-postprocessing/trees_5cm.png"><img src="../images/module-postprocessing/trees_5cm.png" class="img-fluid figure-img" alt="Resampled to 5 cm resolution"></a></p>
+<figcaption>Original resolution resampled to 5 cm resolution</figcaption>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>The pilot is responsible, always.</p>
 </div>
 </div>
+<p>The core question becomes: what resolution is <em>reasonable</em> and <em>manageable</em> — full detail at 1.5 cm or resampled 5 cm? There is no universal answer. It depends on your analysis goal and method. Often, highest resolution ≠ best result — especially considering non-linear increases in data volume.</p>
 </section>
-<section id="registration-as-uas-operator" class="level1">
-<h1>Registration as UAS Operator</h1>
-<p>Drone operators must be registered in the EU member state in which they are based. In Germany, this registration is done online through the <a href="https://uas-registration.lba-openuav.de/#/registration/uasOperator">Luftfahrt-Bundesamt (LBA)</a>.</p>
-<p>The registration applies to the <strong>UAS operator</strong>, not to each individual drone. One registered operator can operate several drones under the same operator ID / eID. The assigned eID must be attached visibly to every drone operated by this operator.</p>
-<p>For small drones below 250 g, registration is still required if the drone has a camera or another sensor capable of recording personal data.</p>
-<p>In teaching contexts, it is important to distinguish between <strong>operator</strong> and <strong>remote pilot</strong>:</p>
-<ul>
-<li>The <strong>operator</strong> is the person or institution legally responsible for the operation.</li>
-<li>The <strong>remote pilot</strong> is the person who actually controls the drone during the flight.</li>
-</ul>
-<p>If students fly a university-owned or instructor-owned drone <strong>under supervision and within the course operation</strong>, they usually act as remote pilots. In this case, the operator registration of the university or instructor can be used, provided that this person or institution is the defined operator for the flight and the drone carries the corresponding eID.</p>
-<p>If students plan and conduct flights <strong>independently</strong>, outside the supervised course operation, they may become UAS operators themselves. In that case, they need their own operator registration, their own eID, and their own liability coverage or explicit confirmation that the flight is covered by an existing insurance policy.</p>
-<p>For field courses, the operator role should therefore be defined before the flight. A simple course rule is:</p>
-<blockquote class="blockquote">
-<p>All flights in this course are conducted under the operator responsibility of <code>[institution / responsible instructor]</code>. Students act as remote pilots only when explicitly assigned and supervised.</p>
-</blockquote>
-<section id="liability-insurance" class="level2">
-<h2 class="anchored" data-anchor-id="liability-insurance">Liability Insurance</h2>
-<p>In Germany, drone liability insurance is required for drone operations. Before any field course, the responsible person must check that the aircraft and the planned use are covered by valid liability insurance.</p>
-</section>
-<section id="specific-regulations-for-uavs-under-250-g" class="level2">
-<h2 class="anchored" data-anchor-id="specific-regulations-for-uavs-under-250-g">Specific Regulations for UAVs under 250 g</h2>
-<p>Drones below 250 g are usually operated in the EU <strong>Open A1</strong> category. For C0 drones and drones below 250 g, the EU A1/A3 competence certificate is not mandatory.</p>
-<p>These drones may be flown near uninvolved persons, but crowds or assemblies of people must not be overflown. If uninvolved persons are unexpectedly overflown, the overflight must be ended as quickly and safely as possible.</p>
-<p>For teaching, sub-250 g drones are therefore the simplest practical option. They are suitable for short training flights, manual mapping exercises, object flights, and basic mission planning, provided that all local restrictions are checked before the flight.</p>
-</section>
-<section id="uavs-up-to-2-kg-in-student-fieldwork" class="level2">
-<h2 class="anchored" data-anchor-id="uavs-up-to-2-kg-in-student-fieldwork">UAVs up to 2 kg in Student Fieldwork</h2>
-<p>Drones above 250 g and up to 2 kg can also be used in student fieldwork, but the requirements are stricter.</p>
-<p>At minimum, the remote pilot usually needs the EU <strong>A1/A3 competence certificate</strong>. Depending on the drone class and the planned distance to uninvolved persons, the <strong>A2 remote pilot certificate</strong> may also be required.</p>
-<p>For practical courses, drones up to 2 kg should only be used when the operation can be clearly controlled:</p>
-<ul>
-<li>flight below 120 m AGL,</li>
-<li>visual line of sight,</li>
-<li>no overflight of crowds,</li>
-<li>safe distance to uninvolved persons,</li>
-<li>clearly defined take-off and landing area,</li>
-<li>emergency procedure,</li>
-<li>observer or spotter if needed,</li>
-<li>valid operator registration,</li>
-<li>visible eID,</li>
-<li>valid liability insurance.</li>
-</ul>
-<p>For student exercises, this usually means open fields, training areas, or supervised field sites where uninvolved persons can reliably be kept away from the operation area.</p>
-<section id="distance-to-airfields-and-airports" class="level3">
-<h3 class="anchored" data-anchor-id="distance-to-airfields-and-airports">Distance to Airfields and Airports</h3>
-<p>Flights near airports, airfields, and heliports are restricted and must be checked before every flight.</p>
-<p>As a practical rule, special care is required near:</p>
-<ul>
-<li>commercial airports,</li>
-<li>airfields,</li>
-<li>heliports,</li>
-<li>runway extensions,</li>
-<li>controlled airspace.</li>
-</ul>
-<p>The exact restrictions depend on the location. They must be checked using the <a href="https://maptool-dipul.dfs.de/?language=de">DIPUL Map Tool</a> and, where necessary, clarified with the responsible authority or air traffic control.</p>
-</section>
-<section id="residential-areas-and-residential-properties" class="level3">
-<h3 class="anchored" data-anchor-id="residential-areas-and-residential-properties">Residential Areas and Residential Properties</h3>
-<p>Residential areas and private residential properties are sensitive areas. Flights over or near them may be restricted, especially because of privacy, noise, and safety concerns.</p>
-<p>Such flights should only be planned if they are necessary, legally allowed, and operationally safe. In teaching contexts, residential areas should normally be avoided unless explicit permission and a clear operational reason exist.</p>
-</section>
-<section id="distance-to-traffic-routes" class="level3">
-<h3 class="anchored" data-anchor-id="distance-to-traffic-routes">Distance to Traffic Routes</h3>
-<p>Roads, railways, waterways, and other traffic routes may be subject to distance restrictions. Flights near traffic routes require special care because a drone failure could endanger people or traffic.</p>
-<p>Before planning such a flight, check the location in DIPUL and assess whether additional permission from the responsible infrastructure operator is required.</p>
-</section>
-<section id="nature-reserves-and-protected-areas" class="level3">
-<h3 class="anchored" data-anchor-id="nature-reserves-and-protected-areas">Nature Reserves and Protected Areas</h3>
-<p>Nature reserves and other protected areas may be restricted for drone operations. A flight may only be conducted if it is legally allowed and compatible with the protection purpose of the area.</p>
-<p>Before planning such flights, check DIPUL and the relevant nature conservation rules. If required, obtain permission from the competent authority.</p>
-</section>
-<section id="further-geographical-restrictions" class="level3">
-<h3 class="anchored" data-anchor-id="further-geographical-restrictions">Further Geographical Restrictions</h3>
-<p>Additional restrictions may apply near sensitive locations such as:</p>
-<ul>
-<li>accident scenes and emergency operation sites,</li>
-<li>industrial facilities,</li>
-<li>prisons,</li>
-<li>military facilities,</li>
-<li>police facilities,</li>
-<li>constitutional bodies,</li>
-<li>power generation and distribution infrastructure,</li>
-<li>hospitals,</li>
-<li>military exercises.</li>
-</ul>
-<p>These restrictions are part of the German geographical-zone logic under § 21h LuftVO. Before every flight, the current situation must be checked using DIPUL.</p>
-</section>
-<section id="practical-rule-for-field-courses" class="level3">
-<h3 class="anchored" data-anchor-id="practical-rule-for-field-courses">Practical Rule for Field Courses</h3>
-<p>For teaching, the safest and simplest setup is:</p>
-<ul>
-<li>sub-250 g drone where possible,</li>
-<li>open area,</li>
-<li>no uninvolved persons nearby,</li>
-<li>no protected area,</li>
-<li>no airport or heliport conflict,</li>
-<li>clear take-off and landing zone,</li>
-<li>one responsible pilot,</li>
-<li>one observer,</li>
-<li>short test flight before the actual exercise.</li>
-</ul>
-<p>The legal text, the LBA information pages, and the DIPUL Map Tool are the operational references. This summary is only a teaching-oriented checklist and does not replace the current legal requirements.</p>
-</section>
-</section>
-<section id="student-projects-and-independent-flights" class="level2">
-<h2 class="anchored" data-anchor-id="student-projects-and-independent-flights">Student Projects and Independent Flights</h2>
-<ul>
-<li><p>If students want to conduct their own UAV projects, the operator role must be clarified before the flight. If the project is conducted as part of the course under the responsibility of the university or instructor, students may act as remote pilots using the registered operator ID/eID of the defined operator. In this case, the flight must follow the course rules, insurance coverage, supervision concept, pre-flight checklist, and approved operation area.</p></li>
-<li><p>If students plan and conduct flights independently, outside the supervised course operation, they may become UAS operators themselves. In that case, they need their own LBA operator registration/eID, valid liability insurance or confirmed insurance coverage, the required remote-pilot competence, and their own check of all geographical zones and local restrictions using DIPUL.</p></li>
-<li><p>For student projects, the recommended procedure is therefore: define the operator, check insurance, verify pilot competence, check the location in DIPUL, document the mission plan, and approve the flight before take-off.</p></li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Hinweis</span>Operator Registration (Germany)
+<section id="typical-visual-issues" class="level2">
+<h2 class="anchored" data-anchor-id="typical-visual-issues">Typical Visual Issues</h2>
+<p>The following panel illustrates typical artifacts:</p>
+<div class="quarto-layout-panel" data-layout="[[1,1],[1,1]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/module-postprocessing/blur.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Motion blur or vertical displacements"><img src="../images/module-postprocessing/blur.png" class="img-fluid figure-img" alt="Motion blur or vertical displacements" width="420"></a></p>
+<figcaption>Motion blur or vertical displacements</figcaption>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>If you plan to operate UAVs independently (i.e.&nbsp;as the responsible operator), you must register as a UAS operator in Germany.</p>
-<p>Registration is done online via the Luftfahrt-Bundesamt (LBA):</p>
-<ul>
-<li>https://uas-registration.lba-openuav.de/#/registration/uasOperator</li>
-</ul>
-<section id="requirements" class="level4">
-<h4 class="anchored" data-anchor-id="requirements">Requirements</h4>
-<ul>
-<li>minimum age: 16 years</li>
-<li>valid email address</li>
-<li>basic personal information</li>
-</ul>
-</section>
-<section id="costs" class="level4">
-<h4 class="anchored" data-anchor-id="costs">Costs</h4>
-<ul>
-<li>Registration fee: approx. <strong>20–25 €</strong> (one-time)</li>
-<li>Validity: <strong>5 years</strong></li>
-</ul>
-<p>After registration, you will receive your <strong>UAS operator ID (eID)</strong>.<br>
-This ID must be attached visibly to every drone you operate.</p>
-</section>
-<section id="important" class="level4">
-<h4 class="anchored" data-anchor-id="important">Important</h4>
-<p>You do <strong>not</strong> need your own registration if you fly exclusively under the operator responsibility of the course instructor or institution and use their registered UAV.</p>
-</section>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/module-postprocessing/oversampling_scale.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Oversampling (redundant images)"><img src="../images/module-postprocessing/oversampling_scale.png" class="img-fluid figure-img" alt="Oversampling from redundant images" width="420"></a></p>
+<figcaption>Oversampling (redundant images)</figcaption>
+</figure>
 </div>
 </div>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warnung</span>What happens if the rules are not followed?
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/module-postprocessing/shadow_artifact.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Shadow duplication"><img src="../images/module-postprocessing/shadow_artifact.png" class="img-fluid figure-img" alt="Shadow duplication" width="420"></a></p>
+<figcaption>Shadow duplication</figcaption>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Violations of drone regulations in Germany can lead to significant legal consequences.</p>
-<section id="possible-consequences" class="level3">
-<h3 class="anchored" data-anchor-id="possible-consequences">Possible consequences</h3>
-<ul>
-<li><p><strong>Fines</strong><br>
-Violations (e.g.&nbsp;flying without registration, in restricted areas, or without insurance) can result in fines of up to <strong>50,000 €</strong> depending on severity.</p></li>
-<li><p><strong>Loss of insurance coverage</strong><br>
-If you violate legal requirements, your liability insurance may refuse to cover damages. You may then be personally liable for all costs.</p></li>
-<li><p><strong>Confiscation of equipment</strong><br>
-Authorities may confiscate your drone in case of serious violations.</p></li>
-<li><p><strong>Criminal charges</strong><br>
-In severe cases (e.g.&nbsp;endangering air traffic, people, or critical infrastructure), criminal prosecution is possible.</p></li>
-</ul>
-</section>
-<section id="important-1" class="level3">
-<h3 class="anchored" data-anchor-id="important-1">Important</h3>
-<p>Ignorance of the rules does not protect you.<br>
-Every remote pilot is responsible for checking:</p>
-<ul>
-<li>registration (operator / eID),</li>
-<li>insurance coverage,</li>
-<li>airspace and geographical restrictions (DIPUL),</li>
-<li>safe operation.</li>
-</ul>
-<p>In case of doubt: <strong>do not fly.</strong></p>
-</section>
-<section id="independent-student-uav-operations" class="level2">
-<h2 class="anchored" data-anchor-id="independent-student-uav-operations">Independent Student UAV Operations</h2>
-<p>Two valid operational models exist for student-led UAV flights. The decisive factor is the definition of the <strong>UAS operator</strong>.</p>
-<section id="model-a-student-as-uas-operator" class="level3">
-<h3 class="anchored" data-anchor-id="model-a-student-as-uas-operator">Model A – Student as UAS Operator</h3>
-<p>In this model, the student acts as the responsible operator.</p>
-<p>This means:</p>
-<ul>
-<li>the student holds their own operator registration (eID),</li>
-<li>the student ensures valid liability insurance,</li>
-<li>the student meets all required remote-pilot competence levels,</li>
-<li>the student independently checks airspace and geographical restrictions (e.g.&nbsp;via DIPUL),</li>
-<li>the student assumes full legal and operational responsibility.</li>
-</ul>
-<p>This model provides maximum independence and is suitable for fully autonomous student projects (e.g.&nbsp;theses or external work).</p>
-<hr>
-</section>
-<section id="model-b-operation-under-institutional-responsibility" class="level3">
-<h3 class="anchored" data-anchor-id="model-b-operation-under-institutional-responsibility">Model B – Operation under Institutional Responsibility</h3>
-<p>In this model, the instructor or institution remains the UAS operator.</p>
-<p>This means:</p>
-<ul>
-<li>the UAV carries the operator ID (eID) of the responsible institution or instructor,</li>
-<li>students act as remote pilots on behalf of the operator,</li>
-<li>flights may also be conducted without direct supervision,</li>
-<li>the operation remains bound to a predefined framework (approved locations, procedures, and flight types),</li>
-<li>insurance must explicitly cover additional pilots and independent student flights,</li>
-<li>the operator retains overall responsibility for the operation.</li>
-</ul>
-<p>This model enables controlled autonomy and is commonly used in teaching environments.</p>
-<p>If the predefined framework is exceeded or the operation is no longer attributable to the institutional operator, the flight falls under Model A.</p>
-</section>
-</section>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../images/module-postprocessing/poor_sampling_artifact.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Edge distortion due to insufficient image overlap"><img src="../images/module-postprocessing/poor_sampling_artifact.png" class="img-fluid figure-img" alt="Edge distortion due to insufficient image overlap" width="420"></a></p>
+<figcaption>Edge distortion due to insufficient image overlap</figcaption>
+</figure>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="connected-module" class="level2">
-<h2 class="anchored" data-anchor-id="connected-module">Connected Module</h2>
-<ul>
-<li><a href="../modules/module-fieldwork.html">Autonomous Flights Made Easy</a></li>
-</ul>
+<section id="overall-visual-inspection" class="level2">
+<h2 class="anchored" data-anchor-id="overall-visual-inspection">Overall Visual Inspection</h2>
+<p>Below, you’ll find an interactive <a href="https://cesium.com/platform/cesium-ion/">Cesium-Ion</a> map with the full 5 cm orthoimage. Compare the <em>three trees</em> section again to assess rendering performance.</p>
+<iframe src="../images/module-postprocessing/cesium_ortho_1.html" height="800px" width="100%" frameborder="0" onload="resizeIframe(this)">
+</iframe>
+<p><em>Note: Cesium resamples images for performance, so quality may appear reduced.</em></p>
+</section>
+<section id="further-products" class="level2">
+<h2 class="anchored" data-anchor-id="further-products">Further Products</h2>
+<p>Beyond orthoimages, dense 3D point clouds are a key output and — depending on the context — comparable to LiDAR data in information content.</p>
+<p>Such models are ideal for participatory planning, public outreach, and environmental monitoring.</p>
+<section id="d-model" class="level3">
+<h3 class="anchored" data-anchor-id="d-model">3D Model</h3>
+<p>Below is a shaded 3D mesh (raw, unfiltered).</p>
+<iframe src="../images/module-postprocessing/cesium_ortho_2.html" height="850px" width="100%" style="border:none;">
+</iframe>
+<p>Note: For Cesium display, mesh models must be manually aligned in 3D space. Minor inaccuracies in placement may still be visible.</p>
+</section>
+<section id="d-point-cloud" class="level3">
+<h3 class="anchored" data-anchor-id="d-point-cloud">3D Point Cloud</h3>
+<p>Here is a reduced version (factor 30) of the point cloud rendered in Cesium:</p>
+<iframe src="../images/module-postprocessing/cesium_ortho_3.html" height="850px" width="100%" style="border:none;">
+</iframe>
+<p><em>Despite heavy downsampling, the model clearly reveals 3D structure of vegetation and terrain.</em></p>
+<p>Also available as a Sketchfab model:</p>
+<iframe title="Gisselberger Spannweite" src="https://sketchfab.com/models/c38b78f3c0b04102abe46f92cb5c4fd9/embed?ui_theme=dark" width="100%" height="600" frameborder="0" allow="autoplay; fullscreen; xr-spatial-tracking" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" style="border: none;">
+</iframe>
+<p><em>Note: Rendering capabilities vary depending on the 3D engine.</em></p>
+</section>
+</section>
+</section>
+<section id="conclusions" class="level1">
+<h1>Conclusions</h1>
+<p>The presented case study illustrates that using a mini-UAV, efficient flight planning, and standardized processing workflows can produce reproducible and accurate orthoimages and point clouds. This method shows great potential for low-cost, non-invasive environmental monitoring — especially in sensitive or inaccessible areas.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -898,6 +777,38 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

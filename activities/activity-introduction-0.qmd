@@ -48,7 +48,7 @@ Reviews help you understand the field as a whole. Case studies help you see how 
 
 ## Step 4: Organize your library in Zotero
 
-Import all relevant sources into Zotero and create a dedicated collection for this module.
+Import all relevant sources into Zotero and [create a dedicated collection](activity-introduction-99.qmd) for this module.
 
 Use tags, notes, or short comments to record why a source is relevant, which thematic group it belongs to, and whether it is a review paper or a case study. This will help you move from a list of papers to a structured overview of the field.
 
@@ -64,6 +64,16 @@ Read at least some papers in full, but do not treat every article in the same wa
 
 Always compare papers rather than reading them in isolation. Ask yourself what kinds of problems are being addressed, what role UAV imagery plays, and where RGB/VIS data are sufficient or limited.
 
+
+::: {.callout-note}
+## Further comparison of reference management tools
+
+A more detailed comparison of reference management programs is provided by the Technical University of Munich Library:
+
+[Reference management programmes in test – TUM University Library](https://www.ub.tum.de/en/news/reference-management-programmes-test)
+
+This page gives a broader overview of different reference management tools and compares them across relevant criteria such as functionality, usability, collaboration options, and costs. Use it if you want to better understand how Zotero compares to alternatives such as Citavi, EndNote, Mendeley, JabRef, or Paperpile.
+:::
 ---
 
 [**Module:** UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)

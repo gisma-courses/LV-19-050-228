@@ -107,9 +107,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-activities','listing-assessments','listing-labels','listing-source','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-source_url','listing-published','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-materials','listing-assessments','listing-labels','listing-source','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-activities','listing-source_url','listing-published','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-activities","listing-assessments","listing-labels","listing-source","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-source_url","listing-published","listing-subtitle"],
+      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-materials","listing-assessments","listing-labels","listing-source","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-activities","listing-source_url","listing-published","listing-subtitle"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -136,7 +136,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-materials','listing-assessments','listing-labels','listing-published','listing-source','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-source_url','listing-activity',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-materials","listing-assessments","listing-labels","listing-published","listing-source","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-source_url","listing-activity"],
     };
 
@@ -689,6 +690,9 @@ window.Quarto = {
 </div>
 
 <div class="listing-no-matching d-none">Keine Treffer</div>
+<nav id="module-activities-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 <div id="listing-module-assessments" class="quarto-listing quarto-listing-container-custom">
 

@@ -1,0 +1,130 @@
+---
+title: "Organizing Literature in Zotero"
+id: activity-introduction-zotero
+order: 36
+summary: "Organize  selected literature sources in Zotero, clean metadata, and add structured personal notes."
+modules:
+  - module-introduction
+Goals:
+  - module-goals
+materials:
+assessments:
+  - assessment-introduction
+labels:
+  - basic
+  - mandatory
+published: true
+---
+
+## Exercise: Organizing and Annotating Literature in Zotero
+
+### Objective
+
+You have collected a number of relevant literature sources. The goal is to:
+
+- organize them in Zotero,
+- ensure clean metadata,
+- and add a short personal assessment to each source.
+
+---
+
+### Step 1 – Create a Collection
+
+Open Zotero Desktop or the Zotero Web Library and create a new collection. Zotero collections are used to group literature for a project or topic without duplicating the actual entries. See the Zotero documentation on [collections and tags](https://www.zotero.org/support/collections_and_tags).
+
+**Collection name:** `YourName_Topic_Literature`
+
+---
+
+### Step 2 – Add Your Sources
+
+Add all sources to Zotero. The preferred method is the Zotero Browser Connector, which saves bibliographic metadata directly from library catalogues, databases, Google Scholar, publisher pages, and other supported websites. See the Zotero documentation on [adding items](https://www.zotero.org/support/adding_items_to_zotero) and the [Zotero Connector](https://www.zotero.org/support/connector).
+
+Alternative options:
+
+- add by DOI, ISBN, or PMID,
+- import a PDF,
+- create the entry manually if no metadata can be found.
+
+Check for each entry:
+
+- title,
+- authors,
+- year,
+- journal / publisher,
+- DOI, if available.
+
+Fix metadata errors immediately.
+
+---
+
+### Step 3 – Clean and Standardize
+
+For each entry, check whether the Zotero metadata are complete and consistent. This is necessary because citation errors often come from wrong metadata, not from Zotero itself.
+
+Check especially:
+
+- duplicate entries,
+- author names,
+- title capitalization,
+- journal or publisher information,
+- DOI,
+- attached PDF, if available.
+
+Use Zotero’s duplicate detection if needed. See the Zotero documentation on [duplicate detection](https://www.zotero.org/support/duplicate_detection) and [adding files](https://www.zotero.org/support/files).
+
+---
+
+### Step 4 – Add Tags
+
+Assign at least **2 tags per entry**. Tags help you describe the role of each source in your project. See the Zotero documentation on [collections and tags](https://www.zotero.org/support/collections_and_tags).
+
+Possible tags:
+
+- `method`
+- `case study`
+- `review`
+- `theory`
+- `dataset`
+
+---
+
+### Step 5 – Personal Note (Core Task)
+
+For each of the  entries, add a note in Zotero. Notes are used to store your own reading comments, summaries, and reflections. See the Zotero documentation on [notes](https://www.zotero.org/support/notes).
+
+Write a short note for each source:
+
+1. What is the main idea of the paper in your own understanding?
+2. Why do you personally find this paper interesting?
+3. Which aspect needs further literature to understand it properly?
+
+No copy-paste. Use your own wording.
+
+---
+
+### Step 6 – Optional: Highlight Key Passages
+
+If a PDF is available, highlight key passages and connect them to your note. Zotero’s PDF reader allows highlighting, annotations, and note extraction. See the Zotero documentation on the [PDF reader](https://www.zotero.org/support/pdf_reader).
+
+---
+
+### Deliverable
+
+Submit one of the following:
+
+- a shared Zotero collection,
+- an exported Zotero collection,
+- or screenshots showing the collection, tags, and notes.
+
+For exporting, see the Zotero documentation on [importing and exporting](https://www.zotero.org/support/kb/importing_records_from_endnote).
+
+Every entry must contain a personal note.
+
+---
+
+### Key Principle
+
+Zotero/Citavi etc. is not just storage.
+
+It is your **thinking structure for literature**.

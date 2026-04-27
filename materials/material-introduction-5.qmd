@@ -1,0 +1,40 @@
+---
+title: "Introduction to Zotero"
+id: material-introduction-4
+summary: "Zotero Quick Start (3 videos, 15 minutes)"
+
+
+modules:
+  - module-introduction
+Goals:
+  - module-goals
+activities: []
+assessments:
+  - assessment
+labels:
+  - basic
+  - recommended
+  - youtube
+published: true
+
+---
+
+## Watch the videos:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hmRkwi9rs38?si=KUnrVH0DnTAtggNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=s37tBleu9iEZ3A9R&amp;list=PLTU8eFl06Wq3du3lgStlHyqW1U90NFzmq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y2sXLQR-IAs?si=W1l2oKLS2oIvOIg_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xupeuj786BI?si=0WDvsNMdghkD5sOH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+[Zotero Quick Start](https://www.youtube.com/playlist?list=PLTU8eFl06Wq3du3lgStlHyqW1U90NFzmq)
+
+---
+
+[**Module:** UAV based remote Sensing - A Brief Overview](../modules/module-introduction.qmd)
+

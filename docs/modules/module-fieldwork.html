@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Activities – Micro-Remote Sensing</title>
+<title>Autonomous Flights Made Easy – Micro-Remote Sensing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e80e75a345bc4b34ce127970a478ece3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e80e75a345bc4b34ce127970a478ece3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,21 +72,104 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-activities-list .list');
+    const listingTargetEl = window.document.querySelector('#listing-module-module-goals .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-module-goals','listing-materials','listing-activities','listing-assessments','listing-published','listing-source','listing-title-block-banner','listing-title-block-banner-color','listing-listing','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-labels','listing-Goals','listing-modules','listing-source_url','listing-activity',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-module-goals","listing-materials","listing-activities","listing-assessments","listing-published","listing-source","listing-title-block-banner","listing-title-block-banner-color","listing-listing","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-labels","listing-Goals","listing-modules","listing-source_url","listing-activity"],
+      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-subtitle','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-materials','listing-activities','listing-assessments','listing-published','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-source',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-subtitle","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-materials","listing-activities","listing-assessments","listing-published","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-source"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-activities-list'] = new List('listing-activities-list', options);
+    window['quarto-listings']['listing-module-module-goals'] = new List('listing-module-module-goals', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-module-materials .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-activities','listing-assessments','listing-labels','listing-source','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-source_url','listing-published','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-activities","listing-assessments","listing-labels","listing-source","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-source_url","listing-published","listing-subtitle"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-module-materials'] = new List('listing-module-materials', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-module-activities .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-materials','listing-assessments','listing-labels','listing-published','listing-source','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-source_url','listing-activity',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-materials","listing-assessments","listing-labels","listing-published","listing-source","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-source_url","listing-activity"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-module-activities'] = new List('listing-module-activities', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-module-assessments .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-resource-path','listing-website','listing-format','listing-lang','listing-language','listing-content_type','listing-title','listing-id','listing-order','listing-summary','listing-modules','listing-Goals','listing-materials','listing-activities','listing-labels','listing-published','listing-source','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-resource-path","listing-website","listing-format","listing-lang","listing-language","listing-content_type","listing-title","listing-id","listing-order","listing-summary","listing-modules","listing-Goals","listing-materials","listing-activities","listing-labels","listing-published","listing-source","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-module-assessments'] = new List('listing-module-assessments', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -99,6 +182,23 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: black;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: black;
+background: images/uav-fieldwork/fp4.png;
+      }
+</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -130,26 +230,25 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="css/styles.css">
-<meta property="og:title" content="Activities – Micro-Remote Sensing">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/banner.png">
+<link rel="stylesheet" href="../css/styles.css">
+<meta property="og:title" content="Autonomous Flights Made Easy – Micro-Remote Sensing">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/modules/images/banner.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
-<meta property="og:image:height" content="146">
-<meta property="og:image:width" content="1024">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/logo.png" alt="" class="navbar-logo light-content">
-    <img src="./images/logo.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/logo.png" alt="" class="navbar-logo light-content">
+    <img src="../images/logo.png" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Micro-Remote Sensing</span>
     </a>
   </div>
@@ -160,29 +259,29 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./modules.html"> 
+    <a class="nav-link" href="../modules.html"> 
 <span class="menu-text">Modules</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./module-goals.html"> 
+    <a class="nav-link" href="../module-goals.html"> 
 <span class="menu-text">Goals</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./materials.html"> 
+    <a class="nav-link" href="../materials.html"> 
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./activities.html" aria-current="page"> 
+    <a class="nav-link" href="../activities.html"> 
 <span class="menu-text">Activities</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assessments.html"> 
+    <a class="nav-link" href="../assessments.html"> 
 <span class="menu-text">Assessments</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./base/faq.html"> <i class="bi bi-question-square-fill" role="img">
+    <a class="nav-link" href="../base/faq.html"> <i class="bi bi-question-square-fill" role="img">
 </i> 
 <span class="menu-text">FAQ</span></a>
   </li>  
@@ -199,568 +298,251 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Autonomous Flights Made Easy</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Activities</h1>
+
+
+
+
+<p>This module bundles the processing workflow for creating high-quality outputs from aerial imagery.</p>
+<div id="listing-module-module-goals" class="quarto-listing quarto-listing-container-custom">
+
+<h2 class="related-section-title anchored">Goals</h2>
+
+<div class="related-cards">
+
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../module-goals/outcome-fw.html">Autonomous Flight Planning Workflow</a>
+      </h3>
+
+      
+      <p class="related-card-summary">Implement autonomous flight planning confidently and successfully, from software choice to safe execution.</p>
+      
+    </div>
+
+    
+    
+  </article>
+
 </div>
 
+<div class="listing-no-matching d-none">Keine Treffer</div>
+</div>
+<div id="listing-module-materials" class="quarto-listing quarto-listing-container-custom">
 
+<h2 class="related-section-title anchored">Materials</h2>
 
-<div class="quarto-title-meta">
+<div class="related-cards">
 
-    
-  
-    
-  </div>
-  
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../materials/material-fw-7.html">QGroundControl Planning a Mission</a>
+      </h3>
 
-
-</header>
-
-
-<div id="listing-activities-list" class="quarto-listing quarto-listing-container-custom">
-
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">UAV based remote Sensing - A Brief Overview</h2>
-
-    <div class="related-cards">
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-introduction-0.html">Searching literature and organizing it in Zotero</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Learn how to search for relevant academic literature on UAV applications and how to organize your sources systematically in Zotero.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
+      
+      <p class="related-card-summary">Getting an idea how to practically plan and perform a flight mission with QGroundControl.</p>
+      
     </div>
-  </section>
-  
 
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">Autonomous Flights Made Easy</h2>
-
-    <div class="related-cards">
     
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-14.html">Legal Guidelines</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Flight planning requires compliance with a number of more or less clear legal regulations.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
     
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-11.html">UAV Mission Planning Practical Workflow</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Planning an aerial flight mission using QGroundControl and uavRmp.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-111.html">Field Guide</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Schemes for well-being during the field work.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-recommended">recommended</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-12.html">DJI UAV Flight Simulator</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Train the handling of the drones with the DJI flight simulator. Worse than flying, better than crashing.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-basics">basics</span>
+      
+      <span class="related-card-tag tag-mandatory">mandatory</span>
+      
+      <span class="related-card-tag tag-youtube">YouTube</span>
+      
     </div>
-  </section>
-  
-
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">Creating High Quality Products</h2>
-
-    <div class="related-cards">
     
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-metashape-wf-10.html">Metashape basic workflow</a>
-          </h3>
+  </article>
 
-          
-          <p class="related-card-summary">The Metashape software provides a slim standard workflow with reasonable default values for creating an orthoimage and a point cloud.</p>
-          
-        </div>
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../materials/material-fw-8.html">uavRmp - Adapt Your Planning</a>
+      </h3>
 
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-metashape-wf-11.html">Metashape Ortho+ - optimized processing of RGB images</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Metashape Ortho+ provides scripts for reproducible optimized generation of orthoimages and point clouds.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-usecase-1.html">Use Case Gisselberger Spannweite</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A feasibility test for reproducible orthoimages using low-cost mini-UAVs with minimal effort.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-usecase">usecase</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-odm-09.html">The OpenDroneMap Tutorial Page</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A practical introduction to the operation of OpenDroneMap.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-odm-10.html">The OpenDroneMap Tutorial Page</a>
-          </h3>
-
-          
-          <p class="related-card-summary">OpenDroneMap offers a free, powerful, and open source choice for creating, processing, and analyzing low-cost aerial imagery.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-odm-15.html">ODM - The Missing Guide</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A practical guide to the operation of OpenDroneMap provided through the closed Ilias course area.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-fw-21.html">Georeferencing of imagery without GPS data</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Aligning UAV pictures with missing or defective GPS image positions.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-metashape-altum.html">Metashape MicaSense Altum workflow</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A tutorial for processing multisensor datasets from a MicaSense Altum sensor in Metashape.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
+      
+      <p class="related-card-summary">The uavRmp package is designed for UAV autonomous mission planning for monitoring flights of low cost drones based on R.</p>
+      
     </div>
-  </section>
-  
 
-  
-
-  
-
-  
-
-  
-  <section class="module-group">
-    <h2 class="module-group-title anchored">Analysis of high resolution aerial data</h2>
-
-    <div class="related-cards">
     
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-0.html">OBIA Workflow for QGIS in a nutshell</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A concise video overview of an OBIA workflow with QGIS and the OTB processing plugin.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-        </div>
-        
-      </article>
     
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-1.html">OBIA Workflow for QGIS step by step</a>
-          </h3>
-
-          
-          <p class="related-card-summary">A step-by-step OBIA workflow in QGIS with Orfeo Toolbox.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-mandatory">mandatory</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-4.html">Manual and CSF based Classification of Ground Points with CloudCompare</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Manual and automatic classification and segmentation for small photogrammetric datasets using CloudCompare.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-basic">basic</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-spat-analysis-5.html">CANUPO train and classify point clouds</a>
-          </h3>
-
-          
-          <p class="related-card-summary">The CANUPO suite is a simple and efficient way to automatically classify a point cloud.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-5.html">qCanupo classification</a>
-          </h3>
-
-          
-          <p class="related-card-summary">qCanupo classification tutorial.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-          <span class="related-card-tag tag-youtube">YouTube</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-3.html">DL &amp; ML Workflow with R</a>
-          </h3>
-
-          
-          <p class="related-card-summary">Selected deep learning and machine learning workflow resources in R.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
-      <article class="related-card">
-        <div class="related-card-body">
-          <h3 class="related-card-title anchored">
-            <a href="./activities/activity-analysis-6.html">Deriving ecological indices from LiDAR data</a>
-          </h3>
-
-          
-          <p class="related-card-summary">After simple ground-point classification, typical LiDAR processing can be performed.</p>
-          
-        </div>
-
-        
-        
-        <div class="related-card-tags">
-          
-          <span class="related-card-tag tag-advanced">advanced</span>
-          
-          <span class="related-card-tag tag-supplement">supplement</span>
-          
-          <span class="related-card-tag tag-optional">optional</span>
-          
-        </div>
-        
-      </article>
-    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-advanced">advanced</span>
+      
+      <span class="related-card-tag tag-mandatory">mandatory</span>
+      
     </div>
-  </section>
-  
+    
+  </article>
+
+</div>
 
 <div class="listing-no-matching d-none">Keine Treffer</div>
-<nav id="activities-list-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
+</div>
+<div id="listing-module-activities" class="quarto-listing quarto-listing-container-custom">
+
+<h2 class="related-section-title anchored">Activities</h2>
+
+<div class="related-cards">
+
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../activities/activity-fw-14.html">Legal Guidelines</a>
+      </h3>
+
+      
+      <p class="related-card-summary">Flight planning requires compliance with a number of more or less clear legal regulations.</p>
+      
+    </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-basic">basic</span>
+      
+      <span class="related-card-tag tag-mandatory">mandatory</span>
+      
+    </div>
+    
+  </article>
+
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../activities/activity-fw-11.html">UAV Mission Planning Practical Workflow</a>
+      </h3>
+
+      
+      <p class="related-card-summary">Planning an aerial flight mission using QGroundControl and uavRmp.</p>
+      
+    </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-advanced">advanced</span>
+      
+      <span class="related-card-tag tag-mandatory">mandatory</span>
+      
+    </div>
+    
+  </article>
+
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../activities/activity-fw-111.html">Field Guide</a>
+      </h3>
+
+      
+      <p class="related-card-summary">Schemes for well-being during the field work.</p>
+      
+    </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-advanced">advanced</span>
+      
+      <span class="related-card-tag tag-recommended">recommended</span>
+      
+    </div>
+    
+  </article>
+
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../activities/activity-fw-12.html">Flight Simulator</a>
+      </h3>
+
+      
+      <p class="related-card-summary">Train the handling of the drones with the Real Drone Flight Simulator</p>
+      
+    </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-supplement">supplement</span>
+      
+      <span class="related-card-tag tag-optional">optional</span>
+      
+    </div>
+    
+  </article>
+
+</div>
+
+<div class="listing-no-matching d-none">Keine Treffer</div>
+</div>
+<div id="listing-module-assessments" class="quarto-listing quarto-listing-container-custom">
+
+<h2 class="related-section-title anchored">Assessments</h2>
+
+<div class="related-cards">
+
+  <article class="related-card">
+    <div class="related-card-body">
+      <h3 class="related-card-title anchored">
+        <a href="../assessments/fw-assessment.html">Create a Litchi-Flightplan</a>
+      </h3>
+
+      
+      <p class="related-card-summary">Develop an applicable flight plan, taking legal restrictions into account, and upload it to the cloud in Litchi format.</p>
+      
+    </div>
+
+    
+    
+    <div class="related-card-tags">
+      
+      <span class="related-card-tag tag-self-check">self-check</span>
+      
+    </div>
+    
+  </article>
+
+</div>
+
+<div class="listing-no-matching d-none">Keine Treffer</div>
 </div>
 
 

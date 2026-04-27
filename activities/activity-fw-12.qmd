@@ -1,8 +1,8 @@
 ---
-title: "DJI UAV Flight Simulator"
+title: "Flight Simulator"
 id: activity-fw-12
 order: 93
-summary: "Train the handling of the drones with the DJI flight simulator. Worse than flying, better than crashing."
+summary: "Train the handling of the drones with the Real Drone Flight Simulator"
 modules:
   - module-fieldwork
 Goals:
@@ -25,7 +25,7 @@ Worse than flying, better than crashing.
 
 Download the simulator:
 
-<https://www.dji.com/de/downloads/products/simulator>
+[Real Drone simulator](https://www.realdronesimulator.com/downloads)
 
 ## Connected Module
 

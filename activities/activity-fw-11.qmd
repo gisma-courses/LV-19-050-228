@@ -114,12 +114,29 @@ Image Size 16:9, 4000 x 2250:
 You may also use a [depth of field calculator](https://www.cambridgeincolour.com/tutorials/dof-calculator.htm) to estimate the minimum distance of the camera to the target.
 
 ::: {.callout-note}
-For DJI usage, save this flight plan to an appropriate folder and follow the instructions in the conversion chapter to create the Litchi-compatible DJI format.
+For DJI usage, save this flight plan to an appropriate folder and follow the instructions in the conversion chapter to create a Litchi-compatible mission file.
+
+This workflow is valid for DJI aircraft only if the concrete aircraft, controller, operating system, and Litchi app generation support waypoint missions via the DJI SDK. For the Mini class up to the Mini 3 Pro, this mainly means:
+
+- **Mavic Mini 1**
+- **DJI Mini SE v1**
+- **DJI Mini 2**
+- **DJI Mini 3**
+- **DJI Mini 3 Pro**
+
+For **Mavic Mini 1, Mini SE v1, and Mini 2**, use the classic **Litchi for DJI Drones** app. For **Mini 3 and Mini 3 Pro**, use **Litchi Pilot**, not the classic Litchi app. Check this before the course because support depends on the exact controller and Android/iOS setup.
 :::
 
 ## Conversion of the Flight Plan for Litchi-Compatible DJI Devices
 
-The R package [`uavRmp`](https://github.com/gisma/uavRmp) bridges this gap. It generates MAVLINK-compliant mission files that can be uploaded to the Pixhawk controller via any Ground Control Station software. It also exports or converts plannings to the Litchi format for DJI drones.
+The R package [`uavRmp`](https://github.com/gisma/uavRmp) bridges this gap. It generates MAVLINK-compliant mission files that can be uploaded to the Pixhawk controller via any Ground Control Station software. It also exports or converts QGroundControl plannings to the Litchi CSV format for DJI drones.
+
+For DJI aircraft, this conversion is only the planning and file-generation step. The actual execution of the mission depends on whether the aircraft is supported by the relevant Litchi app through DJI SDK access. For the Mini class up to the Mini 3 Pro, the relevant distinction is:
+
+- **Classic Litchi for DJI Drones:** Mavic Mini 1, Mini SE v1, Mini 2.
+- **Litchi Pilot:** Mini 3 and Mini 3 Pro.
+
+The classic Litchi app lists Mini 2, Mini SE v1, and Mavic Mini 1 as compatible aircraft, while Mini 3 and Mini 3 Pro are handled through Litchi Pilot instead. Litchi Pilot is still listed separately from the classic app and supports waypoint planning/execution for newer DJI models including Mini 3 and Mini 3 Pro. 
 
 ### Installation of R and uavRmp
 
@@ -169,7 +186,7 @@ fp = makeAP(projectDir = "~/uav",
             uavType = "dji_csv")
 ```
 
-The script generates R objects for visualization, log files, and flight control files for running a mission on DJI drones. The log file records the important parameters of the calculated mission.
+The script generates R objects for visualization, log files, and flight control files for running a mission on supported DJI/Litchi setups.
 
 For a more comprehensive tutorial, see [Mission Planning on basis of QGroundControl](https://gisma.github.io/uavRmp/articles/uavRmp_2.html).
 
@@ -185,11 +202,91 @@ Navigate to the requested files and check the output. Be patient; it may take a 
 
 ![uavRmp Shiny interface](../images/uav-fieldwork/shiny.png)
 
-After checking the files, import the control file to the [Litchi Hub](https://flylitchi.com/hub). You need an account. During the course, the account and Litchi software are provided via Ilias.
+After checking the files, import the control file to the [Litchi Hub](https://flylitchi.com/hub) or to the corresponding Litchi/Pilot workflow used for the supported aircraft. You need an account.
 
 ::: {.callout-tip}
 Ready to take off: that is your first flight plan.
 :::
+
+## Alternative Mission Planning with Dronelink-Compatible DJI Devices
+
+Dronelink provides an alternative planning and execution environment for DJI aircraft. In contrast to the Litchi workflow described above, this is not a `QGroundControl` → `uavRmp` → Litchi CSV conversion workflow. Dronelink is used as its own mission planning system.
+
+This means that the survey geometry, altitude logic, speed, camera actions, and flight direction must be defined and checked directly in Dronelink. The `QGroundControl` / `uavRmp` workflow can still be used as a reference for terrain-aware planning, camera geometry, overlap estimation, and mission validation, but the executable mission is created in Dronelink.
+
+For DJI Mini-class drones up to the Mini 3 Pro, Dronelink support depends on the exact aircraft, controller, operating system, and app version. Relevant Mini-class models include:
+
+- **Mavic Mini 1 / DJI Mini SE v1**
+- **DJI Mini 2**
+- **DJI Mini 3**
+- **DJI Mini 3 Pro**
+
+For Mini 3 and Mini 3 Pro, Dronelink currently documents Android-based support only: no iOS support, no DJI RC support, and installation via the correct Dronelink APK rather than the Google Play or Apple App Store version. Supported controller setups include DJI RC Pro for Mini 3 Pro and DJI RC-N1 with modern 64-bit Android devices for Mini 3 / Mini 3 Pro. :contentReference[oaicite:0]{index=0}
+
+### Workflow Using Dronelink
+
+1. Open the Dronelink web planner or app.
+2. Create a new mission for the selected survey area.
+3. Define the mission geometry, for example as a mapping grid, path, orbit, facade flight, or waypoint mission.
+4. Set the relevant flight parameters:
+   - altitude or terrain-following logic,
+   - speed,
+   - camera angle,
+   - photo interval or capture mode,
+   - overlap / spacing,
+   - flight direction,
+   - start and end behaviour.
+5. Check all generated waypoints, camera actions, altitude changes, and turns.
+6. Synchronize the mission to the mobile device or controller.
+7. Perform the complete pre-flight check.
+8. Execute the mission.
+
+::: {.callout-note}
+Dronelink is not used here as a target format for `uavRmp`. It is a separate mission planning environment. Use `QGroundControl` and `uavRmp` for planning comparison, terrain and camera-geometry checks, or teaching the structure of a survey mission, but create and verify the executable Dronelink mission inside Dronelink itself.
+:::
+
+::: {.callout-warning}
+Do not assume that a DJI Mini drone is supported only because it belongs to the Mini series. Support is determined by the exact drone model, controller, mobile device, operating system, Dronelink app generation, and DJI SDK availability. Always test the complete setup with a short, low-risk mission before using it in the field.
+:::
+
+## Litchi vs. Dronelink – Practical Trade-Off
+
+For DJI-based workflows, two fundamentally different approaches exist for executing planned missions:
+
+### Litchi + uavRmp (File-Based Workflow)
+
+- **Concept**: QGroundControl → `uavRmp` → Litchi CSV → Execution
+- **Strengths**:
+  - Direct transfer of planned flight geometry
+  - Strong integration with external planning tools
+  - Transparent and reproducible workflow
+  - Well suited for teaching structured survey logic
+- **Limitations**:
+  - Technically fragile (format dependencies, import issues, SDK constraints)
+  - Limited flexibility once the mission is generated
+  - Dependent on exact Litchi compatibility
+
+### Dronelink (System-Based Workflow)
+
+- **Concept**: Mission is created and executed entirely within Dronelink
+- **Strengths**:
+  - Robust execution environment
+  - High flexibility (mapping, waypoint, facade, orbit, adaptive missions)
+  - Integrated terrain awareness and mission logic
+- **Limitations**:
+  - Higher cost (licensing required)
+  - More complex interface and setup
+  - No direct import of external mission files (manual reconstruction required)
+
+### Practical Implication
+
+- **Litchi + uavRmp** is technically more fragile, but highly efficient for transferring structured survey plans.
+- **Dronelink** is more robust and flexible in operation, but more expensive and more complex to use.
+
+For low-cost DJI Mini-class mission planning, there are essentially two practical approaches. The first is the file-based QGroundControl / uavRmp / Litchi workflow, where QGroundControl provides the actual planning power and uavRmp converts the resulting plan into a Litchi-compatible execution format. This approach is technically more fragile, but transparent, reproducible, and well suited for teaching mission-planning logic.
+
+The second approach is Dronelink. Dronelink is more powerful as an integrated mission-planning environment, but it is also more complex and more expensive. It should be understood as a separate planning ecosystem, not as a simple replacement for the QGroundControl / uavRmp / Litchi workflow.
+
 
 ## Connected Module
 

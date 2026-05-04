@@ -1,0 +1,114 @@
+---
+title: "Litchi Hub - Current DJI Mission Planning Workflow"
+id: material-fw-9
+order: 92
+summary: "Litchi Hub is the current low-budget baseline workflow for many DJI mapping missions, including area mapping, 3D planning, and terrain-aware mission preparation."
+modules:
+  - module-fieldwork
+Goals:
+  - module-goals-fw
+activities:
+  - activity-fw-11
+assessments:
+  - fw-assessment
+labels:
+  - basic
+  - mandatory
+source: "../LV-uav-workflow/morea/UAVFieldwork/material-fw-9.md"
+---
+
+# Litchi Hub - Current DJI Mission Planning Workflow
+
+Litchi Hub has become the current low-budget baseline tool for many DJI mapping workflows. It supports browser-based mission planning, area mapping, photogrammetry grids, 3D planning, simulation, and mission synchronization with the Litchi flight apps.
+
+For standard DJI mapping missions, start with Litchi Hub before using the older `QGroundControl` / `uavRmp` workflow.
+
+Use `uavRmp` only when you need reproducible mission generation from R, custom GIS-derived flight geometry, explicit DEM-based planning, conversion workflows, or Pixhawk-compatible output.
+
+## Core Links
+
+- [Litchi Hub](https://hub.flylitchi.com/)  
+  Browser-based mission planning for DJI workflows.
+
+- [Litchi User Guide](https://flylitchi.com/help)  
+  Official documentation for Litchi, Litchi Hub, and Litchi Pilot workflows.
+
+- [Litchi Hub Guide: Using Litchi Hub with DJI Fly / SkyRover](https://forum.flylitchi.com/t/guide-how-to-use-litchi-hub-with-dji-fly-skyrover/24332)  
+  Forum guide for newer Litchi Hub export and bridge workflows.
+
+- [Litchi Mapping Missions Tutorial – From App Install to Mission Hub Planning](https://www.youtube.com/watch?v=AHaiZhpW8DI)  
+  Practical video tutorial for the new mapping mission workflow.
+
+- [Litchi Area Mapping & Photogrammetry Tutorial](https://www.youtube.com/watch?v=yxdkM2wk9YU)  
+  Video tutorial focusing on area mapping and photogrammetry settings.
+
+## Legal and Airspace Checks
+
+Litchi plans the technical mission. It does not replace the legal airspace check.
+
+Use these tools separately before flying:
+
+- [DIPUL Map Tool](https://maptool-dipul.dfs.de/?language=en)  
+  Official German map tool for checking geographical drone zones.
+
+- [TraX](https://droniq.de/en/drohnenapp-trax/)  
+  Drone flight planning and airspace-checking application for Germany.
+
+::: callout-warning
+A technically valid Litchi mission is not automatically a legally valid flight. Always check geographical drone zones, protected areas, airspace restrictions, maximum altitude, and local constraints separately.
+:::
+
+## Suggested Learning Path
+
+1. Open [Litchi Hub](https://hub.flylitchi.com/).
+2. Create a simple area mapping mission.
+3. Set altitude, overlap, speed, camera angle, and capture mode.
+4. Inspect the mission in 2D and 3D.
+5. Compare the generated flight lines with the logic you know from `QGroundControl` and `uavRmp`.
+6. Check the planned area in DIPUL or TraX.
+7. Only use `uavRmp` if the mission requires reproducible GIS/R-based planning.
+
+## Embedded Tutorials
+
+The following videos are embedded as iframes. If they do not render in your browser or on the course website, open them using the links above.
+
+### Litchi Mapping Missions Tutorial
+
+<iframe width="100%" height="420"
+src="https://www.youtube.com/embed/AHaiZhpW8DI"
+title="Litchi Mapping Missions Tutorial"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+
+### Litchi Area Mapping & Photogrammetry Tutorial
+
+<iframe width="100%" height="420"
+src="https://www.youtube.com/embed/yxdkM2wk9YU"
+title="Litchi Area Mapping and Photogrammetry Tutorial"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+
+::: callout-note
+Interactive web apps such as Litchi Hub, DIPUL, or TraX may block iframe embedding for security reasons. Therefore they are linked directly instead of being embedded.
+:::
+
+## Relation to `uavRmp`
+
+`uavRmp` remains relevant as a special-purpose workflow:
+
+- reproducible mission generation from R,
+- GIS-derived survey geometries,
+- custom DEM workflows,
+- Pixhawk / MAVLink output,
+- QGroundControl or Mission Planner conversion,
+- teaching the internal structure of UAV survey missions.
+
+For ordinary DJI mapping flights, Litchi Hub is now the simpler first choice.
+
+## Connected Module
+
+- [Autonomous Flights Made Easy](../modules/module-fieldwork.qmd)

@@ -7,6 +7,7 @@ module-goals:
   - module-goals-fw
 materials:
   - material-fw-7
+  - material-fw-9  
   - material-fw-8
   - material-fw-6
 activities:

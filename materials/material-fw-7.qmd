@@ -1,8 +1,8 @@
 ---
-title: "## Planning and Running a Mission - QGroundControl Planning a Mission"
+title: "Planning and Running a Mission - Workflow Options"
 id: material-fw-7
 order: 90
-summary: "Getting an idea how to practically plan and perform a flight mission with QGroundControl."
+summary: "Getting an idea how to practically plan and perform a UAV mapping mission with Litchi Hub, QGroundControl, and uavRmp."
 modules:
   - module-fieldwork
 Goals:
@@ -12,53 +12,124 @@ activities:
 assessments:
   - fw-assessment
 labels:
-  - basics
-  - mandatory
-  - YouTube 
+  - basic
+  - optional
+  - YouTube
 source: "../LV-uav-workflow/morea/UAVFieldwork/material-fw-7.md"
 ---
-
-
 
 ## Lowest-Budget Mission Planning Options for DJI Mini-Class Mapping
 
 The table compares realistic low-budget workflows for teaching UAV mapping and object flights with DJI Mini-class aircraft. The focus is not maximum comfort, but the cheapest workable setup that still allows meaningful mission planning.
 
+The practical situation has changed since late 2025. Litchi Hub is now the current baseline workflow for many DJI mapping missions. The older QGroundControl / `uavRmp` / Litchi workflow remains useful, but mostly as a legacy or special-purpose workflow for reproducible planning, GIS-derived flight geometries, explicit DEM logic, Pixhawk workflows, and teaching the internal structure of mission planning.
+
 | Workflow | Approx. software cost | Main role | Strength | Weakness | Lowest-budget suitability |
-|---|---:|---|---|---|---|
-| **QGroundControl + uavRmp + Litchi** | QGC/uavRmp free + Litchi app ca. **30 €** | Open planning + Litchi execution | Very transparent, reproducible, terrain-aware planning possible, strong for teaching | Technically fragile, requires file conversion and careful checking | **Very high** |
-| **Litchi only** | ca. **30 €** | Waypoint execution and simple mission planning | Cheapest practical DJI waypoint workflow, simple, good for object flights | Limited survey planning, weak terrain/planning logic compared with QGC | **High** |
-| **DJIFlightPlanner + Litchi** | **US$99** + Litchi ca. **30 €** | Simple photogrammetry grid planning + Litchi execution | Easy grid planning, direct Litchi export, low one-time cost | Proprietary, Windows-only, less didactically transparent than QGC/uavRmp | **Medium to high** |
-| **Dronelink** | from about **US$20+**, depending on plan | Integrated mission planning and execution | Powerful, flexible, supports mapping/object workflows in one environment | More complex, more expensive, model/controller/OS dependent | **Medium** |
+|------------|-----------:|------------|------------|------------|------------|
+| **Litchi Hub + Litchi / Litchi Pilot** | Litchi Hub + paid flight app, depending on platform and aircraft | Current baseline workflow for many DJI mapping flights | Browser-based planning, area mapping, photogrammetry grids, 3D planning, simulation, KML/KMZ import, direct Litchi ecosystem | Depends on exact drone, controller, operating system, Litchi app generation, and elevation workflow | **Very high** |
+| **QGroundControl + uavRmp + Litchi** | QGC/uavRmp free + Litchi app | Open planning + conversion + Litchi execution | Transparent, reproducible, useful for terrain-aware planning, strong for teaching mission logic | Technically fragile, requires file conversion and careful checking; now mostly legacy/special-purpose for standard DJI mapping | **High for teaching / special workflows** |
+| **QGroundControl only** | free | Open mission planning for Pixhawk-compatible platforms | Mature, open, strong for Pixhawk workflows, survey grid support, terrain following options | Not the direct baseline workflow for DJI Mini-class execution | **High for Pixhawk, limited for DJI** |
+| **DJIFlightPlanner + Litchi** | DJIFlightPlanner US\$99 + Litchi app | Commercial grid planning + Litchi execution | Easy grid planning, direct Litchi-oriented workflow, low one-time licence cost | Proprietary, Windows-only, less didactically transparent than QGC/uavRmp; less central now that Litchi Hub has mapping tools | **Medium** |
 | **Manual flight + interval photos** | free | Manual training / fallback | Cheapest possible, works without mission app | No reproducible autonomous mission, weak for systematic mapping | **Medium as fallback** |
 | **Enterprise tools: UgCS / Pix4D / DroneDeploy etc.** | usually subscription / high cost | Professional mission planning and processing | Strong professional workflows | Too expensive and often overkill for low-budget teaching | **Low** |
 
 ### Interpretation
 
-For a lowest-budget teaching setup, the strongest option is usually the **QGroundControl / uavRmp / Litchi workflow**. It is not the most comfortable solution, but it combines open planning, reproducible mission files, terrain-aware logic, and low-cost DJI execution.
+For ordinary DJI mapping flights, the first tool to check is now **Litchi Hub**. It has become the simplest low-budget baseline workflow for many practical mapping tasks because the mission can be planned directly in the browser and synchronized into the Litchi execution environment.
 
-**Litchi only** is cheaper and simpler, but the planning logic is weaker. It is suitable for simple waypoint missions, object flights, and basic training.
+The older **QGroundControl / uavRmp / Litchi** workflow is still useful, but its role has changed. It is no longer the first choice for simple DJI mapping flights. Its strength is transparency: students can see how flight lines, waypoints, camera geometry, overlap, terrain following, mission files, and conversion steps relate to each other.
 
-**DJIFlightPlanner** is a useful low-cost commercial alternative if the main goal is quick grid planning for photogrammetry. It is easier than QGroundControl/uavRmp, but less open and less suitable for teaching the underlying mission-planning logic.
+**QGroundControl only** is still highly relevant for Pixhawk-based UAVs. For DJI Mini-class workflows, it is mainly useful as a planning reference or as part of the conversion workflow through `uavRmp`.
 
-**Dronelink** is the strongest integrated alternative, but it is not the lowest-budget route. It is better understood as a more powerful, more expensive, and more complex ecosystem.
+**DJIFlightPlanner** remains a possible low-cost commercial alternative if the main goal is simple grid planning and Litchi export. However, because Litchi Hub now includes area mapping and 3D planning, DJIFlightPlanner is less central for this course.
+
+**Manual interval-photo flights** are useful as fallback and for basic pilot training, but they are not a replacement for reproducible autonomous mapping missions.
 
 ### Practical Teaching Recommendation
 
 For low-budget UAV teaching, use a tiered approach:
 
-1. **Litchi only** for basic waypoint and object-flight training.
-2. **QGroundControl + uavRmp + Litchi** for serious mapping logic, terrain-aware planning, and reproducible mission workflows.
-3. **Dronelink** only where budget and device compatibility allow it.
-4. **Manual interval-photo flights** as emergency fallback or introductory exercise.
+1.  **Litchi Hub** for ordinary DJI mapping workflows.
+2.  **QGroundControl + uavRmp + Litchi** for reproducible planning, GIS/DEM-based workflows, conversion logic, and teaching the internal structure of mission planning.
+3.  **QGroundControl only** for Pixhawk-based platforms.
+4.  **Manual interval-photo flights** as emergency fallback or introductory exercise.
 
-::: {.callout-note}
-The distinctive strength of the QGroundControl / uavRmp / Litchi workflow is not that it is the easiest solution. Its strength is that it is cheap, transparent, reproducible, and exposes the actual planning logic behind mapping missions.
+::: callout-note
+The distinctive strength of the QGroundControl / uavRmp / Litchi workflow is not that it is the easiest solution. Its strength is that it is transparent, reproducible, and exposes the actual planning logic behind mapping missions.
+
+For routine DJI mapping flights, Litchi Hub is now usually the simpler first choice.
 :::
+
+## Litchi Hub as Current Baseline Workflow
+
+Use Litchi Hub when:
+
+- the survey area can be drawn directly in the browser,
+- the area can be imported as KML/KMZ,
+- the mission is a standard photogrammetry or mapping grid,
+- overlap, altitude, speed, camera angle, and capture mode can be configured directly in Litchi,
+- 2D/3D visual planning and simulation are sufficient,
+- the selected aircraft can execute the mission through the relevant Litchi app workflow.
+
+Basic workflow:
+
+1.  Open [Litchi Hub](https://hub.flylitchi.com/).
+2.  Create a new mission or flight.
+3.  Select an area mapping / photogrammetry workflow.
+4.  Draw or import the survey area.
+5.  Set altitude, speed, overlap, gimbal angle, and capture mode.
+6.  Inspect the generated grid and capture points.
+7.  Use the 2D/3D preview and simulation.
+8.  Save and synchronize the mission with the relevant Litchi flight app.
+9.  Check the mission legally using DIPUL and/or TraX before flying.
+
+Relevant links:
+
+- [Litchi Hub](https://hub.flylitchi.com/)
+- [Litchi User Guide](https://flylitchi.com/help)
+- [Litchi Hub Guide: Using Litchi Hub with DJI Fly / SkyRover](https://forum.flylitchi.com/t/guide-how-to-use-litchi-hub-with-dji-fly-skyrover/24332)
+- [Litchi Mapping Missions Tutorial – From App Install to Mission Hub Planning](https://www.youtube.com/watch?v=AHaiZhpW8DI)
+- [Litchi Area Mapping & Photogrammetry Tutorial](https://www.youtube.com/watch?v=yxdkM2wk9YU)
+
+::: callout-warning
+Litchi Hub is a mission planning tool. It is not a legal approval system. A technically valid Litchi mission is not automatically a legally valid flight.
+:::
+
+## Legal and Airspace Check
+
+Always check the planned operation separately:
+
+- [DIPUL Map Tool](https://maptool-dipul.dfs.de/?language=en), the official German map tool for geographical drone zones.
+- [TraX](https://droniq.de/en/drohnenapp-trax/), a drone flight planning and airspace-checking application for Germany.
+
+For mapping flights, use the full operational area and the maximum planned altitude for the legal check. Do not check only a single centre point.
+
+## QGroundControl / uavRmp as Legacy and Special-Purpose Workflow
+
+Use the older workflow when:
+
+- the mission should be generated reproducibly from R,
+- the survey geometry comes from GIS analysis,
+- the terrain model should be handled explicitly,
+- a Pixhawk-compatible workflow is required,
+- a QGroundControl or Mission Planner file has to be converted,
+- students should understand the technical structure of mapping missions.
+
+This workflow is not obsolete. It is just no longer the simplest route for ordinary DJI mapping flights.
 
 Watch the QGroundControl mission planning video:
 
 <https://www.youtube.com/watch?v=0d23O_RUOmI>
+
+### Embedded QGroundControl Tutorial
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/0d23O_RUOmI" title="QGroundControl Mission Planning Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+
+::: callout-note
+If the embedded video does not render in your browser or on the course website, open it directly using the link above.
+:::
 
 ## Connected Module
 

@@ -13,7 +13,7 @@ assessments:
   - fw-assessment
 labels:
   - advanced
-  - mandatory
+  - optional
 source: "../LV-uav-workflow/morea/UAVFieldwork/material-fw-8.md"
 ---
 

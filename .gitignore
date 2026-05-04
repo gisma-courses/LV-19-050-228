@@ -8,3 +8,4 @@ scripts
 session-1
 /.quarto/
 **/*.quarto_ipynb
+.positai

@@ -107,10 +107,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../css/styles.css">
 <meta property="og:title" content="UAV Mission Planning Practical Workflow – Micro-Remote Sensing">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/uav-fieldwork/lahn_quer.png">
+<meta property="og:image" content="https://gisma-courses.github.io/LV-19-050-228/images/uav-fieldwork/sensor_size.png">
 <meta property="og:site_name" content="Micro-Remote Sensing">
-<meta property="og:image:height" content="1741">
-<meta property="og:image:width" content="1340">
+<meta property="og:image:height" content="393">
+<meta property="og:image:width" content="530">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -187,26 +187,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#basic-mission-planning-workflow" id="toc-basic-mission-planning-workflow" class="nav-link" data-scroll-target="#basic-mission-planning-workflow">Basic Mission Planning Workflow</a></li>
   <li><a href="#things-you-need" id="toc-things-you-need" class="nav-link" data-scroll-target="#things-you-need">Things You Need</a></li>
   <li><a href="#general-workflow" id="toc-general-workflow" class="nav-link" data-scroll-target="#general-workflow">General Workflow</a></li>
-  <li><a href="#aim-of-the-tutorial" id="toc-aim-of-the-tutorial" class="nav-link" data-scroll-target="#aim-of-the-tutorial">Aim of the Tutorial</a>
+  <li><a href="#aim-of-the-tutorial" id="toc-aim-of-the-tutorial" class="nav-link" data-scroll-target="#aim-of-the-tutorial">Aim of the Tutorial</a></li>
+  </ul></li>
+  <li><a href="#contemporary-workflow-mission-planning-with-litchi-hub" id="toc-contemporary-workflow-mission-planning-with-litchi-hub" class="nav-link" data-scroll-target="#contemporary-workflow-mission-planning-with-litchi-hub">Contemporary Workflow: Mission Planning with Litchi Hub</a>
+  <ul class="collapse">
+  <li><a href="#basic-litchi-hub-workflow" id="toc-basic-litchi-hub-workflow" class="nav-link" data-scroll-target="#basic-litchi-hub-workflow">Basic Litchi Hub Workflow</a></li>
+  <li><a href="#litchi-hub-and-elevation-data" id="toc-litchi-hub-and-elevation-data" class="nav-link" data-scroll-target="#litchi-hub-and-elevation-data">Litchi Hub and Elevation Data</a></li>
+  <li><a href="#specific-settings-for-dji-cameras" id="toc-specific-settings-for-dji-cameras" class="nav-link" data-scroll-target="#specific-settings-for-dji-cameras">Specific Settings for DJI Cameras</a></li>
+  <li><a href="#aircraft-and-app-compatibility" id="toc-aircraft-and-app-compatibility" class="nav-link" data-scroll-target="#aircraft-and-app-compatibility">Aircraft and App Compatibility</a></li>
+  </ul></li>
+  <li><a href="#legacy-special-purpose-workflow-qgroundcontrol-and-uavrmp" id="toc-legacy-special-purpose-workflow-qgroundcontrol-and-uavrmp" class="nav-link" data-scroll-target="#legacy-special-purpose-workflow-qgroundcontrol-and-uavrmp">Legacy / Special-Purpose Workflow: QGroundControl and uavRmp</a>
   <ul class="collapse">
   <li><a href="#digitizing-the-survey-area-using-qgroundcontrols-survey-feature" id="toc-digitizing-the-survey-area-using-qgroundcontrols-survey-feature" class="nav-link" data-scroll-target="#digitizing-the-survey-area-using-qgroundcontrols-survey-feature">Digitizing the Survey Area Using QGroundControl’s Survey Feature</a></li>
-  <li><a href="#specific-settings-for-dji-cameras" id="toc-specific-settings-for-dji-cameras" class="nav-link" data-scroll-target="#specific-settings-for-dji-cameras">Specific Settings for DJI Cameras</a></li>
-  </ul></li>
-  <li><a href="#conversion-of-the-flight-plan-for-litchi-compatible-dji-devices" id="toc-conversion-of-the-flight-plan-for-litchi-compatible-dji-devices" class="nav-link" data-scroll-target="#conversion-of-the-flight-plan-for-litchi-compatible-dji-devices">Conversion of the Flight Plan for Litchi-Compatible DJI Devices</a>
-  <ul class="collapse">
+  <li><a href="#conversion-of-the-flight-plan-for-litchi-compatible-dji-devices" id="toc-conversion-of-the-flight-plan-for-litchi-compatible-dji-devices" class="nav-link" data-scroll-target="#conversion-of-the-flight-plan-for-litchi-compatible-dji-devices">Conversion of the Flight Plan for Litchi-Compatible DJI Devices</a></li>
   <li><a href="#installation-of-r-and-uavrmp" id="toc-installation-of-r-and-uavrmp" class="nav-link" data-scroll-target="#installation-of-r-and-uavrmp">Installation of R and uavRmp</a></li>
-  <li><a href="#calling-makeap-from-uavrmp" id="toc-calling-makeap-from-uavrmp" class="nav-link" data-scroll-target="#calling-makeap-from-uavrmp">Calling <code>makeAP</code> from <code>uavRmp</code></a></li>
+  <li><a href="#calling-makeap-from-uavrmp" id="toc-calling-makeap-from-uavrmp" class="nav-link" data-scroll-target="#calling-makeap-from-uavrmp">Calling <code>makeAP()</code> from <code>uavRmp</code></a></li>
   </ul></li>
-  <li><a href="#alternative-mission-planning-with-dronelink-compatible-dji-devices" id="toc-alternative-mission-planning-with-dronelink-compatible-dji-devices" class="nav-link" data-scroll-target="#alternative-mission-planning-with-dronelink-compatible-dji-devices">Alternative Mission Planning with Dronelink-Compatible DJI Devices</a>
+  <li><a href="#litchi-vs.-qgroundcontroluavrmp" id="toc-litchi-vs.-qgroundcontroluavrmp" class="nav-link" data-scroll-target="#litchi-vs.-qgroundcontroluavrmp">Litchi vs.&nbsp;QGroundControl/uavRmp</a>
   <ul class="collapse">
-  <li><a href="#workflow-using-dronelink" id="toc-workflow-using-dronelink" class="nav-link" data-scroll-target="#workflow-using-dronelink">Workflow Using Dronelink</a></li>
-  </ul></li>
-  <li><a href="#litchi-vs.-dronelink-practical-trade-off" id="toc-litchi-vs.-dronelink-practical-trade-off" class="nav-link" data-scroll-target="#litchi-vs.-dronelink-practical-trade-off">Litchi vs.&nbsp;Dronelink – Practical Trade-Off</a>
-  <ul class="collapse">
-  <li><a href="#litchi-uavrmp-file-based-workflow" id="toc-litchi-uavrmp-file-based-workflow" class="nav-link" data-scroll-target="#litchi-uavrmp-file-based-workflow">Litchi + uavRmp (File-Based Workflow)</a></li>
-  <li><a href="#dronelink-system-based-workflow" id="toc-dronelink-system-based-workflow" class="nav-link" data-scroll-target="#dronelink-system-based-workflow">Dronelink (System-Based Workflow)</a></li>
+  <li><a href="#litchi-hub-litchi-pilot" id="toc-litchi-hub-litchi-pilot" class="nav-link" data-scroll-target="#litchi-hub-litchi-pilot">Litchi Hub / Litchi Pilot</a></li>
+  <li><a href="#qgroundcontrol-uavrmp" id="toc-qgroundcontrol-uavrmp" class="nav-link" data-scroll-target="#qgroundcontrol-uavrmp">QGroundControl + uavRmp</a></li>
   <li><a href="#practical-implication" id="toc-practical-implication" class="nav-link" data-scroll-target="#practical-implication">Practical Implication</a></li>
   </ul></li>
+  <li><a href="#legal-and-airspace-checks" id="toc-legal-and-airspace-checks" class="nav-link" data-scroll-target="#legal-and-airspace-checks">Legal and Airspace Checks</a>
+  <ul class="collapse">
   <li><a href="#connected-module" id="toc-connected-module" class="nav-link" data-scroll-target="#connected-module">Connected Module</a></li>
   </ul></li>
   </ul>
@@ -250,38 +254,202 @@ Warnung
 </div>
 <section id="uav-mission-planning---practical-workflow" class="level1">
 <h1>UAV Mission Planning - Practical Workflow</h1>
-<p>The open UAV community is focused on the PixHawk autopilot unit and the <a href="http://qgroundcontrol.com/downloads/">MissionPlanner</a>, or the more recent and platform-independent <a href="http://ardupilot.org/planner2/">QGroundControl</a> software. Both are well documented and provide APIs and easy-to-use GUIs.</p>
-<p>Nevertheless, they miss some planning capabilities, such as high-resolution terrain-following flight planning, dealing with battery-dependent task splitting, safe departures and approaches within the split main tasks, or exporting the tasks to DJI-compatible format. Other commercial competitors such as <a href="https://www.ugcs.com/">UgCS</a> are powerful but cost intensive and complex.</p>
+<p>This tutorial introduces practical UAV mission planning for mapping flights. The workflow has changed substantially since 2025. For many DJI-based mapping tasks, <a href="https://hub.flylitchi.com/">Litchi Hub</a> is now the most practical low-budget baseline workflow because it provides browser-based mission planning, area mapping for photogrammetry, Google Earth based 3D planning, flight simulation, and direct planning support for common DJI workflows.</p>
+<p>The older <code>QGroundControl</code> / <code>uavRmp</code> workflow remains relevant, but mostly as a legacy or special-purpose toolchain. It is still useful when missions must be generated reproducibly from GIS data, when terrain-following logic must be controlled explicitly, when Pixhawk-based platforms are used, or when mission formats need to be converted.</p>
+<p>The goal of this page is therefore not to replace one workflow with another, but to distinguish clearly between:</p>
+<ul>
+<li>the contemporary Litchi-based baseline workflow,</li>
+<li>the legacy/special-purpose <code>QGroundControl</code> / <code>uavRmp</code> workflow,</li>
+<li>the legal airspace-check workflow.</li>
+</ul>
 <section id="basic-mission-planning-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="basic-mission-planning-workflow">Basic Mission Planning Workflow</h2>
-<p>This tutorial deals with effective and safe planning of an autonomous flight. It provides basic information about hardware and software, supplemental data, and useful additions. The extended workflow gives further explanations and hints for improving your planning.</p>
+<p>This tutorial deals with effective and safe planning of autonomous UAV mapping flights. It provides basic information about hardware and software, supplemental data, and useful additions. The extended workflow gives further explanations and hints for improving planning quality.</p>
+<p>For ordinary DJI mapping tasks, start with Litchi Hub. Use the older <code>QGroundControl</code> / <code>uavRmp</code> workflow only when the mission requires external geospatial computation, explicit conversion, or Pixhawk-compatible output.</p>
 </section>
 <section id="things-you-need" class="level2">
 <h2 class="anchored" data-anchor-id="things-you-need">Things You Need</h2>
+<p><strong>Data</strong></p>
 <ul>
-<li><a href="https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1/view">Digital Surface Model</a>. Account needed.</li>
-<li><a href="http://qgroundcontrol.com/">QGroundControl</a></li>
-<li><a href="https://docs.qgroundcontrol.com/master/en/PlanView/pattern_survey.html">Step-by-step tutorial</a></li>
-<li><a href="https://app.airmap.com/">Airmap</a>, an easy-to-use application</li>
-<li><a href="https://app.flynex.io/">flynex</a>, a complex professional application with extensive support</li>
+<li><a href="https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1/view">Digital Surface Model / Digital Elevation Model data</a>. Account may be required.</li>
+<li>Any other Digital Surface Model or Digital Elevation Model data if available and suitable.</li>
+</ul>
+<p><strong>Contemporary low-budget planning workflow</strong></p>
+<ul>
+<li><a href="https://hub.flylitchi.com/">Litchi Hub</a>, browser-based mission planning for DJI workflows.</li>
+<li><a href="https://flylitchi.com/help">Litchi User Guide</a>, official documentation for Litchi and Litchi Hub workflows.</li>
+<li><a href="https://flylitchi.com/">Litchi Mission Hub / Litchi classic entry point</a>, mainly relevant for classic Litchi workflows and older mission management.</li>
+</ul>
+<p><strong>Legacy / special-purpose planning workflow</strong></p>
+<ul>
+<li><a href="https://qgroundcontrol.com/downloads/">QGroundControl</a>, an open source Ground Control Station for mission planning and mission upload. It is a mature and reliable tool, but for straightforward DJI mapping workflows it should now be considered mainly a legacy or special-purpose option.</li>
+<li><a href="https://docs.qgroundcontrol.com/master/en/qgc-user-guide/plan_view/pattern_survey.html">QGroundControl Survey Tutorial</a>, step-by-step documentation for creating survey grid missions.</li>
+<li><a href="https://github.com/gisma/uavRmp"><code>uavRmp</code></a>, an <code>R</code> package for reproducible UAV mission generation and conversion.</li>
+</ul>
+<p><strong>Legal checks</strong></p>
+<ul>
+<li><a href="https://maptool-dipul.dfs.de/?language=en">DIPUL Map Tool</a>, the official German map tool for checking geographical drone zones.</li>
+<li><a href="https://droniq.de/en/drohnenapp-trax/">TraX</a>, a drone flight planning and airspace-checking application for Germany.</li>
 </ul>
 </section>
 <section id="general-workflow" class="level2">
 <h2 class="anchored" data-anchor-id="general-workflow">General Workflow</h2>
 <ol type="1">
-<li>Identify the area and digitize it.</li>
-<li>Adjust the flight parameters to your needs and generate flight control files.</li>
-<li>Convert and upload the mission control files either directly to your tablet or smartphone, or via the Litchi cloud.</li>
+<li>Identify the survey area.</li>
+<li>Check legal restrictions using DIPUL and/or TraX.</li>
+<li>Plan the mission in Litchi Hub if the task is a standard DJI mapping mission.</li>
+<li>Use <code>QGroundControl</code> / <code>uavRmp</code> only if the mission requires external GIS-based planning, reproducible <code>R</code> generation, Pixhawk output, or conversion workflows.</li>
+<li>Check flight altitude, overlap, camera angle, speed, terrain clearance, start behaviour, and return behaviour.</li>
+<li>Upload or synchronize the mission to the relevant flight app.</li>
 <li>Make an extensive pre-flight check.</li>
-<li>Fly the mission.</li>
+<li>Fly the mission under safe and legal field conditions.</li>
 </ol>
 </section>
 <section id="aim-of-the-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="aim-of-the-tutorial">Aim of the Tutorial</h2>
-<p>The tutorial introduces the basic usage of <code>QGroundControl</code> and <code>uavRmp</code>.</p>
-<p>The goal is to create flight plans for surveys over high relief-energy surfaces and terrain to generate orthophotos and point clouds.</p>
-<section id="digitizing-the-survey-area-using-qgroundcontrols-survey-feature" class="level3">
-<h3 class="anchored" data-anchor-id="digitizing-the-survey-area-using-qgroundcontrols-survey-feature">Digitizing the Survey Area Using QGroundControl’s Survey Feature</h3>
+<p>The tutorial introduces the basic logic of UAV mission planning.</p>
+<p>The practical goal is to create flight plans for surveys over high relief-energy surfaces and terrain to generate orthophotos and point clouds.</p>
+<p>The current recommended entry point for DJI workflows is Litchi Hub. The <code>QGroundControl</code> / <code>uavRmp</code> workflow is retained as a second path because it explains the structure of survey missions very clearly and remains useful for special-purpose workflows.</p>
+</section>
+</section>
+<section id="contemporary-workflow-mission-planning-with-litchi-hub" class="level1">
+<h1>Contemporary Workflow: Mission Planning with Litchi Hub</h1>
+<p>Litchi Hub has become the simplest baseline tool for many DJI mapping flights. It allows mission planning directly in the browser and provides functions that previously required separate tools or conversion workflows.</p>
+<p>Use Litchi Hub directly when:</p>
+<ul>
+<li>the survey area can be drawn or imported as a simple mapping polygon,</li>
+<li>the mission is a standard photogrammetry grid,</li>
+<li>overlap, speed, camera angle, and capture settings can be configured directly in Litchi,</li>
+<li>3D visual planning and flight simulation are sufficient,</li>
+<li>the mission can be executed with the supported Litchi or Litchi Pilot app for the selected aircraft.</li>
+</ul>
+<section id="basic-litchi-hub-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="basic-litchi-hub-workflow">Basic Litchi Hub Workflow</h2>
+<ol type="1">
+<li>Open <a href="https://hub.flylitchi.com/">Litchi Hub</a>.</li>
+<li>Log in with your Litchi account.</li>
+<li>Create a new flight.</li>
+<li>Select an appropriate flight type, for example an area mapping or waypoint-based mission.</li>
+<li>Draw the survey area or import a suitable KML/KMZ mapping polygon.</li>
+<li>Select the drone and camera profile if available.</li>
+<li>Set flight altitude, speed, overlap, gimbal angle, and capture mode.</li>
+<li>Check the generated flight lines and capture points.</li>
+<li>Use the 2D/3D preview or Google Earth based planning view to inspect the mission.</li>
+<li>Simulate the mission before flying.</li>
+<li>Save the mission and synchronize it with the relevant Litchi flight app.</li>
+<li>Perform a conservative field check before execution.</li>
+</ol>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warnung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Litchi Hub is a planning tool, not a legal approval system. Always check the planned operation separately using DIPUL and/or TraX. Also check whether the selected drone, controller, mobile device, and Litchi app generation actually support the required waypoint or mapping workflow.</p>
+</div>
+</div>
+</section>
+<section id="litchi-hub-and-elevation-data" class="level2">
+<h2 class="anchored" data-anchor-id="litchi-hub-and-elevation-data">Litchi Hub and Elevation Data</h2>
+<p>Litchi Hub and the classic Litchi workflows support elevation-aware planning. However, do not confuse visual map overlays with terrain-following elevation models.</p>
+<p>For terrain-aware missions, check the currently supported DEM workflow carefully. In classic Litchi documentation, DEM import is based on Esri ASCII Grid files (<code>.asc</code>) in the WGS-84 coordinate system. GeoTIFFs or DOMs may be useful as visual overlays, but they should not automatically be treated as terrain-following DEMs unless the current Litchi workflow explicitly uses them as elevation data.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Practical rule: import or activate elevation data before finalizing the mapping mission, then inspect all altitudes and terrain clearances. Do not assume that a visually correct map overlay guarantees correct terrain-following behaviour.</p>
+</div>
+</div>
+</section>
+<section id="specific-settings-for-dji-cameras" class="level2">
+<h2 class="anchored" data-anchor-id="specific-settings-for-dji-cameras">Specific Settings for DJI Cameras</h2>
+<p>To derive a valid planning, camera parameters must be set correctly. Camera parameters are often standardized to the 35 mm full-frame sensor format. DJI Mini-class sensors are much smaller. The DJI Mini 2, for example, uses a 1/2.3 inch sensor. The default setting of many point-and-shoot cameras is 16:9, which changes the usable sensor height because part of the image height is cut.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/uav-fieldwork/sensor_size.png" class="img-fluid figure-img"></p>
+<figcaption>Sensor size comparison</figcaption>
+</figure>
+</div>
+<p>The real focal length can be calculated approximately by dividing the equivalent focal length by the corresponding <a href="https://shuttermuse.com/calculate-cameras-crop-factor/">crop factor</a>.</p>
+<pre class="text"><code>rF = eFL / cf
+
+eFL = equivalent Focal Length
+cf  = crop factor
+rF  = real Focal Length
+
+For the Mavic Mini 2:
+rF = 24 / 5.6 = 4.285714
+rF = 4.3</code></pre>
+<p>According to this, the camera specs for the DJI Mavic Mini 2 are:</p>
+<p>Image Size 4:3, 4000 x 3000:</p>
+<ul>
+<li>Sensor Width: 6.17 mm</li>
+<li>Sensor Height: 4.77 mm</li>
+<li>Focal Length: 4.3 mm</li>
+</ul>
+<p>Image Size 16:9, 4000 x 2250:</p>
+<ul>
+<li>Sensor Width: 6.17 mm</li>
+<li>Sensor Height: 4.56 mm</li>
+<li>Focal Length: 4.3 mm</li>
+</ul>
+<p>You may also use a <a href="https://www.cambridgeincolour.com/tutorials/dof-calculator.htm">depth of field calculator</a> to estimate the minimum distance of the camera to the target.</p>
+</section>
+<section id="aircraft-and-app-compatibility" class="level2">
+<h2 class="anchored" data-anchor-id="aircraft-and-app-compatibility">Aircraft and App Compatibility</h2>
+<p>For DJI workflows, mission planning and mission execution are two different things. A flight may be planned in Litchi Hub, but execution depends on whether the concrete aircraft, controller, operating system, and Litchi app generation support the required waypoint or mapping mode.</p>
+<p>For older DJI aircraft, use the classic <strong>Litchi for DJI Drones</strong> app where supported. For newer DJI models, especially Mini 3 and newer, Litchi distinguishes these workflows from the classic app and refers users to <strong>Litchi Pilot</strong>.</p>
+<p>For the Mini class up to the Mini 3 Pro, this mainly means:</p>
+<ul>
+<li><strong>Mavic Mini 1</strong></li>
+<li><strong>DJI Mini SE v1</strong></li>
+<li><strong>DJI Mini 2</strong></li>
+<li><strong>DJI Mini 3</strong></li>
+<li><strong>DJI Mini 3 Pro</strong></li>
+</ul>
+<p>For <strong>Mavic Mini 1, Mini SE v1, and Mini 2</strong>, use the classic <strong>Litchi for DJI Drones</strong> app if your device setup is supported.</p>
+<p>For <strong>Mini 3 and Mini 3 Pro</strong>, use <strong>Litchi Pilot</strong>, not the classic Litchi app. Check this before the course because support depends on the exact controller and Android/iOS setup.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warnung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do not assume that a DJI Mini drone is supported only because it belongs to the Mini series. Support is determined by the exact drone model, controller, mobile device, operating system, Litchi app generation, and DJI SDK availability. Always test the complete setup with a short, low-risk mission before using it in the field.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="legacy-special-purpose-workflow-qgroundcontrol-and-uavrmp" class="level1">
+<h1>Legacy / Special-Purpose Workflow: QGroundControl and uavRmp</h1>
+<p>The open UAV community has traditionally focused on the Pixhawk autopilot ecosystem and on Ground Control Station software such as <a href="https://ardupilot.org/planner/">Mission Planner</a> and <a href="https://qgroundcontrol.com/">QGroundControl</a>. Both are well documented and provide APIs and easy-to-use graphical interfaces.</p>
+<p>However, depending on the task, they may still lack a simple low-budget workflow for high-resolution terrain-following flight planning, battery-dependent task splitting, safe departures and approaches within split mission chunks, or direct export to DJI-compatible mission formats. Commercial competitors such as <a href="https://www.ugcs.com/">UgCS</a> are powerful, but cost-intensive and complex.</p>
+<p>The R package <a href="https://github.com/gisma/uavRmp"><code>uavRmp</code></a> bridges this gap. It generates MAVLink-compliant mission files that can be uploaded to Pixhawk controllers via Ground Control Station software. It also exports or converts QGroundControl plannings to the Litchi CSV format for DJI drones.</p>
+<p>Use this workflow when:</p>
+<ul>
+<li>you use a Pixhawk-based UAV,</li>
+<li>you need reproducible mission generation from <code>R</code>,</li>
+<li>the mission geometry comes from external GIS analysis,</li>
+<li>you need explicit control over DEM-based terrain following,</li>
+<li>you need to convert QGroundControl or Mission Planner output into Litchi-compatible formats,</li>
+<li>you want to teach or inspect the internal structure of survey missions.</li>
+</ul>
+<section id="digitizing-the-survey-area-using-qgroundcontrols-survey-feature" class="level2">
+<h2 class="anchored" data-anchor-id="digitizing-the-survey-area-using-qgroundcontrols-survey-feature">Digitizing the Survey Area Using QGroundControl’s Survey Feature</h2>
 <p>We want to plan a flight in structured terrain in the upper Lahn valley. Start <code>QGroundControl</code>, navigate to the Mission tab, open <code>Pattern -&gt; Survey</code>, digitize a pattern, and fill in the values in the right-side menus for camera angle, overlap, and related parameters.</p>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -315,88 +483,39 @@ Warnung
 </div>
 <div class="callout-body-container callout-body">
 <p>During planning, observe all airspace and protected-area regulations. This is not only a legal issue, but also a matter of maximum safety.</p>
-<p>Relevant links: <a href="https://www.lba.de/DE/Drohnen/Drohnen_node.html;jsessionid=7ECB1558F37F914B0EF93F2D54B8991B.live11311">LBA legal information</a> and the <a href="https://www.bmvi.de/SharedDocs/DE/Anlage/LF/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile">BMDV cheat card</a>.</p>
+<p>Relevant links: <a href="https://www.lba.de/DE/Drohnen/Drohnen_node.html">LBA legal information</a> and the <a href="https://bmdv.bund.de/SharedDocs/DE/Anlage/DG/drohnen-flyer-regelungen-eu-und-deutschland.pdf?__blob=publicationFile">BMDV cheat card</a>.</p>
 </div>
 </div>
-<p>If you use a Pixhawk device, the QGroundControl workflow is sufficient at this point.</p>
-</section>
-<section id="specific-settings-for-dji-cameras" class="level3">
-<h3 class="anchored" data-anchor-id="specific-settings-for-dji-cameras">Specific Settings for DJI Cameras</h3>
-<p>To derive a valid planning, we need to calculate the correct camera parameters. Typically camera parameters are standardized to the 35 mm full-frame sensor format. The DJI Mini 2 sensors have a size of 1/2.3 inch. The default setting of many point-and-shoot cameras is 16:9, which changes the sensor size because part of the height is cut.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/uav-fieldwork/sensor_size.png" class="img-fluid figure-img"></p>
-<figcaption>Sensor size comparison</figcaption>
-</figure>
-</div>
-<p>The real focal length can be calculated approximately by dividing the equivalent focal length by the corresponding <a href="https://shuttermuse.com/calculate-cameras-crop-factor/">crop factor</a>.</p>
-<pre class="text"><code>rF = eFL / cf
-
-eFL = equivalent Focal Length
-cf  = crop factor
-rF  = real Focal Length
-
-For the Mavic Mini 2:
-rF = 24 / 5.6 = 4.285714
-rF = 4.3</code></pre>
-<p>According to this, the camera specs for the DJI Mavic Mini 2 are:</p>
-<p>Image Size 4:3, 4000 x 3000:</p>
-<ul>
-<li>Sensor Width: 6.17 mm</li>
-<li>Sensor Height: 4.77 mm</li>
-<li>Focal Length: 4.3 mm</li>
-</ul>
-<p>Image Size 16:9, 4000 x 2250:</p>
-<ul>
-<li>Sensor Width: 6.17 mm</li>
-<li>Sensor Height: 4.56 mm</li>
-<li>Focal Length: 4.3 mm</li>
-</ul>
-<p>You may also use a <a href="https://www.cambridgeincolour.com/tutorials/dof-calculator.htm">depth of field calculator</a> to estimate the minimum distance of the camera to the target.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For DJI usage, save this flight plan to an appropriate folder and follow the instructions in the conversion chapter to create a Litchi-compatible mission file.</p>
-<p>This workflow is valid for DJI aircraft only if the concrete aircraft, controller, operating system, and Litchi app generation support waypoint missions via the DJI SDK. For the Mini class up to the Mini 3 Pro, this mainly means:</p>
-<ul>
-<li><strong>Mavic Mini 1</strong></li>
-<li><strong>DJI Mini SE v1</strong></li>
-<li><strong>DJI Mini 2</strong></li>
-<li><strong>DJI Mini 3</strong></li>
-<li><strong>DJI Mini 3 Pro</strong></li>
-</ul>
-<p>For <strong>Mavic Mini 1, Mini SE v1, and Mini 2</strong>, use the classic <strong>Litchi for DJI Drones</strong> app. For <strong>Mini 3 and Mini 3 Pro</strong>, use <strong>Litchi Pilot</strong>, not the classic Litchi app. Check this before the course because support depends on the exact controller and Android/iOS setup.</p>
-</div>
-</div>
-</section>
+<p>If you use a Pixhawk device, the QGroundControl workflow may already be sufficient at this point.</p>
 </section>
 <section id="conversion-of-the-flight-plan-for-litchi-compatible-dji-devices" class="level2">
 <h2 class="anchored" data-anchor-id="conversion-of-the-flight-plan-for-litchi-compatible-dji-devices">Conversion of the Flight Plan for Litchi-Compatible DJI Devices</h2>
-<p>The R package <a href="https://github.com/gisma/uavRmp"><code>uavRmp</code></a> bridges this gap. It generates MAVLINK-compliant mission files that can be uploaded to the Pixhawk controller via any Ground Control Station software. It also exports or converts QGroundControl plannings to the Litchi CSV format for DJI drones.</p>
-<p>For DJI aircraft, this conversion is only the planning and file-generation step. The actual execution of the mission depends on whether the aircraft is supported by the relevant Litchi app through DJI SDK access. For the Mini class up to the Mini 3 Pro, the relevant distinction is:</p>
+<p>For DJI aircraft, this conversion is only the planning and file-generation step. The actual execution of the mission depends on whether the aircraft is supported by the relevant Litchi app through DJI SDK access.</p>
+<p>For the Mini class up to the Mini 3 Pro, the relevant distinction is:</p>
 <ul>
 <li><strong>Classic Litchi for DJI Drones:</strong> Mavic Mini 1, Mini SE v1, Mini 2.</li>
 <li><strong>Litchi Pilot:</strong> Mini 3 and Mini 3 Pro.</li>
 </ul>
-<p>The classic Litchi app lists Mini 2, Mini SE v1, and Mavic Mini 1 as compatible aircraft, while Mini 3 and Mini 3 Pro are handled through Litchi Pilot instead. Litchi Pilot is still listed separately from the classic app and supports waypoint planning/execution for newer DJI models including Mini 3 and Mini 3 Pro.</p>
-<section id="installation-of-r-and-uavrmp" class="level3">
-<h3 class="anchored" data-anchor-id="installation-of-r-and-uavrmp">Installation of R and uavRmp</h3>
-<p>First install R and preferably the RStudio IDE. You can use the <a href="https://geomoer.github.io/moer-base-r/unit01/unit01-02_Installation.html">HowTo install R &amp; RStudio</a> tutorial, or the <a href="https://github.com/r-lib/rig#the-r-installation-manager">rig R installation manager</a>. Then follow the <a href="https://github.com/gisma/uavRmp"><code>uavRmp</code></a> homepage and install the package.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"uavRmp"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-<p>To install the current GitHub version, install <code>devtools</code> and the latest GitHub version of <code>link2GI</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"gisma/uavRmp"</span>, <span class="at">ref =</span> <span class="st">"master"</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"r-spatial/link2GI"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The classic Litchi app lists Mini 2, Mini SE v1, and Mavic Mini 1 as compatible aircraft, while Mini 3 and newer are handled through Litchi Pilot instead. Litchi Pilot is separate from the classic app and supports newer DJI models where DJI SDK access is available.</p>
 </section>
-<section id="calling-makeap-from-uavrmp" class="level3">
-<h3 class="anchored" data-anchor-id="calling-makeap-from-uavrmp">Calling <code>makeAP</code> from <code>uavRmp</code></h3>
+<section id="installation-of-r-and-uavrmp" class="level2">
+<h2 class="anchored" data-anchor-id="installation-of-r-and-uavrmp">Installation of R and uavRmp</h2>
+<p>First install R and preferably the RStudio IDE. You can use the <a href="https://geomoer.github.io/moer-base-r/unit01/unit01-02_Installation.html">HowTo install R &amp; RStudio</a> tutorial, or the <a href="https://github.com/r-lib/rig#the-r-installation-manager">rig R installation manager</a>. Then install <code>uavRmp</code>.</p>
+<p>The recommended installation method for the current GitHub version is <code>pak</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pak"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"gisma/uavRmp"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If <code>pak</code> is already installed, use:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"gisma/uavRmp"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The CRAN version can be installed with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"uavRmp"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The older <code>devtools::install_github()</code> workflow is no longer the recommended installation method, but may still work in existing development environments:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"gisma/uavRmp"</span>, <span class="at">ref =</span> <span class="st">"master"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If <code>link2GI</code> is required for your local workflow, install it separately:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"r-spatial/link2GI"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="calling-makeap-from-uavrmp" class="level2">
+<h2 class="anchored" data-anchor-id="calling-makeap-from-uavrmp">Calling <code>makeAP()</code> from <code>uavRmp</code></h2>
 <p>There are many optional arguments that control generation of an autonomous flight plan. In this first use case, keep it simple. Results are stored in a fixed folder structure. The root folder is set by <code>projectDir</code>, for example <code>~/proj/uav</code>. The current working directory is generated from <code>locationName</code> and is always a subfolder of <code>projectDir</code>. The folder structure creates subfolders for log files, temporary data, and mission control files.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -419,28 +538,28 @@ Hinweis
 </div>
 <p>Explanation of the used arguments:</p>
 <ul>
-<li><code>useMP = TRUE</code> activates QGroundControl or MissionPlanner task files.</li>
+<li><code>useMP = TRUE</code> activates QGroundControl or Mission Planner task files.</li>
 <li><code>demFn = filenameDEM</code> sets path and file name for the DEM.</li>
 <li><code>surveyArea = filenameFlightarea</code> sets path and file name of the QGroundControl flight plan.</li>
 </ul>
 <p>The example below uses demo files from the package. To change it, provide the path and name of your DEM and planning file.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(uavRmp)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>filenameDEM <span class="ot">=</span> <span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="st">"mrbiko.tif"</span>, <span class="at">package =</span> <span class="st">"uavRmp"</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>filenameFlightarea <span class="ot">=</span> <span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="st">"tutdata_qgc_survey.plan"</span>, <span class="at">package =</span> <span class="st">"uavRmp"</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>fp <span class="ot">=</span> <span class="fu">makeAP</span>(<span class="at">projectDir =</span> <span class="st">"~/uav"</span>,</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">useMP =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">surveyArea =</span> filenameFlightarea,</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">demFn =</span> filenameDEM,</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">cameraType =</span> <span class="st">"dji43"</span>,</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">uavType =</span> <span class="st">"dji_csv"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(uavRmp)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>filenameDEM <span class="ot">=</span> <span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="st">"mrbiko.tif"</span>, <span class="at">package =</span> <span class="st">"uavRmp"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>filenameFlightarea <span class="ot">=</span> <span class="fu">system.file</span>(<span class="st">"extdata"</span>, <span class="st">"tutdata_qgc_survey.plan"</span>, <span class="at">package =</span> <span class="st">"uavRmp"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>fp <span class="ot">=</span> <span class="fu">makeAP</span>(<span class="at">projectDir =</span> <span class="st">"~/uav"</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">useMP =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">surveyArea =</span> filenameFlightarea,</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>            <span class="at">demFn =</span> filenameDEM,</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>            <span class="at">cameraType =</span> <span class="st">"dji43"</span>,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">uavType =</span> <span class="st">"dji_csv"</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The script generates R objects for visualization, log files, and flight control files for running a mission on supported DJI/Litchi setups.</p>
 <p>For a more comprehensive tutorial, see <a href="https://gisma.github.io/uavRmp/articles/uavRmp_2.html">Mission Planning on basis of QGroundControl</a>.</p>
-<p>If you just want to convert flight plans from GroundControl to Litchi, you can use the Shiny GUI:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(uavRmp)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">runApp</span>(<span class="fu">system.file</span>(<span class="st">"shiny/plan2litchi/"</span>, <span class="st">"/app.R"</span>, <span class="at">package =</span> <span class="st">"uavRmp"</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you just want to convert flight plans from QGroundControl to Litchi, you can use the Shiny GUI:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(uavRmp)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">runApp</span>(<span class="fu">system.file</span>(<span class="st">"shiny/plan2litchi/"</span>, <span class="st">"app.R"</span>, <span class="at">package =</span> <span class="st">"uavRmp"</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Navigate to the requested files and check the output. Be patient; it may take a while.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -448,7 +567,7 @@ Hinweis
 <figcaption>uavRmp Shiny interface</figcaption>
 </figure>
 </div>
-<p>After checking the files, import the control file to the <a href="https://flylitchi.com/hub">Litchi Hub</a> or to the corresponding Litchi/Pilot workflow used for the supported aircraft. You need an account.</p>
+<p>After checking the files, import the control file to the relevant Litchi workflow. For older workflows this may be the classic <a href="https://flylitchi.com/hub">Litchi Mission Hub</a>. For newer workflows, use <a href="https://hub.flylitchi.com/">Litchi Hub</a> or the corresponding Litchi Pilot workflow used for the supported aircraft. You need a Litchi account.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -459,57 +578,72 @@ Tipp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Ready to take off: that is your first flight plan.</p>
+<p>Ready to take off: that is your first converted flight plan.</p>
 </div>
 </div>
 </section>
 </section>
-<section id="alternative-mission-planning-with-dronelink-compatible-dji-devices" class="level2">
-<h2 class="anchored" data-anchor-id="alternative-mission-planning-with-dronelink-compatible-dji-devices">Alternative Mission Planning with Dronelink-Compatible DJI Devices</h2>
-<p>Dronelink provides an alternative planning and execution environment for DJI aircraft. In contrast to the Litchi workflow described above, this is not a <code>QGroundControl</code> → <code>uavRmp</code> → Litchi CSV conversion workflow. Dronelink is used as its own mission planning system.</p>
-<p>This means that the survey geometry, altitude logic, speed, camera actions, and flight direction must be defined and checked directly in Dronelink. The <code>QGroundControl</code> / <code>uavRmp</code> workflow can still be used as a reference for terrain-aware planning, camera geometry, overlap estimation, and mission validation, but the executable mission is created in Dronelink.</p>
-<p>For DJI Mini-class drones up to the Mini 3 Pro, Dronelink support depends on the exact aircraft, controller, operating system, and app version. Relevant Mini-class models include:</p>
+<section id="litchi-vs.-qgroundcontroluavrmp" class="level1">
+<h1>Litchi vs.&nbsp;QGroundControl/uavRmp</h1>
+<p>For DJI-based workflows, three fundamentally different approaches exist for executing planned missions.</p>
+<section id="litchi-hub-litchi-pilot" class="level2">
+<h2 class="anchored" data-anchor-id="litchi-hub-litchi-pilot">Litchi Hub / Litchi Pilot</h2>
 <ul>
-<li><strong>Mavic Mini 1 / DJI Mini SE v1</strong></li>
-<li><strong>DJI Mini 2</strong></li>
-<li><strong>DJI Mini 3</strong></li>
-<li><strong>DJI Mini 3 Pro</strong></li>
-</ul>
-<p>For Mini 3 and Mini 3 Pro, Dronelink currently documents Android-based support only: no iOS support, no DJI RC support, and installation via the correct Dronelink APK rather than the Google Play or Apple App Store version. Supported controller setups include DJI RC Pro for Mini 3 Pro and DJI RC-N1 with modern 64-bit Android devices for Mini 3 / Mini 3 Pro. :contentReference<span data-index="0">oaicite:0</span></p>
-<section id="workflow-using-dronelink" class="level3">
-<h3 class="anchored" data-anchor-id="workflow-using-dronelink">Workflow Using Dronelink</h3>
-<ol type="1">
-<li>Open the Dronelink web planner or app.</li>
-<li>Create a new mission for the selected survey area.</li>
-<li>Define the mission geometry, for example as a mapping grid, path, orbit, facade flight, or waypoint mission.</li>
-<li>Set the relevant flight parameters:
+<li><strong>Concept:</strong> Plan and manage the mission directly in the Litchi ecosystem.</li>
+<li><strong>Strengths:</strong>
 <ul>
-<li>altitude or terrain-following logic,</li>
-<li>speed,</li>
-<li>camera angle,</li>
-<li>photo interval or capture mode,</li>
-<li>overlap / spacing,</li>
-<li>flight direction,</li>
-<li>start and end behaviour.</li>
+<li>Current low-budget baseline workflow for many DJI mapping flights.</li>
+<li>Browser-based planning.</li>
+<li>Area mapping / photogrammetry support.</li>
+<li>3D planning and simulation.</li>
+<li>KML/KMZ mapping area import.</li>
+<li>Direct connection to Litchi execution workflows.</li>
 </ul></li>
-<li>Check all generated waypoints, camera actions, altitude changes, and turns.</li>
-<li>Synchronize the mission to the mobile device or controller.</li>
-<li>Perform the complete pre-flight check.</li>
-<li>Execute the mission.</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Dronelink is not used here as a target format for <code>uavRmp</code>. It is a separate mission planning environment. Use <code>QGroundControl</code> and <code>uavRmp</code> for planning comparison, terrain and camera-geometry checks, or teaching the structure of a survey mission, but create and verify the executable Dronelink mission inside Dronelink itself.</p>
-</div>
-</div>
+<li><strong>Limitations:</strong>
+<ul>
+<li>Depends on exact drone, controller, operating system, and Litchi app generation.</li>
+<li>Terrain and elevation workflows must be checked carefully.</li>
+<li>Not a legal airspace approval system.</li>
+<li>Less transparent than code-based mission generation.</li>
+</ul></li>
+</ul>
+</section>
+<section id="qgroundcontrol-uavrmp" class="level2">
+<h2 class="anchored" data-anchor-id="qgroundcontrol-uavrmp">QGroundControl + uavRmp</h2>
+<ul>
+<li><strong>Concept:</strong> QGroundControl / Mission Planner -&gt; <code>uavRmp</code> -&gt; Litchi CSV or MAVLink output.</li>
+<li><strong>Strengths:</strong>
+<ul>
+<li>Transparent and reproducible.</li>
+<li>Strong integration with external GIS and <code>R</code>.</li>
+<li>Useful for Pixhawk workflows.</li>
+<li>Useful for teaching mission-planning logic.</li>
+<li>Useful for explicit DEM and conversion workflows.</li>
+</ul></li>
+<li><strong>Limitations:</strong>
+<ul>
+<li>Now mostly legacy or special-purpose for straightforward DJI workflows.</li>
+<li>Technically fragile because of format dependencies, import issues, and SDK constraints.</li>
+<li>More complex than direct Litchi Hub planning.</li>
+</ul></li>
+</ul>
+</section>
+<section id="practical-implication" class="level2">
+<h2 class="anchored" data-anchor-id="practical-implication">Practical Implication</h2>
+<p>For ordinary DJI mapping missions, start with Litchi Hub.</p>
+<p>Use <code>QGroundControl</code> / <code>uavRmp</code> when the mission has to be computed from geospatial data, converted between formats, generated reproducibly from <code>R</code>, or used with Pixhawk-based systems.</p>
+</section>
+</section>
+<section id="legal-and-airspace-checks" class="level1">
+<h1>Legal and Airspace Checks</h1>
+<p>Mission planning and legal checking are separate tasks.</p>
+<p>Litchi Hub can create and preview the technical mission. It does not replace a legal check of German geographical zones, protected areas, airspace restrictions, local constraints, or operational category requirements.</p>
+<p>Use:</p>
+<ul>
+<li><a href="https://maptool-dipul.dfs.de/?language=en">DIPUL Map Tool</a> for official German geographical drone zones.</li>
+<li><a href="https://droniq.de/en/drohnenapp-trax/">TraX</a> for drone mission and airspace checking in Germany.</li>
+</ul>
+<p>For mapping flights, draw or approximate the planned operation conservatively in the legal checking tool. Use the maximum planned altitude and the full operational area, not only the central flight path.</p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -520,61 +654,9 @@ Warnung
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Do not assume that a DJI Mini drone is supported only because it belongs to the Mini series. Support is determined by the exact drone model, controller, mobile device, operating system, Dronelink app generation, and DJI SDK availability. Always test the complete setup with a short, low-risk mission before using it in the field.</p>
+<p>A technically valid Litchi mission is not automatically a legally valid flight. Always separate technical mission planning from legal operation checking.</p>
 </div>
 </div>
-</section>
-</section>
-<section id="litchi-vs.-dronelink-practical-trade-off" class="level2">
-<h2 class="anchored" data-anchor-id="litchi-vs.-dronelink-practical-trade-off">Litchi vs.&nbsp;Dronelink – Practical Trade-Off</h2>
-<p>For DJI-based workflows, two fundamentally different approaches exist for executing planned missions:</p>
-<section id="litchi-uavrmp-file-based-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="litchi-uavrmp-file-based-workflow">Litchi + uavRmp (File-Based Workflow)</h3>
-<ul>
-<li><strong>Concept</strong>: QGroundControl → <code>uavRmp</code> → Litchi CSV → Execution</li>
-<li><strong>Strengths</strong>:
-<ul>
-<li>Direct transfer of planned flight geometry</li>
-<li>Strong integration with external planning tools</li>
-<li>Transparent and reproducible workflow</li>
-<li>Well suited for teaching structured survey logic</li>
-</ul></li>
-<li><strong>Limitations</strong>:
-<ul>
-<li>Technically fragile (format dependencies, import issues, SDK constraints)</li>
-<li>Limited flexibility once the mission is generated</li>
-<li>Dependent on exact Litchi compatibility</li>
-</ul></li>
-</ul>
-</section>
-<section id="dronelink-system-based-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="dronelink-system-based-workflow">Dronelink (System-Based Workflow)</h3>
-<ul>
-<li><strong>Concept</strong>: Mission is created and executed entirely within Dronelink</li>
-<li><strong>Strengths</strong>:
-<ul>
-<li>Robust execution environment</li>
-<li>High flexibility (mapping, waypoint, facade, orbit, adaptive missions)</li>
-<li>Integrated terrain awareness and mission logic</li>
-</ul></li>
-<li><strong>Limitations</strong>:
-<ul>
-<li>Higher cost (licensing required)</li>
-<li>More complex interface and setup</li>
-<li>No direct import of external mission files (manual reconstruction required)</li>
-</ul></li>
-</ul>
-</section>
-<section id="practical-implication" class="level3">
-<h3 class="anchored" data-anchor-id="practical-implication">Practical Implication</h3>
-<ul>
-<li><strong>Litchi + uavRmp</strong> is technically more fragile, but highly efficient for transferring structured survey plans.</li>
-<li><strong>Dronelink</strong> is more robust and flexible in operation, but more expensive and more complex to use.</li>
-</ul>
-<p>For low-cost DJI Mini-class mission planning, there are essentially two practical approaches. The first is the file-based QGroundControl / uavRmp / Litchi workflow, where QGroundControl provides the actual planning power and uavRmp converts the resulting plan into a Litchi-compatible execution format. This approach is technically more fragile, but transparent, reproducible, and well suited for teaching mission-planning logic.</p>
-<p>The second approach is Dronelink. Dronelink is more powerful as an integrated mission-planning environment, but it is also more complex and more expensive. It should be understood as a separate planning ecosystem, not as a simple replacement for the QGroundControl / uavRmp / Litchi workflow.</p>
-</section>
-</section>
 <section id="connected-module" class="level2">
 <h2 class="anchored" data-anchor-id="connected-module">Connected Module</h2>
 <ul>
